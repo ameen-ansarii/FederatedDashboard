@@ -1,0 +1,84 @@
+{
+  "name": "FedAvg Student Dropout Classifier",
+  "version": "mod_v_1_1786809938_8a91b5",
+  "framework": "PyTorch",
+  "checksum": "aad8d99394ad0570d07b0366417df5aa83b2d2b195533db8b98c7f14134e6f66",
+  "metrics": {
+    "accuracy": 0.3,
+    "precision": 0.3,
+    "recall": 1.0,
+    "f1": 0.4615,
+    "roc_auc": 0.2857,
+    "confusion_matrix": [
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        6
+      ]
+    ]
+  },
+  "lineage": {
+    "dataset_id": 1,
+    "preprocessing_artifact_id": 1,
+    "preprocessing_version": "v_1_1786809938_306cbf",
+    "feature_schema": {
+      "feature_names": [
+        "Age",
+        "GPA",
+        "Attendance",
+        "Tuition_Paid_No",
+        "Tuition_Paid_Yes"
+      ],
+      "feature_count": 5,
+      "numerical_features": [
+        "Age",
+        "GPA",
+        "Attendance"
+      ],
+      "categorical_features": [
+        "Tuition_Paid"
+      ],
+      "scaled": true,
+      "impute_strategy": "mean"
+    },
+    "hyperparameters": {
+      "artifact_id": 1,
+      "name": "FedAvg Student Dropout Classifier",
+      "num_clients": 2,
+      "partitioning": "IID",
+      "dirichlet_alpha": 0.5,
+      "rounds": 1,
+      "local_epochs": 1,
+      "learning_rate": 0.001,
+      "batch_size": 16,
+      "hidden_dims": [
+        16,
+        8
+      ],
+      "dropout_rate": 0.2,
+      "optimizer": "adam",
+      "random_state": 42,
+      "partitioning_details": {
+        "partitioning": "IID",
+        "dirichlet_alpha": 0.5,
+        "num_clients": 2,
+        "client_sample_counts": {
+          "client_0": 30,
+          "client_1": 30
+        }
+      }
+    },
+    "split_summary": {
+      "train_samples": 60,
+      "val_samples": 20,
+      "test_samples": 20,
+      "positive_class_ratio_train": 0.2833333333333333,
+      "positive_class_ratio_val": 0.3,
+      "positive_class_ratio_test": 0.3
+    },
+    "seed": 42
+  }
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "limitation_id": "LIM-01",
+    "topic": "Sample Size Constraint",
+    "description": "The audited OULAD benchmark dataset contains 200 total samples (120 train, 40 validation, 40 test).",
+    "why_it_matters": "Small sample sizes heighten susceptibility to partition variance and reduce statistical power.",
+    "restricted_claim": "Claims regarding asymptotic convergence or scalability to thousands of students.",
+    "future_experiment": "Benchmark across full 32,593 OULAD student record cohort."
+  },
+  {
+    "limitation_id": "LIM-02",
+    "topic": "Held-Out Test Split Scale",
+    "description": "Held-out test split consists of 40 records (27 non-dropout, 13 dropout).",
+    "why_it_matters": "A single sample misclassification shifts accuracy by 2.5% and F1 by approximately 3-4%.",
+    "restricted_claim": "Fine-grained precision claims beyond 2 decimal places.",
+    "future_experiment": "Implement 5-fold cross-validation or larger stratified holdout."
+  },
+  {
+    "limitation_id": "LIM-03",
+    "topic": "Five-Seed Sample Size (N=5)",
+    "description": "Evaluation was conducted over 5 stochastic seeds [42, 123, 456, 789, 1024].",
+    "why_it_matters": "Degrees of freedom df=4 leads to wide Student-t confidence intervals and low statistical test power.",
+    "restricted_claim": "Strong claims of population-level statistical significance.",
+    "future_experiment": "Execute 20-seed or 50-seed Monte Carlo evaluation."
+  },
+  {
+    "limitation_id": "LIM-04",
+    "topic": "Coarse FedProx mu Hyperparameter Grid",
+    "description": "Proximal term was evaluated at order-of-magnitude steps mu in {0.001, 0.01, 0.1}.",
+    "why_it_matters": "The optimal regularization value may lie between 0.005 and 0.05.",
+    "restricted_claim": "Claiming mu=0.01 is the universally optimal proximal parameter.",
+    "future_experiment": "Perform fine-grained Bayesian hyperparameter optimization over [0.001, 0.1]."
+  },
+  {
+    "limitation_id": "LIM-05",
+    "topic": "Single Preprocessing Artifact",
+    "description": "All models evaluated using frozen artifact v_1_1786778298.",
+    "why_it_matters": "Imputation and one-hot encoding strategies were fixed.",
+    "restricted_claim": "Generalization across alternative data preparation pipelines.",
+    "future_experiment": "Evaluate sensitivity across alternative scaling and encoding strategies."
+  },
+  {
+    "limitation_id": "LIM-06",
+    "topic": "Non-Causal Nature of XAI Explanations",
+    "description": "SHAP, LIME, and Integrated Gradients identify feature predictive attributions.",
+    "why_it_matters": "High attribution (e.g. total_vle_clicks) reflects statistical association, not necessarily causal driver.",
+    "restricted_claim": "Recommending educational policy interventions based purely on attribution ranking.",
+    "future_experiment": "Conduct causal inference and do-calculus intervention analysis."
+  },
+  {
+    "limitation_id": "LIM-07",
+    "topic": "No Formal Differential Privacy Noise",
+    "description": "Privacy preservation is achieved via gradient decentralization without raw data transfer; differential privacy (DP-SGD) noise was not added.",
+    "why_it_matters": "Decentralization prevents direct data sharing, but formal (epsilon, delta)-DP bounds against reconstruction attacks are not guaranteed.",
+    "restricted_claim": "Claiming formal mathematical differential privacy guarantees.",
+    "future_experiment": "Integrate DP-FedAvg with RDP accountant to quantify privacy-utility tradeoff."
+  },
+  {
+    "limitation_id": "LIM-08",
+    "topic": "Fixed Three-Client Topology",
+    "description": "Federated evaluations used K=3 clients.",
+    "why_it_matters": "Real-world university consortia may involve 10 to 100 institutions with variable bandwidth.",
+    "restricted_claim": "Generalization to large-scale cross-silo or cross-device federated networks.",
+    "future_experiment": "Simulate scale-up to K=20 and K=50 clients with client dropout/stragglers."
+  },
+  {
+    "limitation_id": "LIM-09",
+    "topic": "Single Neural Architecture (DropoutMLP)",
+    "description": "Evaluation was restricted to 2-layer MLP (33 -> 32 -> 16 -> 1).",
+    "why_it_matters": "Tree-based models (XGBoost) or TabNet might exhibit different centralized vs federated gaps.",
+    "restricted_claim": "Claiming MLP is the optimal model family for academic tabular data.",
+    "future_experiment": "Compare against Federated Gradient Boosted Trees and TabNet."
+  },
+  {
+    "limitation_id": "LIM-10",
+    "topic": "CPU vs GPU Determinism Boundary",
+    "description": "Deterministic reproducibility verified on PyTorch CPU generator.",
+    "why_it_matters": "Atomic operations in CUDA kernels can introduce floating-point non-determinism across GPU architectures.",
+    "restricted_claim": "Bitwise exact reproducibility across heterogeneous GPU hardware.",
+    "future_experiment": "Benchmark determinism across NVIDIA A100 / Apple Metal platforms."
+  }
+]

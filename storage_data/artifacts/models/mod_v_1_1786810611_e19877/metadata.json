@@ -1,0 +1,86 @@
+{
+  "name": "FedProx Student Dropout Classifier",
+  "version": "mod_v_1_1786810611_e19877",
+  "framework": "PyTorch",
+  "checksum": "3350ae3a41d2674e1f9b0b41710d347cca6e49f20c9b0fcd8662b52f693fd8ac",
+  "metrics": {
+    "accuracy": 0.3,
+    "precision": 0.3,
+    "recall": 1.0,
+    "f1": 0.4615,
+    "roc_auc": 0.2976,
+    "confusion_matrix": [
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        6
+      ]
+    ]
+  },
+  "lineage": {
+    "dataset_id": 1,
+    "preprocessing_artifact_id": 1,
+    "preprocessing_version": "v_1_1786810611_fd833b",
+    "feature_schema": {
+      "feature_names": [
+        "Age",
+        "GPA",
+        "Attendance",
+        "Tuition_Paid_No",
+        "Tuition_Paid_Yes"
+      ],
+      "feature_count": 5,
+      "numerical_features": [
+        "Age",
+        "GPA",
+        "Attendance"
+      ],
+      "categorical_features": [
+        "Tuition_Paid"
+      ],
+      "scaled": true,
+      "impute_strategy": "mean"
+    },
+    "hyperparameters": {
+      "artifact_id": 1,
+      "name": "FedProx Student Dropout Classifier",
+      "num_clients": 2,
+      "partitioning": "IID",
+      "dirichlet_alpha": 0.5,
+      "rounds": 1,
+      "local_epochs": 1,
+      "learning_rate": 0.001,
+      "batch_size": 16,
+      "hidden_dims": [
+        16,
+        8
+      ],
+      "dropout_rate": 0.2,
+      "optimizer": "adam",
+      "random_state": 42,
+      "mu": 0.05,
+      "algorithm": "FEDPROX",
+      "partitioning_details": {
+        "partitioning": "IID",
+        "dirichlet_alpha": 0.5,
+        "num_clients": 2,
+        "client_sample_counts": {
+          "client_0": 30,
+          "client_1": 30
+        }
+      }
+    },
+    "split_summary": {
+      "train_samples": 60,
+      "val_samples": 20,
+      "test_samples": 20,
+      "positive_class_ratio_train": 0.2833333333333333,
+      "positive_class_ratio_val": 0.3,
+      "positive_class_ratio_test": 0.3
+    },
+    "seed": 42
+  }
+}

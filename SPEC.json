@@ -1,0 +1,135 @@
+{
+  "project": {
+    "name": "student-dropout-web",
+    "title": "Privacy-Preserving Federated Learning for Student Dropout Prediction with Explainable AI",
+    "type": "production_rest_api_backend",
+    "frontend": {
+      "in_scope": false,
+      "integration_target": [
+        "React",
+        "Next.js"
+      ]
+    }
+  },
+
+  "technology": {
+    "python": "3.11+",
+    "api": "FastAPI",
+    "server": "Uvicorn",
+    "database": "PostgreSQL",
+    "orm": "SQLAlchemy",
+    "migrations": "Alembic",
+    "cache": "Redis",
+    "jobs": "Celery",
+    "ml": [
+      "PyTorch",
+      "scikit-learn",
+      "NumPy",
+      "Pandas"
+    ],
+    "xai": [
+      "SHAP",
+      "LIME",
+      "Captum"
+    ]
+  },
+
+  "learning": {
+    "centralized": true,
+    "federated": {
+      "enabled": true,
+      "methods": [
+        "FedAvg",
+        "FedProx"
+      ],
+      "partitioning": [
+        "IID",
+        "Non-IID"
+      ],
+      "privacy_boundary": {
+        "raw_client_records_to_server": false,
+        "allowed_payloads": [
+          "model_updates",
+          "sample_counts",
+          "metrics",
+          "protocol_metadata"
+        ]
+      }
+    }
+  },
+
+  "target": {
+    "classes": {
+      "0": "Not Dropout",
+      "1": "Dropout"
+    },
+    "risk_bands": {
+      "low": {
+        "condition": "probability < 0.40"
+      },
+      "medium": {
+        "condition": "0.40 <= probability < 0.70"
+      },
+      "high": {
+        "condition": "probability >= 0.70"
+      }
+    }
+  },
+
+  "xai": {
+    "methods": [
+      "shap",
+      "lime",
+      "integrated_gradients"
+    ],
+    "causal_warning": true
+  },
+
+  "roles": [
+    "ADMIN",
+    "RESEARCHER",
+    "CLIENT",
+    "VIEWER"
+  ],
+
+  "jobs": {
+    "async_operations": [
+      "preprocessing",
+      "centralized_training",
+      "fedavg_training",
+      "fedprox_training",
+      "batch_prediction",
+      "shap",
+      "lime",
+      "integrated_gradients"
+    ],
+    "initial_response": "202 Accepted",
+    "durable_job_reference": true
+  },
+
+  "phases": [
+    "foundation",
+    "datasets_preprocessing",
+    "centralized_ml",
+    "fedavg",
+    "fedprox",
+    "prediction",
+    "xai",
+    "jobs_live_status",
+    "security",
+    "dashboard_experiments_model_management",
+    "deployment_validation"
+  ],
+
+  "non_negotiable": [
+    "no_fake_metrics",
+    "no_fake_predictions",
+    "no_fake_xai",
+    "real_fedavg",
+    "real_fedprox",
+    "no_data_leakage",
+    "remote_clients_do_not_send_raw_records",
+    "immutable_model_lineage",
+    "no_secrets_in_source"
+  ]
+}

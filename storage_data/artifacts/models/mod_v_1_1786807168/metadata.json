@@ -1,0 +1,87 @@
+{
+  "name": "FedProx Model mu=0.05",
+  "version": "mod_v_1_1786807168",
+  "framework": "PyTorch",
+  "checksum": "ac70548f39161bb2e1665479417aecb639abda6defee8b96be1c4fe69177a9d9",
+  "metrics": {
+    "accuracy": 0.4688,
+    "precision": 0.4483,
+    "recall": 0.9286,
+    "f1": 0.6047,
+    "roc_auc": 0.4802,
+    "confusion_matrix": [
+      [
+        2,
+        16
+      ],
+      [
+        1,
+        13
+      ]
+    ]
+  },
+  "lineage": {
+    "dataset_id": 1,
+    "preprocessing_artifact_id": 1,
+    "preprocessing_version": "v_1_1786807167",
+    "feature_schema": {
+      "feature_names": [
+        "Age",
+        "GPA",
+        "Attendance",
+        "Tuition_Paid_No",
+        "Tuition_Paid_Yes"
+      ],
+      "feature_count": 5,
+      "numerical_features": [
+        "Age",
+        "GPA",
+        "Attendance"
+      ],
+      "categorical_features": [
+        "Tuition_Paid"
+      ],
+      "scaled": true,
+      "impute_strategy": "mean"
+    },
+    "hyperparameters": {
+      "artifact_id": 1,
+      "name": "FedProx Model mu=0.05",
+      "num_clients": 3,
+      "partitioning": "non_iid",
+      "dirichlet_alpha": 0.5,
+      "rounds": 4,
+      "local_epochs": 2,
+      "learning_rate": 0.001,
+      "batch_size": 32,
+      "hidden_dims": [
+        64,
+        32
+      ],
+      "dropout_rate": 0.2,
+      "optimizer": "adam",
+      "random_state": 42,
+      "mu": 0.05,
+      "algorithm": "FEDPROX",
+      "partitioning_details": {
+        "partitioning": "non_iid",
+        "dirichlet_alpha": 0.5,
+        "num_clients": 3,
+        "client_sample_counts": {
+          "client_0": 25,
+          "client_1": 26,
+          "client_2": 45
+        }
+      }
+    },
+    "split_summary": {
+      "train_samples": 96,
+      "val_samples": 32,
+      "test_samples": 32,
+      "positive_class_ratio_train": 0.4270833333333333,
+      "positive_class_ratio_val": 0.4375,
+      "positive_class_ratio_test": 0.4375
+    },
+    "seed": 42
+  }
+}

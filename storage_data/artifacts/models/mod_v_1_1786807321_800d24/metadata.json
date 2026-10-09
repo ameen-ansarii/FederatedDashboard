@@ -1,0 +1,85 @@
+{
+  "name": "FedAvg Model Baseline",
+  "version": "mod_v_1_1786807321_800d24",
+  "framework": "PyTorch",
+  "checksum": "f25f2f901b56bb32de5e5a9222fba871c40b6ab0fb667c47f60250dc753a14a2",
+  "metrics": {
+    "accuracy": 0.5938,
+    "precision": 1.0,
+    "recall": 0.0714,
+    "f1": 0.1333,
+    "roc_auc": 0.5119,
+    "confusion_matrix": [
+      [
+        18,
+        0
+      ],
+      [
+        13,
+        1
+      ]
+    ]
+  },
+  "lineage": {
+    "dataset_id": 1,
+    "preprocessing_artifact_id": 1,
+    "preprocessing_version": "v_1_1786807318_8f8318",
+    "feature_schema": {
+      "feature_names": [
+        "Age",
+        "GPA",
+        "Attendance",
+        "Tuition_Paid_No",
+        "Tuition_Paid_Yes"
+      ],
+      "feature_count": 5,
+      "numerical_features": [
+        "Age",
+        "GPA",
+        "Attendance"
+      ],
+      "categorical_features": [
+        "Tuition_Paid"
+      ],
+      "scaled": true,
+      "impute_strategy": "mean"
+    },
+    "hyperparameters": {
+      "artifact_id": 1,
+      "name": "FedAvg Model Baseline",
+      "num_clients": 3,
+      "partitioning": "iid",
+      "dirichlet_alpha": 0.5,
+      "rounds": 4,
+      "local_epochs": 2,
+      "learning_rate": 0.001,
+      "batch_size": 32,
+      "hidden_dims": [
+        64,
+        32
+      ],
+      "dropout_rate": 0.2,
+      "optimizer": "adam",
+      "random_state": 42,
+      "partitioning_details": {
+        "partitioning": "iid",
+        "dirichlet_alpha": 0.5,
+        "num_clients": 3,
+        "client_sample_counts": {
+          "client_0": 32,
+          "client_1": 32,
+          "client_2": 32
+        }
+      }
+    },
+    "split_summary": {
+      "train_samples": 96,
+      "val_samples": 32,
+      "test_samples": 32,
+      "positive_class_ratio_train": 0.4270833333333333,
+      "positive_class_ratio_val": 0.4375,
+      "positive_class_ratio_test": 0.4375
+    },
+    "seed": 42
+  }
+}

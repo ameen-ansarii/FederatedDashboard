@@ -1,0 +1,3436 @@
+{
+  "dataset": "OULAD Student Dropout Benchmark",
+  "preprocessing_artifact": "v_1_1786778298",
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ],
+  "benchmark_parameters": {
+    "num_clients": 3,
+    "rounds": 5,
+    "local_epochs": 2,
+    "centralized_epochs": 10,
+    "batch_size": 16,
+    "learning_rate": 0.01,
+    "hidden_dims": [
+      32,
+      16
+    ],
+    "dropout_rate": 0.1,
+    "dirichlet_alpha": 0.5,
+    "mu_values": [
+      0.001,
+      0.01,
+      0.1
+    ]
+  },
+  "aggregated_statistics": {
+    "CENTRALIZED (BASELINE)": {
+      "algorithm": "CENTRALIZED",
+      "variant": "BASELINE",
+      "metrics_summary": {
+        "accuracy_mean": 0.5900000000000001,
+        "accuracy_std": 0.028504385627478437,
+        "accuracy_min": 0.55,
+        "accuracy_max": 0.625,
+        "precision_mean": 0.41142,
+        "precision_std": 0.038078038289806895,
+        "precision_min": 0.3529,
+        "precision_max": 0.4545,
+        "recall_mean": 0.6307600000000001,
+        "recall_std": 0.1140982164628352,
+        "recall_min": 0.4615,
+        "recall_max": 0.7692,
+        "f1_mean": 0.49712000000000006,
+        "f1_std": 0.0635450391454754,
+        "f1_min": 0.4,
+        "f1_max": 0.5714,
+        "roc_auc_mean": 0.5806199999999999,
+        "roc_auc_std": 0.020458910039393617,
+        "roc_auc_min": 0.5641,
+        "roc_auc_max": 0.6125,
+        "loss_mean": 1.2460200000000001,
+        "loss_std": 0.15445396401517184,
+        "loss_min": 1.0551,
+        "loss_max": 1.4081
+      },
+      "deltas_summary": {
+        "delta_accuracy_mean": 0.0,
+        "delta_accuracy_std": 0.0,
+        "delta_f1_mean": 0.0,
+        "delta_f1_std": 0.0,
+        "delta_roc_auc_mean": 0.0,
+        "delta_roc_auc_std": 0.0,
+        "delta_loss_mean": 0.0,
+        "delta_loss_std": 0.0
+      },
+      "seed_runs": [
+        {
+          "seed": 42,
+          "metrics": {
+            "accuracy": 0.575,
+            "precision": 0.4,
+            "recall": 0.6154,
+            "f1": 0.4848,
+            "roc_auc": 0.5641,
+            "loss": 1.3778,
+            "confusion_matrix": [
+              [
+                15,
+                12
+              ],
+              [
+                5,
+                8
+              ]
+            ]
+          },
+          "checksum": "f4d0b9957f1fac3dd5d96d15ed47f2b6e8fcb5b1d309042f2cf9d3cf1e22e1e2",
+          "derived_seed": 1195991226
+        },
+        {
+          "seed": 123,
+          "metrics": {
+            "accuracy": 0.55,
+            "precision": 0.3529,
+            "recall": 0.4615,
+            "f1": 0.4,
+            "roc_auc": 0.567,
+            "loss": 1.0551,
+            "confusion_matrix": [
+              [
+                16,
+                11
+              ],
+              [
+                7,
+                6
+              ]
+            ]
+          },
+          "checksum": "4c6140f96872f61ef214746bb8ed4f6991a89b57e4f11f5b671025cf2b3343d6",
+          "derived_seed": 828163825
+        },
+        {
+          "seed": 456,
+          "metrics": {
+            "accuracy": 0.6,
+            "precision": 0.4286,
+            "recall": 0.6923,
+            "f1": 0.5294,
+            "roc_auc": 0.6125,
+            "loss": 1.1237,
+            "confusion_matrix": [
+              [
+                15,
+                12
+              ],
+              [
+                4,
+                9
+              ]
+            ]
+          },
+          "checksum": "3e0fb87c364d2665c666d26bea6b1e619a3f427187d49076284cd1ec5fc25fa9",
+          "derived_seed": 491147114
+        },
+        {
+          "seed": 789,
+          "metrics": {
+            "accuracy": 0.625,
+            "precision": 0.4545,
+            "recall": 0.7692,
+            "f1": 0.5714,
+            "roc_auc": 0.5897,
+            "loss": 1.4081,
+            "confusion_matrix": [
+              [
+                15,
+                12
+              ],
+              [
+                3,
+                10
+              ]
+            ]
+          },
+          "checksum": "d49e1082c65ddc1265db8771df7e27484cd038a597a64d8fe02ea8a70d165a04",
+          "derived_seed": 2074704245
+        },
+        {
+          "seed": 1024,
+          "metrics": {
+            "accuracy": 0.6,
+            "precision": 0.4211,
+            "recall": 0.6154,
+            "f1": 0.5,
+            "roc_auc": 0.5698,
+            "loss": 1.2654,
+            "confusion_matrix": [
+              [
+                16,
+                11
+              ],
+              [
+                5,
+                8
+              ]
+            ]
+          },
+          "checksum": "04df167b28ef455006a1bad99ac99d04bf624485fc66ba0a9aba68c64cea0ea5",
+          "derived_seed": 1383625223
+        }
+      ]
+    },
+    "FEDAVG (IID)": {
+      "algorithm": "FEDAVG",
+      "variant": "IID",
+      "metrics_summary": {
+        "accuracy_mean": 0.5449999999999999,
+        "accuracy_std": 0.011180339887498959,
+        "accuracy_min": 0.525,
+        "accuracy_max": 0.55,
+        "precision_mean": 0.36526000000000003,
+        "precision_std": 0.022346990848881657,
+        "precision_min": 0.3333,
+        "precision_max": 0.381,
+        "recall_mean": 0.5538599999999999,
+        "recall_std": 0.10030751716596317,
+        "recall_min": 0.3846,
+        "recall_max": 0.6154,
+        "f1_mean": 0.43862000000000007,
+        "f1_std": 0.04980363440553311,
+        "f1_min": 0.3571,
+        "f1_max": 0.4706,
+        "roc_auc_mean": 0.61936,
+        "roc_auc_std": 0.050606007548511474,
+        "roc_auc_min": 0.5527,
+        "roc_auc_max": 0.6838,
+        "loss_mean": 0.68654,
+        "loss_std": 0.020595946203075987,
+        "loss_min": 0.6632,
+        "loss_max": 0.7107
+      },
+      "deltas_summary": {
+        "delta_accuracy_mean": -0.045,
+        "delta_accuracy_std": 0.03259601202601324,
+        "delta_f1_mean": -0.058499999999999996,
+        "delta_f1_std": 0.08620156611106321,
+        "delta_roc_auc_mean": 0.03874,
+        "delta_roc_auc_std": 0.059420139683444034,
+        "delta_loss_mean": -0.55948,
+        "delta_loss_std": 0.14381238472398686
+      },
+      "seed_runs": [
+        {
+          "seed": 42,
+          "metrics": {
+            "accuracy": 0.55,
+            "precision": 0.381,
+            "recall": 0.6154,
+            "f1": 0.4706,
+            "roc_auc": 0.6838,
+            "loss": 0.7107,
+            "confusion_matrix": [
+              [
+                14,
+                13
+              ],
+              [
+                5,
+                8
+              ]
+            ]
+          },
+          "checksum": "7cb05cc232f00690b214c1dfb84fc44462707b4d9729d7f74ded39c3ec04c15e",
+          "derived_seed": 644915249
+        },
+        {
+          "seed": 123,
+          "metrics": {
+            "accuracy": 0.55,
+            "precision": 0.381,
+            "recall": 0.6154,
+            "f1": 0.4706,
+            "roc_auc": 0.6239,
+            "loss": 0.6905,
+            "confusion_matrix": [
+              [
+                14,
+                13
+              ],
+              [
+                5,
+                8
+              ]
+            ]
+          },
+          "checksum": "687c2959f7805b5a729229d4012bea2bf386cac07e399972629fdc4d4524ed8c",
+          "derived_seed": 643732553
+        },
+        {
+          "seed": 456,
+          "metrics": {
+            "accuracy": 0.525,
+            "precision": 0.35,
+            "recall": 0.5385,
+            "f1": 0.4242,
+            "roc_auc": 0.5897,
+            "loss": 0.6632,
+            "confusion_matrix": [
+              [
+                14,
+                13
+              ],
+              [
+                6,
+                7
+              ]
+            ]
+          },
+          "checksum": "2d9b9b3d051d2740445cfa40a6a285d444d217da3564f646952e4b86f16de578",
+          "derived_seed": 1877965428
+        },
+        {
+          "seed": 789,
+          "metrics": {
+            "accuracy": 0.55,
+            "precision": 0.381,
+            "recall": 0.6154,
+            "f1": 0.4706,
+            "roc_auc": 0.6467,
+            "loss": 0.7006,
+            "confusion_matrix": [
+              [
+                14,
+                13
+              ],
+              [
+                5,
+                8
+              ]
+            ]
+          },
+          "checksum": "2c3ebde74634f795a8847e81246fa196c74618171b17f66fcebb1af6a54995a0",
+          "derived_seed": 577532122
+        },
+        {
+          "seed": 1024,
+          "metrics": {
+            "accuracy": 0.55,
+            "precision": 0.3333,
+            "recall": 0.3846,
+            "f1": 0.3571,
+            "roc_auc": 0.5527,
+            "loss": 0.6677,
+            "confusion_matrix": [
+              [
+                17,
+                10
+              ],
+              [
+                8,
+                5
+              ]
+            ]
+          },
+          "checksum": "56144cc84eaac14c9e1ca532eb56aadc0ab128819a1e13abc7f268da06c1feb4",
+          "derived_seed": 1058541295
+        }
+      ]
+    },
+    "FEDAVG (NON_IID_ALPHA_0.5)": {
+      "algorithm": "FEDAVG",
+      "variant": "NON_IID_ALPHA_0.5",
+      "metrics_summary": {
+        "accuracy_mean": 0.5750000000000001,
+        "accuracy_std": 0.03535533905932735,
+        "accuracy_min": 0.55,
+        "accuracy_max": 0.625,
+        "precision_mean": 0.35442,
+        "precision_std": 0.05818081298847585,
+        "precision_min": 0.2727,
+        "precision_max": 0.4286,
+        "recall_mean": 0.3846,
+        "recall_std": 0.0941828806100132,
+        "recall_min": 0.2308,
+        "recall_max": 0.4615,
+        "f1_mean": 0.36722,
+        "f1_std": 0.07276037383081536,
+        "f1_min": 0.25,
+        "f1_max": 0.4444,
+        "roc_auc_mean": 0.59372,
+        "roc_auc_std": 0.07857815854294373,
+        "roc_auc_min": 0.5014,
+        "roc_auc_max": 0.698,
+        "loss_mean": 0.7704000000000001,
+        "loss_std": 0.1820064696652292,
+        "loss_min": 0.6259,
+        "loss_max": 0.9918
+      },
+      "deltas_summary": {
+        "delta_accuracy_mean": -0.015,
+        "delta_accuracy_std": 0.037914377220257756,
+        "delta_f1_mean": -0.1299,
+        "delta_f1_std": 0.03300515111312172,
+        "delta_roc_auc_mean": 0.0131,
+        "delta_roc_auc_std": 0.07741059359028324,
+        "delta_loss_mean": -0.47562,
+        "delta_loss_std": 0.2352892836488734
+      },
+      "seed_runs": [
+        {
+          "seed": 42,
+          "metrics": {
+            "accuracy": 0.55,
+            "precision": 0.3333,
+            "recall": 0.3846,
+            "f1": 0.3571,
+            "roc_auc": 0.5897,
+            "loss": 0.6623,
+            "confusion_matrix": [
+              [
+                17,
+                10
+              ],
+              [
+                8,
+                5
+              ]
+            ]
+          },
+          "checksum": "edef7a13eb3c9a4c1f03d6370fea51d7ba84b3359cf45ec4704a8c116cd226cb",
+          "derived_seed": 595050917
+        },
+        {
+          "seed": 123,
+          "metrics": {
+            "accuracy": 0.55,
+            "precision": 0.2727,
+            "recall": 0.2308,
+            "f1": 0.25,
+            "roc_auc": 0.5014,
+            "loss": 0.9448,
+            "confusion_matrix": [
+              [
+                19,
+                8
+              ],
+              [
+                10,
+                3
+              ]
+            ]
+          },
+          "checksum": "a5839e2c5b0a9dc3920bb01e79d1534a35e807dcba389da0e4586a4b0bb7ac5c",
+          "derived_seed": 1966608531
+        },
+        {
+          "seed": 456,
+          "metrics": {
+            "accuracy": 0.625,
+            "precision": 0.4286,
+            "recall": 0.4615,
+            "f1": 0.4444,
+            "roc_auc": 0.641,
+            "loss": 0.6259,
+            "confusion_matrix": [
+              [
+                19,
+                8
+              ],
+              [
+                7,
+                6
+              ]
+            ]
+          },
+          "checksum": "bf70fbc8aa8437ac7540ff30c7fa826585ed2f5f4ed4f6e9cdd8e5aaed5714f4",
+          "derived_seed": 1611617337
+        },
+        {
+          "seed": 789,
+          "metrics": {
+            "accuracy": 0.55,
+            "precision": 0.3529,
+            "recall": 0.4615,
+            "f1": 0.4,
+            "roc_auc": 0.5385,
+            "loss": 0.9918,
+            "confusion_matrix": [
+              [
+                16,
+                11
+              ],
+              [
+                7,
+                6
+              ]
+            ]
+          },
+          "checksum": "d35604fc18c5f93cf682876ac9abde96464c0c1cf9f867034eb6cbb7cd670c8c",
+          "derived_seed": 989536954
+        },
+        {
+          "seed": 1024,
+          "metrics": {
+            "accuracy": 0.6,
+            "precision": 0.3846,
+            "recall": 0.3846,
+            "f1": 0.3846,
+            "roc_auc": 0.698,
+            "loss": 0.6272,
+            "confusion_matrix": [
+              [
+                19,
+                8
+              ],
+              [
+                8,
+                5
+              ]
+            ]
+          },
+          "checksum": "fff8e069c4392c91df5781d7004e3d299568ae6a148cd048978e403d71863297",
+          "derived_seed": 871092404
+        }
+      ]
+    },
+    "FEDPROX (NON_IID_ALPHA_0.5_MU_0.001)": {
+      "algorithm": "FEDPROX",
+      "variant": "NON_IID_ALPHA_0.5_MU_0.001",
+      "metrics_summary": {
+        "accuracy_mean": 0.6,
+        "accuracy_std": 0.04677071733467428,
+        "accuracy_min": 0.55,
+        "accuracy_max": 0.675,
+        "precision_mean": 0.29657999999999995,
+        "precision_std": 0.18000414439673326,
+        "precision_min": 0.0,
+        "precision_max": 0.4211,
+        "recall_mean": 0.41537999999999997,
+        "recall_std": 0.3245457471605505,
+        "recall_min": 0.0,
+        "recall_max": 0.7692,
+        "f1_mean": 0.3367,
+        "f1_std": 0.23143918207598296,
+        "f1_min": 0.0,
+        "f1_max": 0.5263,
+        "roc_auc_mean": 0.64042,
+        "roc_auc_std": 0.04717257677931108,
+        "roc_auc_min": 0.5897,
+        "roc_auc_max": 0.7179,
+        "loss_mean": 0.8608999999999998,
+        "loss_std": 0.3734156196518834,
+        "loss_min": 0.6267,
+        "loss_max": 1.5174
+      },
+      "deltas_summary": {
+        "delta_accuracy_mean": 0.010000000000000002,
+        "delta_accuracy_std": 0.041833001326703784,
+        "delta_f1_mean": -0.16042,
+        "delta_f1_std": 0.26197640542613754,
+        "delta_roc_auc_mean": 0.0598,
+        "delta_roc_auc_std": 0.032686312119907315,
+        "delta_loss_mean": -0.38512,
+        "delta_loss_std": 0.47788878099407195
+      },
+      "seed_runs": [
+        {
+          "seed": 42,
+          "metrics": {
+            "accuracy": 0.6,
+            "precision": 0.4211,
+            "recall": 0.6154,
+            "f1": 0.5,
+            "roc_auc": 0.6353,
+            "loss": 0.6756,
+            "confusion_matrix": [
+              [
+                16,
+                11
+              ],
+              [
+                5,
+                8
+              ]
+            ]
+          },
+          "checksum": "9c56277b5609a63ec566411419a8b05db811b35b0cb31ee0650d93db56353401",
+          "derived_seed": 1825270140
+        },
+        {
+          "seed": 123,
+          "metrics": {
+            "accuracy": 0.55,
+            "precision": 0.4,
+            "recall": 0.7692,
+            "f1": 0.5263,
+            "roc_auc": 0.5897,
+            "loss": 0.8113,
+            "confusion_matrix": [
+              [
+                12,
+                15
+              ],
+              [
+                3,
+                10
+              ]
+            ]
+          },
+          "checksum": "1dd761655d33dc80e7ff3a0da2dad94f6cb36b9903a82c9e3b751ef64b5c0383",
+          "derived_seed": 860546014
+        },
+        {
+          "seed": 456,
+          "metrics": {
+            "accuracy": 0.675,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "roc_auc": 0.7179,
+            "loss": 1.5174,
+            "confusion_matrix": [
+              [
+                27,
+                0
+              ],
+              [
+                13,
+                0
+              ]
+            ]
+          },
+          "checksum": "1c813a2870a29dc1751d031981c2b69f2bb8d47c3bd4bfb164d4ebe67260e806",
+          "derived_seed": 1781118543
+        },
+        {
+          "seed": 789,
+          "metrics": {
+            "accuracy": 0.6,
+            "precision": 0.4118,
+            "recall": 0.5385,
+            "f1": 0.4667,
+            "roc_auc": 0.6239,
+            "loss": 0.6735,
+            "confusion_matrix": [
+              [
+                17,
+                10
+              ],
+              [
+                6,
+                7
+              ]
+            ]
+          },
+          "checksum": "3af645d0dac248f5e68ea175a2b3c56c9c9a560c3004f788a1179106691d5771",
+          "derived_seed": 43286817
+        },
+        {
+          "seed": 1024,
+          "metrics": {
+            "accuracy": 0.575,
+            "precision": 0.25,
+            "recall": 0.1538,
+            "f1": 0.1905,
+            "roc_auc": 0.6353,
+            "loss": 0.6267,
+            "confusion_matrix": [
+              [
+                21,
+                6
+              ],
+              [
+                11,
+                2
+              ]
+            ]
+          },
+          "checksum": "c0b172e66d1bc86db403f98533d055a2d897425633db3afe76058df6b312f0b7",
+          "derived_seed": 901706461
+        }
+      ]
+    },
+    "FEDPROX (NON_IID_ALPHA_0.5_MU_0.01)": {
+      "algorithm": "FEDPROX",
+      "variant": "NON_IID_ALPHA_0.5_MU_0.01",
+      "metrics_summary": {
+        "accuracy_mean": 0.555,
+        "accuracy_std": 0.059686681931566614,
+        "accuracy_min": 0.475,
+        "accuracy_max": 0.625,
+        "precision_mean": 0.35309999999999997,
+        "precision_std": 0.0748046789980413,
+        "precision_min": 0.25,
+        "precision_max": 0.4444,
+        "recall_mean": 0.46153999999999995,
+        "recall_std": 0.143906820547186,
+        "recall_min": 0.2308,
+        "recall_max": 0.6154,
+        "f1_mean": 0.39694,
+        "f1_std": 0.09981276471473977,
+        "f1_min": 0.24,
+        "f1_max": 0.5161,
+        "roc_auc_mean": 0.5704,
+        "roc_auc_std": 0.03944762350256349,
+        "roc_auc_min": 0.5413,
+        "roc_auc_max": 0.6382,
+        "loss_mean": 0.7771800000000001,
+        "loss_std": 0.1410794350711683,
+        "loss_min": 0.649,
+        "loss_max": 1.0005
+      },
+      "deltas_summary": {
+        "delta_accuracy_mean": -0.034999999999999996,
+        "delta_accuracy_std": 0.0518411033833193,
+        "delta_f1_mean": -0.10018,
+        "delta_f1_std": 0.03817593482810866,
+        "delta_roc_auc_mean": -0.010219999999999998,
+        "delta_roc_auc_std": 0.03613844213576451,
+        "delta_loss_mean": -0.46884,
+        "delta_loss_std": 0.19976325487936963
+      },
+      "seed_runs": [
+        {
+          "seed": 42,
+          "metrics": {
+            "accuracy": 0.55,
+            "precision": 0.3529,
+            "recall": 0.4615,
+            "f1": 0.4,
+            "roc_auc": 0.5613,
+            "loss": 0.7957,
+            "confusion_matrix": [
+              [
+                16,
+                11
+              ],
+              [
+                7,
+                6
+              ]
+            ]
+          },
+          "checksum": "d8afec3b1cd6334f1fde6bd638c70a08f81c329da18959400ba01e0ae5b8cfe4",
+          "derived_seed": 481180090
+        },
+        {
+          "seed": 123,
+          "metrics": {
+            "accuracy": 0.525,
+            "precision": 0.25,
+            "recall": 0.2308,
+            "f1": 0.24,
+            "roc_auc": 0.5413,
+            "loss": 0.6633,
+            "confusion_matrix": [
+              [
+                18,
+                9
+              ],
+              [
+                10,
+                3
+              ]
+            ]
+          },
+          "checksum": "524f7b1508ffa45545812fc87bd32d5a38fe84df855201d23552073f68c69055",
+          "derived_seed": 637667444
+        },
+        {
+          "seed": 456,
+          "metrics": {
+            "accuracy": 0.6,
+            "precision": 0.4,
+            "recall": 0.4615,
+            "f1": 0.4286,
+            "roc_auc": 0.567,
+            "loss": 0.7774,
+            "confusion_matrix": [
+              [
+                18,
+                9
+              ],
+              [
+                7,
+                6
+              ]
+            ]
+          },
+          "checksum": "3f2516ba8e3d374b7738796aad7ccb0de9f72ce69ce47e8f45a070538dfcf473",
+          "derived_seed": 2007145326
+        },
+        {
+          "seed": 789,
+          "metrics": {
+            "accuracy": 0.625,
+            "precision": 0.4444,
+            "recall": 0.6154,
+            "f1": 0.5161,
+            "roc_auc": 0.6382,
+            "loss": 0.649,
+            "confusion_matrix": [
+              [
+                17,
+                10
+              ],
+              [
+                5,
+                8
+              ]
+            ]
+          },
+          "checksum": "c70480ba71ef0a70e6a93d2a332f06c1dee61a1b82be89bc5ad6f4b041d579e2",
+          "derived_seed": 537353392
+        },
+        {
+          "seed": 1024,
+          "metrics": {
+            "accuracy": 0.475,
+            "precision": 0.3182,
+            "recall": 0.5385,
+            "f1": 0.4,
+            "roc_auc": 0.5442,
+            "loss": 1.0005,
+            "confusion_matrix": [
+              [
+                12,
+                15
+              ],
+              [
+                6,
+                7
+              ]
+            ]
+          },
+          "checksum": "b445b5ef6006e98412d698d085073c086afd424db3864e816a5123310c1fcb4b",
+          "derived_seed": 503123220
+        }
+      ]
+    },
+    "FEDPROX (NON_IID_ALPHA_0.5_MU_0.1)": {
+      "algorithm": "FEDPROX",
+      "variant": "NON_IID_ALPHA_0.5_MU_0.1",
+      "metrics_summary": {
+        "accuracy_mean": 0.6,
+        "accuracy_std": 0.05303300858899107,
+        "accuracy_min": 0.525,
+        "accuracy_max": 0.675,
+        "precision_mean": 0.30022000000000004,
+        "precision_std": 0.17772763431723274,
+        "precision_min": 0.0,
+        "precision_max": 0.44,
+        "recall_mean": 0.43077999999999994,
+        "recall_std": 0.3466090189247822,
+        "recall_min": 0.0,
+        "recall_max": 0.8462,
+        "f1_mean": 0.34053999999999995,
+        "f1_std": 0.23560403859017356,
+        "f1_min": 0.0,
+        "f1_max": 0.5789,
+        "roc_auc_mean": 0.65414,
+        "roc_auc_std": 0.037513837447000827,
+        "roc_auc_min": 0.6154,
+        "roc_auc_max": 0.7037,
+        "loss_mean": 0.6842400000000001,
+        "loss_std": 0.05754518224838635,
+        "loss_min": 0.5886,
+        "loss_max": 0.7437
+      },
+      "deltas_summary": {
+        "delta_accuracy_mean": 0.009999999999999998,
+        "delta_accuracy_std": 0.08023403267940606,
+        "delta_f1_mean": -0.15658,
+        "delta_f1_std": 0.19574480069723435,
+        "delta_roc_auc_mean": 0.07352,
+        "delta_roc_auc_std": 0.055278133108852365,
+        "delta_loss_mean": -0.56178,
+        "delta_loss_std": 0.1738634004038803
+      },
+      "seed_runs": [
+        {
+          "seed": 42,
+          "metrics": {
+            "accuracy": 0.6,
+            "precision": 0.44,
+            "recall": 0.8462,
+            "f1": 0.5789,
+            "roc_auc": 0.661,
+            "loss": 0.6917,
+            "confusion_matrix": [
+              [
+                13,
+                14
+              ],
+              [
+                2,
+                11
+              ]
+            ]
+          },
+          "checksum": "16f4694abc975800d23adf757541648165892d26fd56db4ea2e3cc55b9c86514",
+          "derived_seed": 655387260
+        },
+        {
+          "seed": 123,
+          "metrics": {
+            "accuracy": 0.675,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "roc_auc": 0.6724,
+            "loss": 0.6917,
+            "confusion_matrix": [
+              [
+                27,
+                0
+              ],
+              [
+                13,
+                0
+              ]
+            ]
+          },
+          "checksum": "1cd7c80288cc37cf58adacd077e14eef3e2da88f116e77dbb0c541b14b6ac800",
+          "derived_seed": 1947239639
+        },
+        {
+          "seed": 456,
+          "metrics": {
+            "accuracy": 0.6,
+            "precision": 0.4118,
+            "recall": 0.5385,
+            "f1": 0.4667,
+            "roc_auc": 0.6154,
+            "loss": 0.7437,
+            "confusion_matrix": [
+              [
+                17,
+                10
+              ],
+              [
+                6,
+                7
+              ]
+            ]
+          },
+          "checksum": "d5ba926c1355b51cc4d7bbed86409a0901c35078cec71814df38294126900634",
+          "derived_seed": 690560550
+        },
+        {
+          "seed": 789,
+          "metrics": {
+            "accuracy": 0.525,
+            "precision": 0.3636,
+            "recall": 0.6154,
+            "f1": 0.4571,
+            "roc_auc": 0.6182,
+            "loss": 0.7055,
+            "confusion_matrix": [
+              [
+                13,
+                14
+              ],
+              [
+                5,
+                8
+              ]
+            ]
+          },
+          "checksum": "9853c35e2a5f4cc4fcacf04e080f54e87b847973746776f1eab62f4e2845e1d2",
+          "derived_seed": 178987950
+        },
+        {
+          "seed": 1024,
+          "metrics": {
+            "accuracy": 0.6,
+            "precision": 0.2857,
+            "recall": 0.1538,
+            "f1": 0.2,
+            "roc_auc": 0.7037,
+            "loss": 0.5886,
+            "confusion_matrix": [
+              [
+                22,
+                5
+              ],
+              [
+                11,
+                2
+              ]
+            ]
+          },
+          "checksum": "bc783c636ed9555bc8ba8f4adcea78777efb8488788d9f46b6c2f0ac88a45d9c",
+          "derived_seed": 1758161046
+        }
+      ]
+    }
+  },
+  "per_seed_experiments": {
+    "42": {
+      "models": [
+        {
+          "model_id": 1,
+          "model_version": "mod_v_1_1786892257_debc44",
+          "algorithm": "CENTRALIZED",
+          "variant": "BASELINE",
+          "metrics": {
+            "accuracy": 0.575,
+            "precision": 0.4,
+            "recall": 0.6154,
+            "f1": 0.4848,
+            "roc_auc": 0.5641,
+            "loss": 1.3778,
+            "confusion_matrix": [
+              [
+                15,
+                12
+              ],
+              [
+                5,
+                8
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": 0.0,
+            "delta_f1": 0.0,
+            "delta_roc_auc": 0.0,
+            "delta_loss": 0.0
+          }
+        },
+        {
+          "model_id": 2,
+          "model_version": "mod_v_1_1786892257_6f8d2c",
+          "algorithm": "FEDAVG",
+          "variant": "IID",
+          "metrics": {
+            "accuracy": 0.55,
+            "precision": 0.381,
+            "recall": 0.6154,
+            "f1": 0.4706,
+            "roc_auc": 0.6838,
+            "loss": 0.7107,
+            "confusion_matrix": [
+              [
+                14,
+                13
+              ],
+              [
+                5,
+                8
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": -0.025,
+            "delta_f1": -0.0142,
+            "delta_roc_auc": 0.1197,
+            "delta_loss": -0.6671
+          }
+        },
+        {
+          "model_id": 3,
+          "model_version": "mod_v_1_1786892257_ab3ae7",
+          "algorithm": "FEDAVG",
+          "variant": "NON_IID_ALPHA_0.5",
+          "metrics": {
+            "accuracy": 0.55,
+            "precision": 0.3333,
+            "recall": 0.3846,
+            "f1": 0.3571,
+            "roc_auc": 0.5897,
+            "loss": 0.6623,
+            "confusion_matrix": [
+              [
+                17,
+                10
+              ],
+              [
+                8,
+                5
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": -0.025,
+            "delta_f1": -0.1277,
+            "delta_roc_auc": 0.0256,
+            "delta_loss": -0.7155
+          }
+        },
+        {
+          "model_id": 4,
+          "model_version": "mod_v_1_1786892258_b5bf97",
+          "algorithm": "FEDPROX",
+          "variant": "NON_IID_ALPHA_0.5_MU_0.001",
+          "metrics": {
+            "accuracy": 0.6,
+            "precision": 0.4211,
+            "recall": 0.6154,
+            "f1": 0.5,
+            "roc_auc": 0.6353,
+            "loss": 0.6756,
+            "confusion_matrix": [
+              [
+                16,
+                11
+              ],
+              [
+                5,
+                8
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": 0.025,
+            "delta_f1": 0.0152,
+            "delta_roc_auc": 0.0712,
+            "delta_loss": -0.7022
+          }
+        },
+        {
+          "model_id": 5,
+          "model_version": "mod_v_1_1786892258_a8a48e",
+          "algorithm": "FEDPROX",
+          "variant": "NON_IID_ALPHA_0.5_MU_0.01",
+          "metrics": {
+            "accuracy": 0.55,
+            "precision": 0.3529,
+            "recall": 0.4615,
+            "f1": 0.4,
+            "roc_auc": 0.5613,
+            "loss": 0.7957,
+            "confusion_matrix": [
+              [
+                16,
+                11
+              ],
+              [
+                7,
+                6
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": -0.025,
+            "delta_f1": -0.0848,
+            "delta_roc_auc": -0.0028,
+            "delta_loss": -0.5821
+          }
+        },
+        {
+          "model_id": 6,
+          "model_version": "mod_v_1_1786892259_64266f",
+          "algorithm": "FEDPROX",
+          "variant": "NON_IID_ALPHA_0.5_MU_0.1",
+          "metrics": {
+            "accuracy": 0.6,
+            "precision": 0.44,
+            "recall": 0.8462,
+            "f1": 0.5789,
+            "roc_auc": 0.661,
+            "loss": 0.6917,
+            "confusion_matrix": [
+              [
+                13,
+                14
+              ],
+              [
+                2,
+                11
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": 0.025,
+            "delta_f1": 0.0941,
+            "delta_roc_auc": 0.0969,
+            "delta_loss": -0.6861
+          }
+        }
+      ],
+      "trajectories": {
+        "CENTRALIZED": {
+          "epochs": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "loss": [
+            0.9518,
+            0.9551,
+            0.9946,
+            1.0875,
+            1.1285,
+            1.2726,
+            1.4764,
+            1.5254,
+            1.656,
+            1.7459
+          ],
+          "validation_accuracy": [
+            0.45,
+            0.475,
+            0.6,
+            0.45,
+            0.475,
+            0.55,
+            0.525,
+            0.55,
+            0.625,
+            0.65
+          ]
+        },
+        "FEDAVG_IID": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.6827,
+            0.6623,
+            0.6538,
+            0.6503,
+            0.71
+          ],
+          "validation_accuracy": [
+            0.6,
+            0.675,
+            0.6,
+            0.625,
+            0.575
+          ]
+        },
+        "FEDAVG_NON_IID_ALPHA_0.5": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.702,
+            0.6717,
+            0.6505,
+            0.6682,
+            0.6496
+          ],
+          "validation_accuracy": [
+            0.4,
+            0.625,
+            0.625,
+            0.525,
+            0.55
+          ]
+        },
+        "FEDPROX_MU_0.001": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.7191,
+            0.7079,
+            0.6933,
+            0.6833,
+            0.7003
+          ],
+          "validation_accuracy": [
+            0.325,
+            0.325,
+            0.5,
+            0.6,
+            0.575
+          ]
+        },
+        "FEDPROX_MU_0.01": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.6732,
+            0.6641,
+            0.6675,
+            0.6583,
+            0.6438
+          ],
+          "validation_accuracy": [
+            0.725,
+            0.525,
+            0.525,
+            0.575,
+            0.6
+          ]
+        },
+        "FEDPROX_MU_0.1": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.6866,
+            0.6562,
+            0.6468,
+            0.644,
+            0.6577
+          ],
+          "validation_accuracy": [
+            0.6,
+            0.675,
+            0.65,
+            0.675,
+            0.6
+          ]
+        }
+      },
+      "mu_analysis": [
+        {
+          "mu": 0.001,
+          "accuracy": 0.6,
+          "f1": 0.5,
+          "roc_auc": 0.6353,
+          "loss": 0.6756,
+          "delta_f1_vs_centralized": 0.0152,
+          "delta_f1_vs_fedavg_non_iid": 0.1429
+        },
+        {
+          "mu": 0.01,
+          "accuracy": 0.55,
+          "f1": 0.4,
+          "roc_auc": 0.5613,
+          "loss": 0.7957,
+          "delta_f1_vs_centralized": -0.0848,
+          "delta_f1_vs_fedavg_non_iid": 0.0429
+        },
+        {
+          "mu": 0.1,
+          "accuracy": 0.6,
+          "f1": 0.5789,
+          "roc_auc": 0.661,
+          "loss": 0.6917,
+          "delta_f1_vs_centralized": 0.0941,
+          "delta_f1_vs_fedavg_non_iid": 0.2218
+        }
+      ],
+      "client_distributions": {
+        "iid": {
+          "strategy": "IID",
+          "num_clients": 3,
+          "dirichlet_alpha": null,
+          "total_samples": 120,
+          "client_breakdown": {
+            "client_1": {
+              "sample_count": 40,
+              "class_0_count": 25,
+              "class_1_count": 15,
+              "class_0_ratio": 0.625,
+              "class_1_ratio": 0.375
+            },
+            "client_2": {
+              "sample_count": 40,
+              "class_0_count": 28,
+              "class_1_count": 12,
+              "class_0_ratio": 0.7,
+              "class_1_ratio": 0.3
+            },
+            "client_3": {
+              "sample_count": 40,
+              "class_0_count": 28,
+              "class_1_count": 12,
+              "class_0_ratio": 0.7,
+              "class_1_ratio": 0.3
+            }
+          }
+        },
+        "non_iid": {
+          "strategy": "NON_IID",
+          "num_clients": 3,
+          "dirichlet_alpha": 0.5,
+          "total_samples": 120,
+          "client_breakdown": {
+            "client_1": {
+              "sample_count": 22,
+              "class_0_count": 17,
+              "class_1_count": 5,
+              "class_0_ratio": 0.7727,
+              "class_1_ratio": 0.2273
+            },
+            "client_2": {
+              "sample_count": 51,
+              "class_0_count": 44,
+              "class_1_count": 7,
+              "class_0_ratio": 0.8627,
+              "class_1_ratio": 0.1373
+            },
+            "client_3": {
+              "sample_count": 47,
+              "class_0_count": 20,
+              "class_1_count": 27,
+              "class_0_ratio": 0.4255,
+              "class_1_ratio": 0.5745
+            }
+          }
+        }
+      },
+      "reproducibility": {
+        "base_random_state": 42,
+        "derived_seeds": {
+          "centralized": 1195991226,
+          "fedavg_iid": 644915249,
+          "fedavg_non_iid": 595050917,
+          "fedprox_mu_0.001": 1825270140,
+          "fedprox_mu_0.01": 481180090,
+          "fedprox_mu_0.1": 655387260
+        },
+        "artifact_id": 1,
+        "num_clients": 3,
+        "rounds": 5,
+        "local_epochs": 2,
+        "centralized_epochs": 10,
+        "batch_size": 16,
+        "learning_rate": 0.01,
+        "hidden_dims": [
+          32,
+          16
+        ],
+        "dropout_rate": 0.1,
+        "dirichlet_alpha": 0.5,
+        "mu_values": [
+          0.001,
+          0.01,
+          0.1
+        ]
+      },
+      "summary": {
+        "baseline_centralized_f1": 0.4848,
+        "fedavg_iid_f1": 0.4706,
+        "fedavg_non_iid_f1": 0.3571,
+        "best_federated_model": {
+          "model_id": 6,
+          "model_version": "mod_v_1_1786892259_64266f",
+          "algorithm": "FEDPROX",
+          "variant": "NON_IID_ALPHA_0.5_MU_0.1",
+          "metrics": {
+            "accuracy": 0.6,
+            "precision": 0.44,
+            "recall": 0.8462,
+            "f1": 0.5789,
+            "roc_auc": 0.661,
+            "loss": 0.6917,
+            "confusion_matrix": [
+              [
+                13,
+                14
+              ],
+              [
+                2,
+                11
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": 0.025,
+            "delta_f1": 0.0941,
+            "delta_roc_auc": 0.0969,
+            "delta_loss": -0.6861
+          }
+        }
+      }
+    },
+    "123": {
+      "models": [
+        {
+          "model_id": 7,
+          "model_version": "mod_v_1_1786892259_d2269f",
+          "algorithm": "CENTRALIZED",
+          "variant": "BASELINE",
+          "metrics": {
+            "accuracy": 0.55,
+            "precision": 0.3529,
+            "recall": 0.4615,
+            "f1": 0.4,
+            "roc_auc": 0.567,
+            "loss": 1.0551,
+            "confusion_matrix": [
+              [
+                16,
+                11
+              ],
+              [
+                7,
+                6
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": 0.0,
+            "delta_f1": 0.0,
+            "delta_roc_auc": 0.0,
+            "delta_loss": 0.0
+          }
+        },
+        {
+          "model_id": 8,
+          "model_version": "mod_v_1_1786892260_26aad0",
+          "algorithm": "FEDAVG",
+          "variant": "IID",
+          "metrics": {
+            "accuracy": 0.55,
+            "precision": 0.381,
+            "recall": 0.6154,
+            "f1": 0.4706,
+            "roc_auc": 0.6239,
+            "loss": 0.6905,
+            "confusion_matrix": [
+              [
+                14,
+                13
+              ],
+              [
+                5,
+                8
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": 0.0,
+            "delta_f1": 0.0706,
+            "delta_roc_auc": 0.0569,
+            "delta_loss": -0.3646
+          }
+        },
+        {
+          "model_id": 9,
+          "model_version": "mod_v_1_1786892260_7cbfd7",
+          "algorithm": "FEDAVG",
+          "variant": "NON_IID_ALPHA_0.5",
+          "metrics": {
+            "accuracy": 0.55,
+            "precision": 0.2727,
+            "recall": 0.2308,
+            "f1": 0.25,
+            "roc_auc": 0.5014,
+            "loss": 0.9448,
+            "confusion_matrix": [
+              [
+                19,
+                8
+              ],
+              [
+                10,
+                3
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": 0.0,
+            "delta_f1": -0.15,
+            "delta_roc_auc": -0.0656,
+            "delta_loss": -0.1103
+          }
+        },
+        {
+          "model_id": 10,
+          "model_version": "mod_v_1_1786892261_e2d107",
+          "algorithm": "FEDPROX",
+          "variant": "NON_IID_ALPHA_0.5_MU_0.001",
+          "metrics": {
+            "accuracy": 0.55,
+            "precision": 0.4,
+            "recall": 0.7692,
+            "f1": 0.5263,
+            "roc_auc": 0.5897,
+            "loss": 0.8113,
+            "confusion_matrix": [
+              [
+                12,
+                15
+              ],
+              [
+                3,
+                10
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": 0.0,
+            "delta_f1": 0.1263,
+            "delta_roc_auc": 0.0227,
+            "delta_loss": -0.2438
+          }
+        },
+        {
+          "model_id": 11,
+          "model_version": "mod_v_1_1786892261_a3ce41",
+          "algorithm": "FEDPROX",
+          "variant": "NON_IID_ALPHA_0.5_MU_0.01",
+          "metrics": {
+            "accuracy": 0.525,
+            "precision": 0.25,
+            "recall": 0.2308,
+            "f1": 0.24,
+            "roc_auc": 0.5413,
+            "loss": 0.6633,
+            "confusion_matrix": [
+              [
+                18,
+                9
+              ],
+              [
+                10,
+                3
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": -0.025,
+            "delta_f1": -0.16,
+            "delta_roc_auc": -0.0257,
+            "delta_loss": -0.3918
+          }
+        },
+        {
+          "model_id": 12,
+          "model_version": "mod_v_1_1786892262_b3ed7b",
+          "algorithm": "FEDPROX",
+          "variant": "NON_IID_ALPHA_0.5_MU_0.1",
+          "metrics": {
+            "accuracy": 0.675,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "roc_auc": 0.6724,
+            "loss": 0.6917,
+            "confusion_matrix": [
+              [
+                27,
+                0
+              ],
+              [
+                13,
+                0
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": 0.125,
+            "delta_f1": -0.4,
+            "delta_roc_auc": 0.1054,
+            "delta_loss": -0.3634
+          }
+        }
+      ],
+      "trajectories": {
+        "CENTRALIZED": {
+          "epochs": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "loss": [
+            0.9516,
+            0.9514,
+            0.9594,
+            1.006,
+            1.1035,
+            1.1951,
+            1.2854,
+            1.3116,
+            1.3811,
+            1.5314
+          ],
+          "validation_accuracy": [
+            0.625,
+            0.575,
+            0.55,
+            0.5,
+            0.575,
+            0.475,
+            0.575,
+            0.55,
+            0.6,
+            0.65
+          ]
+        },
+        "FEDAVG_IID": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.6822,
+            0.665,
+            0.6952,
+            0.7027,
+            0.7458
+          ],
+          "validation_accuracy": [
+            0.625,
+            0.675,
+            0.525,
+            0.55,
+            0.475
+          ]
+        },
+        "FEDAVG_NON_IID_ALPHA_0.5": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.7139,
+            0.6408,
+            0.5727,
+            0.5747,
+            0.6221
+          ],
+          "validation_accuracy": [
+            0.375,
+            0.65,
+            0.7,
+            0.7,
+            0.725
+          ]
+        },
+        "FEDPROX_MU_0.001": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.6615,
+            0.6605,
+            0.6895,
+            0.7463,
+            0.8466
+          ],
+          "validation_accuracy": [
+            0.675,
+            0.6,
+            0.6,
+            0.575,
+            0.575
+          ]
+        },
+        "FEDPROX_MU_0.01": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.6891,
+            0.6507,
+            0.6293,
+            0.6198,
+            0.6183
+          ],
+          "validation_accuracy": [
+            0.45,
+            0.675,
+            0.675,
+            0.625,
+            0.625
+          ]
+        },
+        "FEDPROX_MU_0.1": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.6619,
+            0.6393,
+            0.713,
+            0.7399,
+            0.7077
+          ],
+          "validation_accuracy": [
+            0.65,
+            0.675,
+            0.675,
+            0.675,
+            0.675
+          ]
+        }
+      },
+      "mu_analysis": [
+        {
+          "mu": 0.001,
+          "accuracy": 0.55,
+          "f1": 0.5263,
+          "roc_auc": 0.5897,
+          "loss": 0.8113,
+          "delta_f1_vs_centralized": 0.1263,
+          "delta_f1_vs_fedavg_non_iid": 0.2763
+        },
+        {
+          "mu": 0.01,
+          "accuracy": 0.525,
+          "f1": 0.24,
+          "roc_auc": 0.5413,
+          "loss": 0.6633,
+          "delta_f1_vs_centralized": -0.16,
+          "delta_f1_vs_fedavg_non_iid": -0.01
+        },
+        {
+          "mu": 0.1,
+          "accuracy": 0.675,
+          "f1": 0.0,
+          "roc_auc": 0.6724,
+          "loss": 0.6917,
+          "delta_f1_vs_centralized": -0.4,
+          "delta_f1_vs_fedavg_non_iid": -0.25
+        }
+      ],
+      "client_distributions": {
+        "iid": {
+          "strategy": "IID",
+          "num_clients": 3,
+          "dirichlet_alpha": null,
+          "total_samples": 120,
+          "client_breakdown": {
+            "client_1": {
+              "sample_count": 40,
+              "class_0_count": 30,
+              "class_1_count": 10,
+              "class_0_ratio": 0.75,
+              "class_1_ratio": 0.25
+            },
+            "client_2": {
+              "sample_count": 40,
+              "class_0_count": 24,
+              "class_1_count": 16,
+              "class_0_ratio": 0.6,
+              "class_1_ratio": 0.4
+            },
+            "client_3": {
+              "sample_count": 40,
+              "class_0_count": 27,
+              "class_1_count": 13,
+              "class_0_ratio": 0.675,
+              "class_1_ratio": 0.325
+            }
+          }
+        },
+        "non_iid": {
+          "strategy": "NON_IID",
+          "num_clients": 3,
+          "dirichlet_alpha": 0.5,
+          "total_samples": 120,
+          "client_breakdown": {
+            "client_1": {
+              "sample_count": 37,
+              "class_0_count": 17,
+              "class_1_count": 20,
+              "class_0_ratio": 0.4595,
+              "class_1_ratio": 0.5405
+            },
+            "client_2": {
+              "sample_count": 72,
+              "class_0_count": 64,
+              "class_1_count": 8,
+              "class_0_ratio": 0.8889,
+              "class_1_ratio": 0.1111
+            },
+            "client_3": {
+              "sample_count": 11,
+              "class_0_count": 0,
+              "class_1_count": 11,
+              "class_0_ratio": 0.0,
+              "class_1_ratio": 1.0
+            }
+          }
+        }
+      },
+      "reproducibility": {
+        "base_random_state": 123,
+        "derived_seeds": {
+          "centralized": 828163825,
+          "fedavg_iid": 643732553,
+          "fedavg_non_iid": 1966608531,
+          "fedprox_mu_0.001": 860546014,
+          "fedprox_mu_0.01": 637667444,
+          "fedprox_mu_0.1": 1947239639
+        },
+        "artifact_id": 1,
+        "num_clients": 3,
+        "rounds": 5,
+        "local_epochs": 2,
+        "centralized_epochs": 10,
+        "batch_size": 16,
+        "learning_rate": 0.01,
+        "hidden_dims": [
+          32,
+          16
+        ],
+        "dropout_rate": 0.1,
+        "dirichlet_alpha": 0.5,
+        "mu_values": [
+          0.001,
+          0.01,
+          0.1
+        ]
+      },
+      "summary": {
+        "baseline_centralized_f1": 0.4,
+        "fedavg_iid_f1": 0.4706,
+        "fedavg_non_iid_f1": 0.25,
+        "best_federated_model": {
+          "model_id": 10,
+          "model_version": "mod_v_1_1786892261_e2d107",
+          "algorithm": "FEDPROX",
+          "variant": "NON_IID_ALPHA_0.5_MU_0.001",
+          "metrics": {
+            "accuracy": 0.55,
+            "precision": 0.4,
+            "recall": 0.7692,
+            "f1": 0.5263,
+            "roc_auc": 0.5897,
+            "loss": 0.8113,
+            "confusion_matrix": [
+              [
+                12,
+                15
+              ],
+              [
+                3,
+                10
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": 0.0,
+            "delta_f1": 0.1263,
+            "delta_roc_auc": 0.0227,
+            "delta_loss": -0.2438
+          }
+        }
+      }
+    },
+    "456": {
+      "models": [
+        {
+          "model_id": 13,
+          "model_version": "mod_v_1_1786892262_eb4aea",
+          "algorithm": "CENTRALIZED",
+          "variant": "BASELINE",
+          "metrics": {
+            "accuracy": 0.6,
+            "precision": 0.4286,
+            "recall": 0.6923,
+            "f1": 0.5294,
+            "roc_auc": 0.6125,
+            "loss": 1.1237,
+            "confusion_matrix": [
+              [
+                15,
+                12
+              ],
+              [
+                4,
+                9
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": 0.0,
+            "delta_f1": 0.0,
+            "delta_roc_auc": 0.0,
+            "delta_loss": 0.0
+          }
+        },
+        {
+          "model_id": 14,
+          "model_version": "mod_v_1_1786892262_eb27f6",
+          "algorithm": "FEDAVG",
+          "variant": "IID",
+          "metrics": {
+            "accuracy": 0.525,
+            "precision": 0.35,
+            "recall": 0.5385,
+            "f1": 0.4242,
+            "roc_auc": 0.5897,
+            "loss": 0.6632,
+            "confusion_matrix": [
+              [
+                14,
+                13
+              ],
+              [
+                6,
+                7
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": -0.075,
+            "delta_f1": -0.1052,
+            "delta_roc_auc": -0.0228,
+            "delta_loss": -0.4605
+          }
+        },
+        {
+          "model_id": 15,
+          "model_version": "mod_v_1_1786892263_69c265",
+          "algorithm": "FEDAVG",
+          "variant": "NON_IID_ALPHA_0.5",
+          "metrics": {
+            "accuracy": 0.625,
+            "precision": 0.4286,
+            "recall": 0.4615,
+            "f1": 0.4444,
+            "roc_auc": 0.641,
+            "loss": 0.6259,
+            "confusion_matrix": [
+              [
+                19,
+                8
+              ],
+              [
+                7,
+                6
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": 0.025,
+            "delta_f1": -0.085,
+            "delta_roc_auc": 0.0285,
+            "delta_loss": -0.4978
+          }
+        },
+        {
+          "model_id": 16,
+          "model_version": "mod_v_1_1786892263_b50377",
+          "algorithm": "FEDPROX",
+          "variant": "NON_IID_ALPHA_0.5_MU_0.001",
+          "metrics": {
+            "accuracy": 0.675,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "roc_auc": 0.7179,
+            "loss": 1.5174,
+            "confusion_matrix": [
+              [
+                27,
+                0
+              ],
+              [
+                13,
+                0
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": 0.075,
+            "delta_f1": -0.5294,
+            "delta_roc_auc": 0.1054,
+            "delta_loss": 0.3937
+          }
+        },
+        {
+          "model_id": 17,
+          "model_version": "mod_v_1_1786892264_f9ab0e",
+          "algorithm": "FEDPROX",
+          "variant": "NON_IID_ALPHA_0.5_MU_0.01",
+          "metrics": {
+            "accuracy": 0.6,
+            "precision": 0.4,
+            "recall": 0.4615,
+            "f1": 0.4286,
+            "roc_auc": 0.567,
+            "loss": 0.7774,
+            "confusion_matrix": [
+              [
+                18,
+                9
+              ],
+              [
+                7,
+                6
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": 0.0,
+            "delta_f1": -0.1008,
+            "delta_roc_auc": -0.0455,
+            "delta_loss": -0.3463
+          }
+        },
+        {
+          "model_id": 18,
+          "model_version": "mod_v_1_1786892264_bbb220",
+          "algorithm": "FEDPROX",
+          "variant": "NON_IID_ALPHA_0.5_MU_0.1",
+          "metrics": {
+            "accuracy": 0.6,
+            "precision": 0.4118,
+            "recall": 0.5385,
+            "f1": 0.4667,
+            "roc_auc": 0.6154,
+            "loss": 0.7437,
+            "confusion_matrix": [
+              [
+                17,
+                10
+              ],
+              [
+                6,
+                7
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": 0.0,
+            "delta_f1": -0.0627,
+            "delta_roc_auc": 0.0029,
+            "delta_loss": -0.38
+          }
+        }
+      ],
+      "trajectories": {
+        "CENTRALIZED": {
+          "epochs": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "loss": [
+            0.9565,
+            0.9369,
+            0.9534,
+            1.0028,
+            1.0554,
+            1.2092,
+            1.4066,
+            1.5204,
+            1.7907,
+            1.8252
+          ],
+          "validation_accuracy": [
+            0.7,
+            0.625,
+            0.625,
+            0.675,
+            0.525,
+            0.525,
+            0.575,
+            0.525,
+            0.575,
+            0.525
+          ]
+        },
+        "FEDAVG_IID": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.7054,
+            0.6871,
+            0.668,
+            0.6491,
+            0.6757
+          ],
+          "validation_accuracy": [
+            0.35,
+            0.6,
+            0.675,
+            0.675,
+            0.6
+          ]
+        },
+        "FEDAVG_NON_IID_ALPHA_0.5": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.6919,
+            0.6861,
+            0.6617,
+            0.6507,
+            0.6367
+          ],
+          "validation_accuracy": [
+            0.575,
+            0.55,
+            0.65,
+            0.625,
+            0.625
+          ]
+        },
+        "FEDPROX_MU_0.001": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.6315,
+            0.6535,
+            0.8619,
+            1.1739,
+            1.5132
+          ],
+          "validation_accuracy": [
+            0.675,
+            0.675,
+            0.675,
+            0.675,
+            0.675
+          ]
+        },
+        "FEDPROX_MU_0.01": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.6961,
+            0.648,
+            0.6412,
+            0.6659,
+            0.6198
+          ],
+          "validation_accuracy": [
+            0.4,
+            0.675,
+            0.575,
+            0.6,
+            0.65
+          ]
+        },
+        "FEDPROX_MU_0.1": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.6783,
+            0.6831,
+            0.677,
+            0.6956,
+            0.7732
+          ],
+          "validation_accuracy": [
+            0.675,
+            0.55,
+            0.575,
+            0.575,
+            0.575
+          ]
+        }
+      },
+      "mu_analysis": [
+        {
+          "mu": 0.001,
+          "accuracy": 0.675,
+          "f1": 0.0,
+          "roc_auc": 0.7179,
+          "loss": 1.5174,
+          "delta_f1_vs_centralized": -0.5294,
+          "delta_f1_vs_fedavg_non_iid": -0.4444
+        },
+        {
+          "mu": 0.01,
+          "accuracy": 0.6,
+          "f1": 0.4286,
+          "roc_auc": 0.567,
+          "loss": 0.7774,
+          "delta_f1_vs_centralized": -0.1008,
+          "delta_f1_vs_fedavg_non_iid": -0.0158
+        },
+        {
+          "mu": 0.1,
+          "accuracy": 0.6,
+          "f1": 0.4667,
+          "roc_auc": 0.6154,
+          "loss": 0.7437,
+          "delta_f1_vs_centralized": -0.0627,
+          "delta_f1_vs_fedavg_non_iid": 0.0223
+        }
+      ],
+      "client_distributions": {
+        "iid": {
+          "strategy": "IID",
+          "num_clients": 3,
+          "dirichlet_alpha": null,
+          "total_samples": 120,
+          "client_breakdown": {
+            "client_1": {
+              "sample_count": 40,
+              "class_0_count": 24,
+              "class_1_count": 16,
+              "class_0_ratio": 0.6,
+              "class_1_ratio": 0.4
+            },
+            "client_2": {
+              "sample_count": 40,
+              "class_0_count": 30,
+              "class_1_count": 10,
+              "class_0_ratio": 0.75,
+              "class_1_ratio": 0.25
+            },
+            "client_3": {
+              "sample_count": 40,
+              "class_0_count": 27,
+              "class_1_count": 13,
+              "class_0_ratio": 0.675,
+              "class_1_ratio": 0.325
+            }
+          }
+        },
+        "non_iid": {
+          "strategy": "NON_IID",
+          "num_clients": 3,
+          "dirichlet_alpha": 0.5,
+          "total_samples": 120,
+          "client_breakdown": {
+            "client_1": {
+              "sample_count": 74,
+              "class_0_count": 52,
+              "class_1_count": 22,
+              "class_0_ratio": 0.7027,
+              "class_1_ratio": 0.2973
+            },
+            "client_2": {
+              "sample_count": 15,
+              "class_0_count": 0,
+              "class_1_count": 15,
+              "class_0_ratio": 0.0,
+              "class_1_ratio": 1.0
+            },
+            "client_3": {
+              "sample_count": 31,
+              "class_0_count": 29,
+              "class_1_count": 2,
+              "class_0_ratio": 0.9355,
+              "class_1_ratio": 0.0645
+            }
+          }
+        }
+      },
+      "reproducibility": {
+        "base_random_state": 456,
+        "derived_seeds": {
+          "centralized": 491147114,
+          "fedavg_iid": 1877965428,
+          "fedavg_non_iid": 1611617337,
+          "fedprox_mu_0.001": 1781118543,
+          "fedprox_mu_0.01": 2007145326,
+          "fedprox_mu_0.1": 690560550
+        },
+        "artifact_id": 1,
+        "num_clients": 3,
+        "rounds": 5,
+        "local_epochs": 2,
+        "centralized_epochs": 10,
+        "batch_size": 16,
+        "learning_rate": 0.01,
+        "hidden_dims": [
+          32,
+          16
+        ],
+        "dropout_rate": 0.1,
+        "dirichlet_alpha": 0.5,
+        "mu_values": [
+          0.001,
+          0.01,
+          0.1
+        ]
+      },
+      "summary": {
+        "baseline_centralized_f1": 0.5294,
+        "fedavg_iid_f1": 0.4242,
+        "fedavg_non_iid_f1": 0.4444,
+        "best_federated_model": {
+          "model_id": 18,
+          "model_version": "mod_v_1_1786892264_bbb220",
+          "algorithm": "FEDPROX",
+          "variant": "NON_IID_ALPHA_0.5_MU_0.1",
+          "metrics": {
+            "accuracy": 0.6,
+            "precision": 0.4118,
+            "recall": 0.5385,
+            "f1": 0.4667,
+            "roc_auc": 0.6154,
+            "loss": 0.7437,
+            "confusion_matrix": [
+              [
+                17,
+                10
+              ],
+              [
+                6,
+                7
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": 0.0,
+            "delta_f1": -0.0627,
+            "delta_roc_auc": 0.0029,
+            "delta_loss": -0.38
+          }
+        }
+      }
+    },
+    "789": {
+      "models": [
+        {
+          "model_id": 19,
+          "model_version": "mod_v_1_1786892265_ab1c00",
+          "algorithm": "CENTRALIZED",
+          "variant": "BASELINE",
+          "metrics": {
+            "accuracy": 0.625,
+            "precision": 0.4545,
+            "recall": 0.7692,
+            "f1": 0.5714,
+            "roc_auc": 0.5897,
+            "loss": 1.4081,
+            "confusion_matrix": [
+              [
+                15,
+                12
+              ],
+              [
+                3,
+                10
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": 0.0,
+            "delta_f1": 0.0,
+            "delta_roc_auc": 0.0,
+            "delta_loss": 0.0
+          }
+        },
+        {
+          "model_id": 20,
+          "model_version": "mod_v_1_1786892265_2a5648",
+          "algorithm": "FEDAVG",
+          "variant": "IID",
+          "metrics": {
+            "accuracy": 0.55,
+            "precision": 0.381,
+            "recall": 0.6154,
+            "f1": 0.4706,
+            "roc_auc": 0.6467,
+            "loss": 0.7006,
+            "confusion_matrix": [
+              [
+                14,
+                13
+              ],
+              [
+                5,
+                8
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": -0.075,
+            "delta_f1": -0.1008,
+            "delta_roc_auc": 0.057,
+            "delta_loss": -0.7075
+          }
+        },
+        {
+          "model_id": 21,
+          "model_version": "mod_v_1_1786892265_229e55",
+          "algorithm": "FEDAVG",
+          "variant": "NON_IID_ALPHA_0.5",
+          "metrics": {
+            "accuracy": 0.55,
+            "precision": 0.3529,
+            "recall": 0.4615,
+            "f1": 0.4,
+            "roc_auc": 0.5385,
+            "loss": 0.9918,
+            "confusion_matrix": [
+              [
+                16,
+                11
+              ],
+              [
+                7,
+                6
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": -0.075,
+            "delta_f1": -0.1714,
+            "delta_roc_auc": -0.0512,
+            "delta_loss": -0.4163
+          }
+        },
+        {
+          "model_id": 22,
+          "model_version": "mod_v_1_1786892266_c45f9b",
+          "algorithm": "FEDPROX",
+          "variant": "NON_IID_ALPHA_0.5_MU_0.001",
+          "metrics": {
+            "accuracy": 0.6,
+            "precision": 0.4118,
+            "recall": 0.5385,
+            "f1": 0.4667,
+            "roc_auc": 0.6239,
+            "loss": 0.6735,
+            "confusion_matrix": [
+              [
+                17,
+                10
+              ],
+              [
+                6,
+                7
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": -0.025,
+            "delta_f1": -0.1047,
+            "delta_roc_auc": 0.0342,
+            "delta_loss": -0.7346
+          }
+        },
+        {
+          "model_id": 23,
+          "model_version": "mod_v_1_1786892266_03849c",
+          "algorithm": "FEDPROX",
+          "variant": "NON_IID_ALPHA_0.5_MU_0.01",
+          "metrics": {
+            "accuracy": 0.625,
+            "precision": 0.4444,
+            "recall": 0.6154,
+            "f1": 0.5161,
+            "roc_auc": 0.6382,
+            "loss": 0.649,
+            "confusion_matrix": [
+              [
+                17,
+                10
+              ],
+              [
+                5,
+                8
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": 0.0,
+            "delta_f1": -0.0553,
+            "delta_roc_auc": 0.0485,
+            "delta_loss": -0.7591
+          }
+        },
+        {
+          "model_id": 24,
+          "model_version": "mod_v_1_1786892267_8503e8",
+          "algorithm": "FEDPROX",
+          "variant": "NON_IID_ALPHA_0.5_MU_0.1",
+          "metrics": {
+            "accuracy": 0.525,
+            "precision": 0.3636,
+            "recall": 0.6154,
+            "f1": 0.4571,
+            "roc_auc": 0.6182,
+            "loss": 0.7055,
+            "confusion_matrix": [
+              [
+                13,
+                14
+              ],
+              [
+                5,
+                8
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": -0.1,
+            "delta_f1": -0.1143,
+            "delta_roc_auc": 0.0285,
+            "delta_loss": -0.7026
+          }
+        }
+      ],
+      "trajectories": {
+        "CENTRALIZED": {
+          "epochs": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "loss": [
+            0.9574,
+            0.9548,
+            0.9759,
+            1.0395,
+            1.2777,
+            1.2379,
+            1.3894,
+            1.5009,
+            1.925,
+            1.8524
+          ],
+          "validation_accuracy": [
+            0.7,
+            0.575,
+            0.65,
+            0.6,
+            0.6,
+            0.55,
+            0.6,
+            0.55,
+            0.625,
+            0.625
+          ]
+        },
+        "FEDAVG_IID": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.672,
+            0.6708,
+            0.6825,
+            0.7072,
+            0.756
+          ],
+          "validation_accuracy": [
+            0.625,
+            0.625,
+            0.55,
+            0.5,
+            0.425
+          ]
+        },
+        "FEDAVG_NON_IID_ALPHA_0.5": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.6777,
+            0.6869,
+            0.753,
+            0.8133,
+            0.9346
+          ],
+          "validation_accuracy": [
+            0.6,
+            0.55,
+            0.55,
+            0.6,
+            0.575
+          ]
+        },
+        "FEDPROX_MU_0.001": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.6901,
+            0.6753,
+            0.6444,
+            0.7004,
+            0.6748
+          ],
+          "validation_accuracy": [
+            0.575,
+            0.575,
+            0.7,
+            0.425,
+            0.5
+          ]
+        },
+        "FEDPROX_MU_0.01": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.672,
+            0.6357,
+            0.6417,
+            0.6538,
+            0.6786
+          ],
+          "validation_accuracy": [
+            0.675,
+            0.725,
+            0.675,
+            0.625,
+            0.65
+          ]
+        },
+        "FEDPROX_MU_0.1": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.6793,
+            0.6612,
+            0.6613,
+            0.657,
+            0.6961
+          ],
+          "validation_accuracy": [
+            0.625,
+            0.65,
+            0.575,
+            0.625,
+            0.6
+          ]
+        }
+      },
+      "mu_analysis": [
+        {
+          "mu": 0.001,
+          "accuracy": 0.6,
+          "f1": 0.4667,
+          "roc_auc": 0.6239,
+          "loss": 0.6735,
+          "delta_f1_vs_centralized": -0.1047,
+          "delta_f1_vs_fedavg_non_iid": 0.0667
+        },
+        {
+          "mu": 0.01,
+          "accuracy": 0.625,
+          "f1": 0.5161,
+          "roc_auc": 0.6382,
+          "loss": 0.649,
+          "delta_f1_vs_centralized": -0.0553,
+          "delta_f1_vs_fedavg_non_iid": 0.1161
+        },
+        {
+          "mu": 0.1,
+          "accuracy": 0.525,
+          "f1": 0.4571,
+          "roc_auc": 0.6182,
+          "loss": 0.7055,
+          "delta_f1_vs_centralized": -0.1143,
+          "delta_f1_vs_fedavg_non_iid": 0.0571
+        }
+      ],
+      "client_distributions": {
+        "iid": {
+          "strategy": "IID",
+          "num_clients": 3,
+          "dirichlet_alpha": null,
+          "total_samples": 120,
+          "client_breakdown": {
+            "client_1": {
+              "sample_count": 40,
+              "class_0_count": 25,
+              "class_1_count": 15,
+              "class_0_ratio": 0.625,
+              "class_1_ratio": 0.375
+            },
+            "client_2": {
+              "sample_count": 40,
+              "class_0_count": 28,
+              "class_1_count": 12,
+              "class_0_ratio": 0.7,
+              "class_1_ratio": 0.3
+            },
+            "client_3": {
+              "sample_count": 40,
+              "class_0_count": 28,
+              "class_1_count": 12,
+              "class_0_ratio": 0.7,
+              "class_1_ratio": 0.3
+            }
+          }
+        },
+        "non_iid": {
+          "strategy": "NON_IID",
+          "num_clients": 3,
+          "dirichlet_alpha": 0.5,
+          "total_samples": 120,
+          "client_breakdown": {
+            "client_1": {
+              "sample_count": 19,
+              "class_0_count": 4,
+              "class_1_count": 15,
+              "class_0_ratio": 0.2105,
+              "class_1_ratio": 0.7895
+            },
+            "client_2": {
+              "sample_count": 12,
+              "class_0_count": 8,
+              "class_1_count": 4,
+              "class_0_ratio": 0.6667,
+              "class_1_ratio": 0.3333
+            },
+            "client_3": {
+              "sample_count": 89,
+              "class_0_count": 69,
+              "class_1_count": 20,
+              "class_0_ratio": 0.7753,
+              "class_1_ratio": 0.2247
+            }
+          }
+        }
+      },
+      "reproducibility": {
+        "base_random_state": 789,
+        "derived_seeds": {
+          "centralized": 2074704245,
+          "fedavg_iid": 577532122,
+          "fedavg_non_iid": 989536954,
+          "fedprox_mu_0.001": 43286817,
+          "fedprox_mu_0.01": 537353392,
+          "fedprox_mu_0.1": 178987950
+        },
+        "artifact_id": 1,
+        "num_clients": 3,
+        "rounds": 5,
+        "local_epochs": 2,
+        "centralized_epochs": 10,
+        "batch_size": 16,
+        "learning_rate": 0.01,
+        "hidden_dims": [
+          32,
+          16
+        ],
+        "dropout_rate": 0.1,
+        "dirichlet_alpha": 0.5,
+        "mu_values": [
+          0.001,
+          0.01,
+          0.1
+        ]
+      },
+      "summary": {
+        "baseline_centralized_f1": 0.5714,
+        "fedavg_iid_f1": 0.4706,
+        "fedavg_non_iid_f1": 0.4,
+        "best_federated_model": {
+          "model_id": 23,
+          "model_version": "mod_v_1_1786892266_03849c",
+          "algorithm": "FEDPROX",
+          "variant": "NON_IID_ALPHA_0.5_MU_0.01",
+          "metrics": {
+            "accuracy": 0.625,
+            "precision": 0.4444,
+            "recall": 0.6154,
+            "f1": 0.5161,
+            "roc_auc": 0.6382,
+            "loss": 0.649,
+            "confusion_matrix": [
+              [
+                17,
+                10
+              ],
+              [
+                5,
+                8
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": 0.0,
+            "delta_f1": -0.0553,
+            "delta_roc_auc": 0.0485,
+            "delta_loss": -0.7591
+          }
+        }
+      }
+    },
+    "1024": {
+      "models": [
+        {
+          "model_id": 25,
+          "model_version": "mod_v_1_1786892267_282c41",
+          "algorithm": "CENTRALIZED",
+          "variant": "BASELINE",
+          "metrics": {
+            "accuracy": 0.6,
+            "precision": 0.4211,
+            "recall": 0.6154,
+            "f1": 0.5,
+            "roc_auc": 0.5698,
+            "loss": 1.2654,
+            "confusion_matrix": [
+              [
+                16,
+                11
+              ],
+              [
+                5,
+                8
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": 0.0,
+            "delta_f1": 0.0,
+            "delta_roc_auc": 0.0,
+            "delta_loss": 0.0
+          }
+        },
+        {
+          "model_id": 26,
+          "model_version": "mod_v_1_1786892268_a85e2b",
+          "algorithm": "FEDAVG",
+          "variant": "IID",
+          "metrics": {
+            "accuracy": 0.55,
+            "precision": 0.3333,
+            "recall": 0.3846,
+            "f1": 0.3571,
+            "roc_auc": 0.5527,
+            "loss": 0.6677,
+            "confusion_matrix": [
+              [
+                17,
+                10
+              ],
+              [
+                8,
+                5
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": -0.05,
+            "delta_f1": -0.1429,
+            "delta_roc_auc": -0.0171,
+            "delta_loss": -0.5977
+          }
+        },
+        {
+          "model_id": 27,
+          "model_version": "mod_v_1_1786892268_54d632",
+          "algorithm": "FEDAVG",
+          "variant": "NON_IID_ALPHA_0.5",
+          "metrics": {
+            "accuracy": 0.6,
+            "precision": 0.3846,
+            "recall": 0.3846,
+            "f1": 0.3846,
+            "roc_auc": 0.698,
+            "loss": 0.6272,
+            "confusion_matrix": [
+              [
+                19,
+                8
+              ],
+              [
+                8,
+                5
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": 0.0,
+            "delta_f1": -0.1154,
+            "delta_roc_auc": 0.1282,
+            "delta_loss": -0.6382
+          }
+        },
+        {
+          "model_id": 28,
+          "model_version": "mod_v_1_1786892268_0f9241",
+          "algorithm": "FEDPROX",
+          "variant": "NON_IID_ALPHA_0.5_MU_0.001",
+          "metrics": {
+            "accuracy": 0.575,
+            "precision": 0.25,
+            "recall": 0.1538,
+            "f1": 0.1905,
+            "roc_auc": 0.6353,
+            "loss": 0.6267,
+            "confusion_matrix": [
+              [
+                21,
+                6
+              ],
+              [
+                11,
+                2
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": -0.025,
+            "delta_f1": -0.3095,
+            "delta_roc_auc": 0.0655,
+            "delta_loss": -0.6387
+          }
+        },
+        {
+          "model_id": 29,
+          "model_version": "mod_v_1_1786892269_9cf1bc",
+          "algorithm": "FEDPROX",
+          "variant": "NON_IID_ALPHA_0.5_MU_0.01",
+          "metrics": {
+            "accuracy": 0.475,
+            "precision": 0.3182,
+            "recall": 0.5385,
+            "f1": 0.4,
+            "roc_auc": 0.5442,
+            "loss": 1.0005,
+            "confusion_matrix": [
+              [
+                12,
+                15
+              ],
+              [
+                6,
+                7
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": -0.125,
+            "delta_f1": -0.1,
+            "delta_roc_auc": -0.0256,
+            "delta_loss": -0.2649
+          }
+        },
+        {
+          "model_id": 30,
+          "model_version": "mod_v_1_1786892270_2caf1e",
+          "algorithm": "FEDPROX",
+          "variant": "NON_IID_ALPHA_0.5_MU_0.1",
+          "metrics": {
+            "accuracy": 0.6,
+            "precision": 0.2857,
+            "recall": 0.1538,
+            "f1": 0.2,
+            "roc_auc": 0.7037,
+            "loss": 0.5886,
+            "confusion_matrix": [
+              [
+                22,
+                5
+              ],
+              [
+                11,
+                2
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": 0.0,
+            "delta_f1": -0.3,
+            "delta_roc_auc": 0.1339,
+            "delta_loss": -0.6768
+          }
+        }
+      ],
+      "trajectories": {
+        "CENTRALIZED": {
+          "epochs": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "loss": [
+            0.9539,
+            0.9417,
+            0.9621,
+            1.0708,
+            1.1876,
+            1.4032,
+            1.4756,
+            1.5243,
+            1.629,
+            1.7749
+          ],
+          "validation_accuracy": [
+            0.65,
+            0.525,
+            0.525,
+            0.55,
+            0.55,
+            0.525,
+            0.55,
+            0.6,
+            0.6,
+            0.65
+          ]
+        },
+        "FEDAVG_IID": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.6666,
+            0.6573,
+            0.6461,
+            0.6464,
+            0.6756
+          ],
+          "validation_accuracy": [
+            0.675,
+            0.675,
+            0.725,
+            0.575,
+            0.575
+          ]
+        },
+        "FEDAVG_NON_IID_ALPHA_0.5": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.6911,
+            0.6819,
+            0.6698,
+            0.6421,
+            0.6603
+          ],
+          "validation_accuracy": [
+            0.525,
+            0.575,
+            0.575,
+            0.65,
+            0.525
+          ]
+        },
+        "FEDPROX_MU_0.001": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.7008,
+            0.6866,
+            0.6668,
+            0.6657,
+            0.6689
+          ],
+          "validation_accuracy": [
+            0.35,
+            0.6,
+            0.625,
+            0.55,
+            0.575
+          ]
+        },
+        "FEDPROX_MU_0.01": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.7024,
+            0.7121,
+            0.738,
+            0.862,
+            0.8795
+          ],
+          "validation_accuracy": [
+            0.4,
+            0.45,
+            0.55,
+            0.45,
+            0.5
+          ]
+        },
+        "FEDPROX_MU_0.1": {
+          "rounds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "loss": [
+            0.7178,
+            0.6978,
+            0.6867,
+            0.707,
+            0.7464
+          ],
+          "validation_accuracy": [
+            0.325,
+            0.425,
+            0.525,
+            0.475,
+            0.5
+          ]
+        }
+      },
+      "mu_analysis": [
+        {
+          "mu": 0.001,
+          "accuracy": 0.575,
+          "f1": 0.1905,
+          "roc_auc": 0.6353,
+          "loss": 0.6267,
+          "delta_f1_vs_centralized": -0.3095,
+          "delta_f1_vs_fedavg_non_iid": -0.1941
+        },
+        {
+          "mu": 0.01,
+          "accuracy": 0.475,
+          "f1": 0.4,
+          "roc_auc": 0.5442,
+          "loss": 1.0005,
+          "delta_f1_vs_centralized": -0.1,
+          "delta_f1_vs_fedavg_non_iid": 0.0154
+        },
+        {
+          "mu": 0.1,
+          "accuracy": 0.6,
+          "f1": 0.2,
+          "roc_auc": 0.7037,
+          "loss": 0.5886,
+          "delta_f1_vs_centralized": -0.3,
+          "delta_f1_vs_fedavg_non_iid": -0.1846
+        }
+      ],
+      "client_distributions": {
+        "iid": {
+          "strategy": "IID",
+          "num_clients": 3,
+          "dirichlet_alpha": null,
+          "total_samples": 120,
+          "client_breakdown": {
+            "client_1": {
+              "sample_count": 40,
+              "class_0_count": 25,
+              "class_1_count": 15,
+              "class_0_ratio": 0.625,
+              "class_1_ratio": 0.375
+            },
+            "client_2": {
+              "sample_count": 40,
+              "class_0_count": 28,
+              "class_1_count": 12,
+              "class_0_ratio": 0.7,
+              "class_1_ratio": 0.3
+            },
+            "client_3": {
+              "sample_count": 40,
+              "class_0_count": 28,
+              "class_1_count": 12,
+              "class_0_ratio": 0.7,
+              "class_1_ratio": 0.3
+            }
+          }
+        },
+        "non_iid": {
+          "strategy": "NON_IID",
+          "num_clients": 3,
+          "dirichlet_alpha": 0.5,
+          "total_samples": 120,
+          "client_breakdown": {
+            "client_1": {
+              "sample_count": 36,
+              "class_0_count": 34,
+              "class_1_count": 2,
+              "class_0_ratio": 0.9444,
+              "class_1_ratio": 0.0556
+            },
+            "client_2": {
+              "sample_count": 53,
+              "class_0_count": 36,
+              "class_1_count": 17,
+              "class_0_ratio": 0.6792,
+              "class_1_ratio": 0.3208
+            },
+            "client_3": {
+              "sample_count": 31,
+              "class_0_count": 11,
+              "class_1_count": 20,
+              "class_0_ratio": 0.3548,
+              "class_1_ratio": 0.6452
+            }
+          }
+        }
+      },
+      "reproducibility": {
+        "base_random_state": 1024,
+        "derived_seeds": {
+          "centralized": 1383625223,
+          "fedavg_iid": 1058541295,
+          "fedavg_non_iid": 871092404,
+          "fedprox_mu_0.001": 901706461,
+          "fedprox_mu_0.01": 503123220,
+          "fedprox_mu_0.1": 1758161046
+        },
+        "artifact_id": 1,
+        "num_clients": 3,
+        "rounds": 5,
+        "local_epochs": 2,
+        "centralized_epochs": 10,
+        "batch_size": 16,
+        "learning_rate": 0.01,
+        "hidden_dims": [
+          32,
+          16
+        ],
+        "dropout_rate": 0.1,
+        "dirichlet_alpha": 0.5,
+        "mu_values": [
+          0.001,
+          0.01,
+          0.1
+        ]
+      },
+      "summary": {
+        "baseline_centralized_f1": 0.5,
+        "fedavg_iid_f1": 0.3571,
+        "fedavg_non_iid_f1": 0.3846,
+        "best_federated_model": {
+          "model_id": 29,
+          "model_version": "mod_v_1_1786892269_9cf1bc",
+          "algorithm": "FEDPROX",
+          "variant": "NON_IID_ALPHA_0.5_MU_0.01",
+          "metrics": {
+            "accuracy": 0.475,
+            "precision": 0.3182,
+            "recall": 0.5385,
+            "f1": 0.4,
+            "roc_auc": 0.5442,
+            "loss": 1.0005,
+            "confusion_matrix": [
+              [
+                12,
+                15
+              ],
+              [
+                6,
+                7
+              ]
+            ]
+          },
+          "delta_from_baseline": {
+            "delta_accuracy": -0.125,
+            "delta_f1": -0.1,
+            "delta_roc_auc": -0.0256,
+            "delta_loss": -0.2649
+          }
+        }
+      }
+    }
+  }
+}

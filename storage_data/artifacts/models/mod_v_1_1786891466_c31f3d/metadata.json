@@ -1,0 +1,98 @@
+{
+  "name": "FedProx Student Dropout Classifier",
+  "version": "mod_v_1_1786891466_c31f3d",
+  "framework": "PyTorch",
+  "checksum": "c554c174621b776168cec8d6034148659cbb308abecf772a2e30339c9876c3b5",
+  "metrics": {
+    "accuracy": 0.625,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "roc_auc": 0.2,
+    "confusion_matrix": [
+      [
+        15,
+        0
+      ],
+      [
+        9,
+        0
+      ]
+    ]
+  },
+  "lineage": {
+    "dataset_id": 1,
+    "preprocessing_artifact_id": 1,
+    "preprocessing_version": "v_1_1786891466_223ae3",
+    "feature_schema": {
+      "feature_names": [
+        "Age",
+        "GPA",
+        "Attendance",
+        "Tuition_Paid_No",
+        "Tuition_Paid_Yes"
+      ],
+      "feature_count": 5,
+      "numerical_features": [
+        "Age",
+        "GPA",
+        "Attendance"
+      ],
+      "categorical_features": [
+        "Tuition_Paid"
+      ],
+      "scaled": true,
+      "impute_strategy": "mean"
+    },
+    "hyperparameters": {
+      "artifact_id": 1,
+      "name": "FedProx Student Dropout Classifier",
+      "num_clients": 2,
+      "partitioning": "NON_IID",
+      "dirichlet_alpha": 0.5,
+      "rounds": 1,
+      "local_epochs": 1,
+      "learning_rate": 0.01,
+      "batch_size": 16,
+      "hidden_dims": [
+        16,
+        8
+      ],
+      "dropout_rate": 0.1,
+      "optimizer": "adam",
+      "random_state": 655387260,
+      "base_random_state": 42,
+      "mu": 0.1,
+      "algorithm": "FEDPROX",
+      "reproducibility": {
+        "base_random_state": 42,
+        "derived_seed": 655387260,
+        "algorithm": "FEDPROX",
+        "variant": "NON_IID",
+        "mu": 0.1,
+        "num_clients": 2,
+        "rounds": 1,
+        "local_epochs": 1,
+        "dirichlet_alpha": 0.5
+      },
+      "partitioning_details": {
+        "partitioning": "NON_IID",
+        "dirichlet_alpha": 0.5,
+        "num_clients": 2,
+        "client_sample_counts": {
+          "client_0": 64,
+          "client_1": 8
+        }
+      }
+    },
+    "split_summary": {
+      "train_samples": 72,
+      "val_samples": 24,
+      "test_samples": 24,
+      "positive_class_ratio_train": 0.3611111111111111,
+      "positive_class_ratio_val": 0.375,
+      "positive_class_ratio_test": 0.375
+    },
+    "seed": 655387260
+  }
+}

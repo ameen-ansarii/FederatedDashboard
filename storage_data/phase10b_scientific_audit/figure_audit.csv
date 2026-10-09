@@ -1,0 +1,9 @@
+figure_id,filename,title,source_artifact,plotted_metrics,error_bars,audit_status
+Fig 1,fig1_model_performance.png,Model Performance Comparison (Mean +/- Std),phase9d_multiseed_results.json -> aggregated_statistics,"['accuracy', 'f1', 'roc_auc']","Sample Standard Deviation (ddof=1, N=5)",VERIFIED_ACCURATE
+Fig 2,fig2_f1_across_seeds.png,F1-Score Across Evaluated Seeds (N=5),phase9d_multiseed_results.json -> seed_runs,['f1 per seed'],None (Per-seed discrete lines),VERIFIED_ACCURATE
+Fig 3,fig3_roc_auc_across_seeds.png,ROC-AUC Across Evaluated Seeds (N=5),phase9d_multiseed_results.json -> seed_runs,['roc_auc per seed'],None (Per-seed discrete lines),VERIFIED_ACCURATE
+Fig 4,fig4_fedprox_mu_sensitivity.png,FedProx Proximal Parameter mu Sensitivity,phase9d_multiseed_results.json -> FEDPROX variants,"['f1', 'roc_auc across mu in {0.001, 0.01, 0.1}']",Sample Standard Deviation (N=5),VERIFIED_ACCURATE
+Fig 5,fig5_iid_vs_non_iid.png,IID vs Non-IID Dirichlet (alpha=0.5) Distribution Comparison,phase9d_multiseed_results.json -> FEDAVG (IID vs Non-IID),"['accuracy', 'precision', 'recall', 'f1', 'roc_auc']",Sample Standard Deviation (N=5),VERIFIED_ACCURATE
+Fig 6,fig6_convergence.png,Training & Validation Convergence Curves,phase9d_multiseed_results.json -> trajectories,"['loss', 'validation_accuracy per epoch/round']",None (Trajectory steps),VERIFIED_ACCURATE
+Fig 7,fig7_client_heterogeneity.png,Client Dirichlet Label Heterogeneity,phase9d_multiseed_results.json -> client_distributions,"['sample counts per client, class breakdown']",None (Stacked counts),VERIFIED_ACCURATE
+Fig 8,fig8_xai_global_importance.png,Global Feature Importance (Kernel SHAP),xai_service.py -> explain_global_shap,['mean absolute SHAP attribution'],None (Bar ranking),VERIFIED_ACCURATE

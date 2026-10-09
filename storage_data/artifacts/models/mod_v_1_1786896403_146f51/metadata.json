@@ -1,0 +1,79 @@
+{
+  "name": "Centralized Dropout MLP",
+  "version": "mod_v_1_1786896403_146f51",
+  "framework": "PyTorch",
+  "checksum": "203c97794f0e1a906213962fe5de7734395cd60c4fa3f89b4f42cce87db92003",
+  "metrics": {
+    "accuracy": 0.5,
+    "precision": 0.2222,
+    "recall": 0.2,
+    "f1": 0.2105,
+    "roc_auc": 0.375,
+    "confusion_matrix": [
+      [
+        13,
+        7
+      ],
+      [
+        8,
+        2
+      ]
+    ],
+    "class_weight_pos": 2.1034
+  },
+  "lineage": {
+    "dataset_id": 1,
+    "preprocessing_artifact_id": 1,
+    "preprocessing_version": "v_1_1786896403_041266",
+    "feature_schema": {
+      "feature_names": [
+        "Age",
+        "GPA",
+        "Attendance",
+        "Tuition_Paid_No",
+        "Tuition_Paid_Yes"
+      ],
+      "feature_count": 5,
+      "numerical_features": [
+        "Age",
+        "GPA",
+        "Attendance"
+      ],
+      "categorical_features": [
+        "Tuition_Paid"
+      ],
+      "scaled": true,
+      "impute_strategy": "mean"
+    },
+    "hyperparameters": {
+      "artifact_id": 1,
+      "name": "Centralized Dropout MLP",
+      "hidden_dims": [
+        64,
+        32
+      ],
+      "dropout_rate": 0.2,
+      "learning_rate": 0.001,
+      "batch_size": 32,
+      "epochs": 2,
+      "optimizer": "adam",
+      "random_state": 42,
+      "base_random_state": null,
+      "reproducibility": {
+        "base_random_state": 42,
+        "derived_seed": 42,
+        "algorithm": "CENTRALIZED",
+        "variant": "BASELINE"
+      }
+    },
+    "split_summary": {
+      "train_samples": 90,
+      "val_samples": 30,
+      "test_samples": 30,
+      "positive_class_ratio_train": 0.32222222222222224,
+      "positive_class_ratio_val": 0.3333333333333333,
+      "positive_class_ratio_test": 0.3333333333333333
+    },
+    "seed": 42
+  }
+}

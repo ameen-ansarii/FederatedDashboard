@@ -1,0 +1,5 @@
+comparison,top_k,overlap_count,overlap_features,jaccard_similarity,theoretical_jaccard
+SHAP vs LIME,5,3,"['avg_assessment_score', 'studied_credits', 'total_vle_clicks']",0.4286,0.4286
+SHAP vs IG,5,4,"['avg_assessment_score', 'gender_M', 'studied_credits', 'total_vle_clicks']",0.6667,0.6667
+LIME vs IG,5,4,"['avg_assessment_score', 'imd_band_10-20%', 'studied_credits', 'total_vle_clicks']",0.6667,0.6667
+Consensus (All 3 Methods),5,3,"['avg_assessment_score', 'studied_credits', 'total_vle_clicks']",0.4286,0.4286

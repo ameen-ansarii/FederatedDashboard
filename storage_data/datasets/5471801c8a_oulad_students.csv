@@ -1,0 +1,201 @@
+code_module,code_presentation,gender,highest_education,imd_band,age_band,num_of_prev_attempts,studied_credits,disability,total_vle_clicks,avg_assessment_score,final_result
+GGG,2014B,F,Lower Than A Level,50-60%,35-55,0,150,N,687,60.0,Distinction
+FFF,2013B,F,Lower Than A Level,50-60%,0-35,0,30,N,977,82.6,Pass
+GGG,2014J,F,Post Graduate Qualification,40-50%,35-55,1,150,N,242,64.7,Pass
+CCC,2013J,F,A Level or Equivalent,20-30%,35-55,0,90,N,338,30.7,Fail
+EEE,2014B,F,Post Graduate Qualification,50-60%,55<=,0,30,N,312,86.4,Withdrawn
+CCC,2014B,F,HE Qualification,90-100%,0-35,2,150,N,188,79.0,Pass
+GGG,2013B,F,Post Graduate Qualification,50-60%,55<=,0,60,N,204,23.0,Fail
+BBB,2014B,M,Post Graduate Qualification,10-20%,55<=,0,90,N,634,84.4,Distinction
+DDD,2013B,M,Lower Than A Level,50-60%,0-35,0,60,N,699,89.2,Pass
+CCC,2013J,F,HE Qualification,50-60%,55<=,1,120,N,997,61.0,Pass
+DDD,2014J,F,Lower Than A Level,10-20%,35-55,0,60,Y,931,50.3,Distinction
+BBB,2014B,F,Lower Than A Level,40-50%,35-55,1,90,N,701,26.7,Fail
+GGG,2013B,M,HE Qualification,90-100%,0-35,0,150,N,202,86.3,Withdrawn
+BBB,2013B,M,Lower Than A Level,40-50%,35-55,1,90,N,619,20.3,Withdrawn
+AAA,2014J,F,Post Graduate Qualification,20-30%,0-35,0,30,N,1799,47.5,Pass
+BBB,2013B,M,HE Qualification,10-20%,55<=,0,30,N,1239,46.2,Pass
+GGG,2014J,M,Post Graduate Qualification,50-60%,35-55,0,120,N,1778,93.0,Pass
+BBB,2014J,M,Post Graduate Qualification,90-100%,55<=,0,120,N,18,55.9,Fail
+AAA,2014J,M,Post Graduate Qualification,50-60%,35-55,2,90,N,472,91.1,Pass
+GGG,2013B,F,Post Graduate Qualification,30-40%,35-55,2,60,Y,121,27.1,Withdrawn
+AAA,2013B,M,HE Qualification,10-20%,0-35,0,60,N,141,87.7,Fail
+BBB,2014B,M,A Level or Equivalent,20-30%,0-35,0,60,N,929,69.0,Pass
+DDD,2014J,M,Post Graduate Qualification,10-20%,0-35,0,60,N,693,63.0,Pass
+GGG,2014B,M,Lower Than A Level,30-40%,0-35,0,150,N,199,44.5,Distinction
+FFF,2014J,F,A Level or Equivalent,10-20%,55<=,0,120,N,366,59.2,Pass
+EEE,2014J,M,HE Qualification,30-40%,0-35,0,60,N,104,41.9,Withdrawn
+AAA,2014B,F,Lower Than A Level,0-10%,55<=,1,30,N,1,56.5,Fail
+AAA,2013B,M,Post Graduate Qualification,30-40%,35-55,0,30,Y,1151,81.5,Distinction
+EEE,2013B,F,Lower Than A Level,50-60%,55<=,1,90,N,618,70.0,Distinction
+BBB,2014J,M,HE Qualification,30-40%,35-55,3,90,N,376,74.4,Pass
+DDD,2014B,M,HE Qualification,40-50%,35-55,0,120,N,27,91.4,Withdrawn
+CCC,2014B,M,Lower Than A Level,90-100%,55<=,0,30,N,273,24.2,Withdrawn
+EEE,2014J,M,HE Qualification,90-100%,0-35,1,60,N,239,35.9,Withdrawn
+CCC,2013J,F,A Level or Equivalent,90-100%,55<=,2,150,N,94,77.9,Fail
+EEE,2013J,F,Post Graduate Qualification,90-100%,55<=,0,90,N,84,52.7,Withdrawn
+AAA,2014B,M,Lower Than A Level,50-60%,35-55,0,150,N,95,72.0,Fail
+FFF,2014J,F,Post Graduate Qualification,10-20%,35-55,0,90,N,454,91.8,Distinction
+AAA,2014B,M,HE Qualification,10-20%,0-35,1,150,N,66,78.9,Fail
+BBB,2013B,F,Post Graduate Qualification,90-100%,0-35,0,150,N,136,94.6,Withdrawn
+DDD,2014J,M,Post Graduate Qualification,90-100%,0-35,0,90,N,1461,32.2,Withdrawn
+EEE,2014J,F,A Level or Equivalent,90-100%,35-55,3,90,N,123,80.5,Withdrawn
+EEE,2014B,F,Post Graduate Qualification,40-50%,0-35,0,120,N,721,76.2,Distinction
+EEE,2014B,F,A Level or Equivalent,10-20%,55<=,0,60,Y,455,20.6,Withdrawn
+GGG,2013B,M,HE Qualification,90-100%,55<=,0,60,N,266,23.4,Fail
+BBB,2014B,F,HE Qualification,0-10%,0-35,0,150,N,452,22.7,Withdrawn
+FFF,2013B,M,A Level or Equivalent,20-30%,0-35,0,120,N,71,62.2,Fail
+GGG,2014J,M,Lower Than A Level,10-20%,55<=,0,90,N,331,82.1,Pass
+GGG,2014B,M,HE Qualification,30-40%,0-35,1,90,Y,1790,52.4,Distinction
+DDD,2014B,M,Post Graduate Qualification,90-100%,35-55,0,150,N,279,20.3,Withdrawn
+CCC,2014B,F,Lower Than A Level,0-10%,35-55,0,120,N,139,34.0,Withdrawn
+BBB,2014J,F,HE Qualification,50-60%,55<=,0,150,N,1312,95.9,Withdrawn
+EEE,2013B,F,Post Graduate Qualification,30-40%,35-55,0,60,N,471,39.6,Fail
+AAA,2014B,M,Post Graduate Qualification,50-60%,35-55,0,90,N,650,88.3,Distinction
+DDD,2014J,M,Post Graduate Qualification,30-40%,35-55,0,120,N,391,49.6,Distinction
+CCC,2013J,M,HE Qualification,0-10%,35-55,1,90,Y,5,61.7,Withdrawn
+FFF,2013J,F,HE Qualification,0-10%,0-35,1,150,N,704,59.2,Pass
+AAA,2014B,F,Post Graduate Qualification,10-20%,35-55,0,120,Y,1924,30.8,Withdrawn
+DDD,2014B,F,HE Qualification,20-30%,55<=,0,60,N,629,49.3,Pass
+CCC,2013J,M,A Level or Equivalent,30-40%,0-35,0,120,N,827,100.0,Pass
+CCC,2013J,M,Lower Than A Level,50-60%,55<=,0,150,Y,953,65.1,Pass
+CCC,2013B,M,Lower Than A Level,30-40%,35-55,3,90,N,3566,57.2,Pass
+GGG,2013J,M,Lower Than A Level,50-60%,0-35,0,150,N,170,63.9,Distinction
+FFF,2013J,F,Post Graduate Qualification,0-10%,0-35,0,120,N,298,41.0,Pass
+CCC,2013J,M,Post Graduate Qualification,20-30%,0-35,0,120,N,391,65.3,Pass
+EEE,2013B,F,Post Graduate Qualification,50-60%,35-55,0,150,N,82,78.3,Withdrawn
+DDD,2014J,F,Post Graduate Qualification,30-40%,55<=,0,60,N,327,28.5,Withdrawn
+DDD,2013B,M,HE Qualification,90-100%,0-35,0,60,N,162,42.3,Pass
+FFF,2013B,F,A Level or Equivalent,0-10%,55<=,0,30,N,906,36.7,Withdrawn
+EEE,2013B,M,Lower Than A Level,90-100%,55<=,1,30,Y,213,79.6,Distinction
+GGG,2013J,M,Post Graduate Qualification,90-100%,0-35,0,90,N,42,94.9,Withdrawn
+EEE,2013B,F,HE Qualification,10-20%,35-55,0,90,N,5,54.0,Fail
+GGG,2014B,M,HE Qualification,10-20%,35-55,0,90,N,985,70.7,Pass
+FFF,2014B,M,HE Qualification,40-50%,55<=,0,90,N,978,22.5,Fail
+DDD,2013J,M,Post Graduate Qualification,40-50%,0-35,1,30,N,1359,30.5,Withdrawn
+CCC,2014J,F,Lower Than A Level,50-60%,55<=,0,60,N,37,50.8,Withdrawn
+AAA,2014J,M,Post Graduate Qualification,10-20%,55<=,0,90,N,251,73.2,Pass
+GGG,2013J,M,Post Graduate Qualification,0-10%,35-55,0,30,N,279,71.2,Withdrawn
+GGG,2014B,M,A Level or Equivalent,90-100%,35-55,1,60,N,986,35.4,Withdrawn
+EEE,2013J,M,Lower Than A Level,0-10%,35-55,0,60,N,151,30.6,Fail
+DDD,2014B,M,Lower Than A Level,40-50%,0-35,1,60,N,179,95.0,Distinction
+GGG,2014B,F,Post Graduate Qualification,20-30%,0-35,2,30,N,659,48.4,Distinction
+BBB,2014B,F,Lower Than A Level,50-60%,0-35,2,30,N,99,56.8,Fail
+DDD,2014B,M,Post Graduate Qualification,10-20%,0-35,1,150,N,504,27.6,Withdrawn
+CCC,2014J,M,HE Qualification,50-60%,35-55,0,150,N,677,92.8,Pass
+FFF,2013B,F,A Level or Equivalent,90-100%,55<=,0,30,N,99,73.4,Withdrawn
+BBB,2013B,F,A Level or Equivalent,20-30%,35-55,0,90,N,125,60.8,Withdrawn
+CCC,2014B,F,A Level or Equivalent,90-100%,55<=,0,60,N,601,54.5,Pass
+EEE,2013B,F,Post Graduate Qualification,50-60%,0-35,0,150,N,791,24.1,Fail
+AAA,2013B,F,Lower Than A Level,40-50%,0-35,1,150,N,1532,37.1,Withdrawn
+BBB,2013B,F,Post Graduate Qualification,20-30%,35-55,0,60,N,184,88.5,Pass
+EEE,2014J,M,HE Qualification,90-100%,0-35,1,150,N,397,69.8,Pass
+CCC,2014J,M,Lower Than A Level,0-10%,35-55,0,120,N,79,35.5,Fail
+BBB,2013B,F,Lower Than A Level,30-40%,55<=,1,120,Y,287,35.1,Fail
+BBB,2014J,M,Post Graduate Qualification,30-40%,0-35,0,150,N,151,48.0,Distinction
+DDD,2013J,F,HE Qualification,20-30%,55<=,0,90,N,214,69.2,Pass
+EEE,2013B,F,A Level or Equivalent,30-40%,35-55,0,120,N,813,63.4,Pass
+FFF,2013J,M,HE Qualification,20-30%,35-55,3,90,N,812,62.2,Distinction
+BBB,2013B,F,A Level or Equivalent,10-20%,55<=,1,30,N,609,89.5,Pass
+AAA,2014B,M,Post Graduate Qualification,40-50%,0-35,0,60,N,65,88.9,Withdrawn
+AAA,2014B,F,Lower Than A Level,20-30%,0-35,0,150,N,167,87.6,Pass
+DDD,2014B,M,HE Qualification,50-60%,35-55,2,120,N,1400,76.2,Pass
+BBB,2013B,M,A Level or Equivalent,50-60%,35-55,0,90,N,301,51.4,Distinction
+GGG,2014B,F,HE Qualification,0-10%,35-55,0,150,N,486,41.5,Pass
+DDD,2014J,F,HE Qualification,50-60%,0-35,2,30,N,9,96.5,Withdrawn
+DDD,2014B,F,Post Graduate Qualification,40-50%,55<=,0,30,N,364,23.6,Withdrawn
+DDD,2013B,M,Post Graduate Qualification,0-10%,55<=,0,120,N,584,69.5,Pass
+FFF,2014B,M,A Level or Equivalent,50-60%,0-35,1,150,N,30,87.7,Withdrawn
+BBB,2014J,F,Post Graduate Qualification,30-40%,55<=,1,150,N,61,41.8,Withdrawn
+BBB,2013J,F,A Level or Equivalent,10-20%,35-55,0,150,N,229,98.3,Distinction
+CCC,2014J,F,Lower Than A Level,50-60%,55<=,0,30,N,1445,90.9,Pass
+DDD,2013B,M,HE Qualification,90-100%,35-55,0,30,N,143,35.9,Fail
+DDD,2013B,M,A Level or Equivalent,30-40%,35-55,3,60,N,10,41.6,Fail
+DDD,2013J,F,A Level or Equivalent,10-20%,0-35,1,30,N,828,91.8,Pass
+DDD,2013B,F,A Level or Equivalent,50-60%,55<=,1,30,N,946,28.7,Fail
+AAA,2013J,F,HE Qualification,20-30%,55<=,0,60,N,384,35.1,Fail
+GGG,2014J,F,A Level or Equivalent,40-50%,35-55,0,150,N,1117,68.7,Pass
+GGG,2014B,F,HE Qualification,0-10%,0-35,0,30,N,98,31.8,Withdrawn
+BBB,2013J,M,A Level or Equivalent,90-100%,0-35,0,60,Y,160,65.8,Pass
+GGG,2013B,F,A Level or Equivalent,90-100%,55<=,2,150,N,10,66.0,Fail
+GGG,2013B,M,HE Qualification,20-30%,0-35,2,90,Y,437,67.7,Pass
+DDD,2014J,M,Lower Than A Level,50-60%,55<=,1,60,N,1091,40.1,Distinction
+BBB,2013J,M,HE Qualification,90-100%,35-55,0,60,N,466,85.7,Pass
+GGG,2013J,F,Lower Than A Level,50-60%,35-55,0,150,N,41,97.6,Fail
+EEE,2013J,M,Lower Than A Level,0-10%,55<=,0,120,Y,590,42.2,Distinction
+GGG,2014B,F,A Level or Equivalent,10-20%,0-35,0,90,N,563,89.2,Distinction
+DDD,2014B,F,HE Qualification,0-10%,35-55,0,30,N,91,43.4,Withdrawn
+GGG,2013B,F,Lower Than A Level,50-60%,55<=,0,120,Y,882,47.9,Distinction
+BBB,2014B,M,Post Graduate Qualification,30-40%,35-55,0,150,N,1217,82.8,Distinction
+FFF,2014B,M,HE Qualification,0-10%,55<=,0,150,N,248,31.0,Withdrawn
+GGG,2013J,M,Lower Than A Level,10-20%,0-35,0,150,N,184,24.9,Withdrawn
+CCC,2013B,F,HE Qualification,90-100%,35-55,0,120,Y,427,50.9,Pass
+DDD,2013J,M,Lower Than A Level,50-60%,35-55,0,150,N,1797,30.4,Withdrawn
+EEE,2013B,F,A Level or Equivalent,90-100%,35-55,0,90,N,645,26.4,Fail
+DDD,2014B,F,Post Graduate Qualification,0-10%,0-35,0,120,N,780,67.1,Pass
+BBB,2014B,M,Post Graduate Qualification,90-100%,0-35,0,90,N,731,34.7,Fail
+FFF,2014J,F,A Level or Equivalent,40-50%,35-55,0,90,N,1573,44.1,Pass
+AAA,2014J,M,HE Qualification,10-20%,0-35,1,150,Y,846,78.3,Distinction
+FFF,2014B,M,Lower Than A Level,40-50%,0-35,2,90,N,156,27.4,Fail
+AAA,2014J,M,Lower Than A Level,20-30%,55<=,0,120,N,131,99.5,Withdrawn
+FFF,2013J,M,Post Graduate Qualification,90-100%,55<=,0,150,N,138,44.7,Fail
+GGG,2013B,M,Post Graduate Qualification,40-50%,55<=,3,30,N,119,63.7,Fail
+GGG,2013J,M,Lower Than A Level,20-30%,35-55,0,60,N,116,83.3,Withdrawn
+DDD,2013J,F,A Level or Equivalent,10-20%,55<=,0,30,N,1362,39.0,Withdrawn
+AAA,2014J,F,Lower Than A Level,0-10%,0-35,0,120,N,1514,47.3,Pass
+BBB,2013J,M,HE Qualification,10-20%,35-55,0,150,N,47,36.5,Fail
+FFF,2014J,F,Lower Than A Level,30-40%,35-55,0,120,N,33,50.3,Withdrawn
+BBB,2014B,F,HE Qualification,10-20%,0-35,2,150,N,972,78.8,Pass
+AAA,2013B,F,Post Graduate Qualification,10-20%,55<=,0,60,N,414,77.2,Pass
+DDD,2013J,F,Lower Than A Level,50-60%,55<=,0,90,N,118,34.6,Withdrawn
+FFF,2014B,F,Lower Than A Level,30-40%,55<=,0,90,N,309,58.2,Pass
+BBB,2014J,M,HE Qualification,90-100%,35-55,0,90,N,38,75.1,Withdrawn
+DDD,2014J,M,HE Qualification,90-100%,35-55,1,60,N,2014,79.1,Pass
+EEE,2013J,F,HE Qualification,30-40%,55<=,0,120,N,75,70.9,Withdrawn
+GGG,2014B,M,A Level or Equivalent,50-60%,55<=,0,30,N,821,35.6,Fail
+FFF,2014B,M,Post Graduate Qualification,90-100%,35-55,0,30,N,1587,89.4,Pass
+GGG,2014J,F,Lower Than A Level,10-20%,0-35,1,30,N,620,43.1,Pass
+EEE,2013B,F,HE Qualification,90-100%,0-35,3,60,N,46,49.6,Withdrawn
+BBB,2013J,M,Lower Than A Level,50-60%,35-55,0,120,N,445,64.7,Distinction
+EEE,2013B,M,HE Qualification,30-40%,55<=,0,120,Y,69,88.8,Fail
+GGG,2013J,F,Post Graduate Qualification,90-100%,55<=,0,120,N,1008,72.0,Pass
+EEE,2014B,F,A Level or Equivalent,50-60%,55<=,0,30,N,558,76.1,Pass
+DDD,2013B,F,Lower Than A Level,50-60%,0-35,0,30,N,1424,37.3,Withdrawn
+EEE,2014J,F,A Level or Equivalent,10-20%,55<=,2,30,N,78,48.2,Fail
+DDD,2014J,F,Lower Than A Level,10-20%,0-35,0,30,N,302,31.0,Withdrawn
+GGG,2014J,M,HE Qualification,30-40%,0-35,2,60,N,392,79.0,Pass
+AAA,2014B,M,HE Qualification,20-30%,55<=,0,30,N,57,95.9,Withdrawn
+GGG,2014J,M,Post Graduate Qualification,30-40%,55<=,0,120,N,564,78.8,Distinction
+FFF,2014B,F,HE Qualification,0-10%,0-35,0,120,N,417,30.0,Withdrawn
+EEE,2014B,F,A Level or Equivalent,20-30%,35-55,0,120,N,213,75.5,Pass
+EEE,2014J,F,HE Qualification,90-100%,0-35,0,150,N,266,54.7,Pass
+EEE,2014J,F,Post Graduate Qualification,0-10%,0-35,0,120,N,795,27.4,Withdrawn
+EEE,2013B,F,HE Qualification,30-40%,55<=,2,60,N,220,100.0,Pass
+AAA,2013J,F,HE Qualification,30-40%,0-35,0,60,N,1799,77.9,Pass
+AAA,2013J,F,A Level or Equivalent,10-20%,0-35,1,30,N,1251,69.8,Distinction
+BBB,2013B,M,A Level or Equivalent,0-10%,35-55,0,120,Y,40,89.8,Fail
+AAA,2013B,M,Lower Than A Level,90-100%,0-35,0,120,N,956,46.0,Withdrawn
+AAA,2014J,M,Post Graduate Qualification,30-40%,0-35,0,120,N,560,73.3,Pass
+EEE,2014J,F,Lower Than A Level,30-40%,0-35,3,60,N,28,57.5,Withdrawn
+CCC,2013B,F,HE Qualification,90-100%,35-55,0,60,N,1554,29.9,Fail
+CCC,2013B,F,HE Qualification,30-40%,55<=,0,120,Y,896,63.3,Distinction
+FFF,2014J,F,HE Qualification,50-60%,0-35,0,30,N,893,70.6,Withdrawn
+FFF,2014B,M,HE Qualification,0-10%,55<=,0,30,N,1236,57.9,Pass
+AAA,2013J,M,HE Qualification,30-40%,0-35,0,60,N,1269,30.0,Fail
+GGG,2014B,M,A Level or Equivalent,40-50%,55<=,0,150,Y,123,26.0,Withdrawn
+GGG,2013B,F,A Level or Equivalent,90-100%,35-55,1,120,N,1385,73.2,Distinction
+BBB,2014B,F,HE Qualification,40-50%,0-35,1,60,N,24,87.0,Fail
+GGG,2014J,M,Post Graduate Qualification,30-40%,35-55,0,120,N,1066,93.9,Pass
+GGG,2014B,F,Post Graduate Qualification,20-30%,55<=,2,60,N,305,51.1,Distinction
+AAA,2014B,F,Lower Than A Level,50-60%,0-35,0,60,N,889,95.1,Distinction
+CCC,2014B,M,A Level or Equivalent,0-10%,0-35,0,90,N,159,85.6,Pass
+EEE,2013B,M,A Level or Equivalent,50-60%,35-55,0,150,Y,702,53.9,Withdrawn
+EEE,2014B,F,HE Qualification,50-60%,35-55,0,60,N,816,52.5,Pass
+BBB,2014J,F,A Level or Equivalent,10-20%,0-35,1,90,Y,42,46.7,Withdrawn
+CCC,2014J,F,Lower Than A Level,50-60%,55<=,0,60,N,1229,25.5,Withdrawn
+DDD,2013B,F,Post Graduate Qualification,20-30%,55<=,3,90,N,849,20.8,Withdrawn
+BBB,2014B,F,Post Graduate Qualification,40-50%,0-35,0,90,Y,452,39.6,Withdrawn
+FFF,2013B,M,Post Graduate Qualification,0-10%,55<=,1,150,N,615,40.4,Distinction
+EEE,2013B,M,Lower Than A Level,10-20%,0-35,0,120,N,212,78.4,Pass
+DDD,2013B,F,Post Graduate Qualification,40-50%,55<=,0,120,N,317,32.6,Withdrawn
+BBB,2013B,M,Lower Than A Level,30-40%,35-55,0,90,N,79,75.4,Withdrawn

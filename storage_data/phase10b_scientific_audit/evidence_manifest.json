@@ -1,0 +1,83 @@
+{
+  "audit_id": "PHASE_10B_SCIENTIFIC_EVIDENCE_AUDIT",
+  "generated_at": "2026-08-16T15:43:27.720774+00:00",
+  "target_dataset": "OULAD Student Dropout Benchmark",
+  "target_preprocessing_artifact": "v_1_1786778298",
+  "audit_status": "PASSED",
+  "verdict": "READY_FOR_PUBLICATION_DRAFT",
+  "artifact_count": 13,
+  "artifacts": [
+    {
+      "filename": "scientific_audit_report.md",
+      "path": "./storage_data/phase10b_scientific_audit/scientific_audit_report.md",
+      "size_bytes": 14177,
+      "checksum_sha256": "5d39f0b4d84fa1aff0b0d676f2e0410ec4ac0e05fb44aa1e19035bac8238c8cf"
+    },
+    {
+      "filename": "metric_recalculation.json",
+      "path": "./storage_data/phase10b_scientific_audit/metric_recalculation.json",
+      "size_bytes": 5118,
+      "checksum_sha256": "4cbae87642ca413b9214da93ca40d5ce8a74b70e7c25f0ccb39b7ef367d181b2"
+    },
+    {
+      "filename": "confidence_intervals.csv",
+      "path": "./storage_data/phase10b_scientific_audit/confidence_intervals.csv",
+      "size_bytes": 3027,
+      "checksum_sha256": "f9a6a8e15cb2263b21ab3705edc7dee5aa305a5afaac70ca399417e4bef4727b"
+    },
+    {
+      "filename": "paired_tests.csv",
+      "path": "./storage_data/phase10b_scientific_audit/paired_tests.csv",
+      "size_bytes": 2637,
+      "checksum_sha256": "c633f6e296dbf578862e5fed18386fe74780da42395c7fcfa19630cd8e27c2bd"
+    },
+    {
+      "filename": "effect_sizes.csv",
+      "path": "./storage_data/phase10b_scientific_audit/effect_sizes.csv",
+      "size_bytes": 1904,
+      "checksum_sha256": "047c7b046f15e020d4f8c6bc69bedac14284aea8047a588aa6b696dd9fc84f3a"
+    },
+    {
+      "filename": "fedprox_mu_audit.csv",
+      "path": "./storage_data/phase10b_scientific_audit/fedprox_mu_audit.csv",
+      "size_bytes": 620,
+      "checksum_sha256": "670b780826b9fdb05f9a6ba202788398c5ff1e7da9efc58ec0fef93def9cceee"
+    },
+    {
+      "filename": "iid_vs_noniid_audit.csv",
+      "path": "./storage_data/phase10b_scientific_audit/iid_vs_noniid_audit.csv",
+      "size_bytes": 583,
+      "checksum_sha256": "6d6f9871ad7bae8571cfab2c088d5a7b812c3cbff8e5c0da88aba1f487fddd54"
+    },
+    {
+      "filename": "client_heterogeneity_audit.csv",
+      "path": "./storage_data/phase10b_scientific_audit/client_heterogeneity_audit.csv",
+      "size_bytes": 880,
+      "checksum_sha256": "39d30882d04a001e0e52966e272b2cf422f1b10ccbb1d9ce76412fbfa9fcd671"
+    },
+    {
+      "filename": "xai_evidence_audit.csv",
+      "path": "./storage_data/phase10b_scientific_audit/xai_evidence_audit.csv",
+      "size_bytes": 520,
+      "checksum_sha256": "4097f5eb07474f7a72474dd8149f04aa977a38a7f45cace0085f4fe31b9aad05"
+    },
+    {
+      "filename": "figure_audit.csv",
+      "path": "./storage_data/phase10b_scientific_audit/figure_audit.csv",
+      "size_bytes": 1777,
+      "checksum_sha256": "49258880ec000b90cd68ed5f387a150fa828ef30a6ffd4a789a368728e6eee7c"
+    },
+    {
+      "filename": "claim_evidence_matrix.csv",
+      "path": "./storage_data/phase10b_scientific_audit/claim_evidence_matrix.csv",
+      "size_bytes": 4215,
+      "checksum_sha256": "fdfbaba5a15c043aa8c3046f0d859f5698ef32c12a23276718086e3e8e16ea39"
+    },
+    {
+      "filename": "scientific_limitations.json",
+      "path": "./storage_data/phase10b_scientific_audit/scientific_limitations.json",
+      "size_bytes": 4951,
+      "checksum_sha256": "dca97dea99b3e6098f3a22635bb0f6f74a1661ec330986d2e98e188d44f8fda9"
+    }
+  ]
+}

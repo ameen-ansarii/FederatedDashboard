@@ -1,0 +1,107 @@
+{
+  "name": "OULAD Centralized PyTorch Classifier",
+  "version": "mod_v_1_1786778931",
+  "framework": "PyTorch",
+  "checksum": "c8e2063ec5898a24161c2cf2da00f0878d90b178410317ef46dde6f668c7e9b4",
+  "metrics": {
+    "accuracy": 0.575,
+    "precision": 0.4091,
+    "recall": 0.6923,
+    "f1": 0.5143,
+    "roc_auc": 0.6296,
+    "confusion_matrix": [
+      [
+        14,
+        13
+      ],
+      [
+        4,
+        9
+      ]
+    ],
+    "class_weight_pos": 2.0769
+  },
+  "lineage": {
+    "dataset_id": 1,
+    "preprocessing_artifact_id": 1,
+    "preprocessing_version": "v_1_1786778930",
+    "feature_schema": {
+      "feature_names": [
+        "num_of_prev_attempts",
+        "studied_credits",
+        "total_vle_clicks",
+        "avg_assessment_score",
+        "code_module_AAA",
+        "code_module_BBB",
+        "code_module_CCC",
+        "code_module_DDD",
+        "code_module_EEE",
+        "code_module_FFF",
+        "code_module_GGG",
+        "code_presentation_2013B",
+        "code_presentation_2013J",
+        "code_presentation_2014B",
+        "code_presentation_2014J",
+        "gender_F",
+        "gender_M",
+        "highest_education_A Level or Equivalent",
+        "highest_education_HE Qualification",
+        "highest_education_Lower Than A Level",
+        "highest_education_Post Graduate Qualification",
+        "imd_band_0-10%",
+        "imd_band_10-20%",
+        "imd_band_20-30%",
+        "imd_band_30-40%",
+        "imd_band_40-50%",
+        "imd_band_50-60%",
+        "imd_band_90-100%",
+        "age_band_0-35",
+        "age_band_35-55",
+        "age_band_55<=",
+        "disability_N",
+        "disability_Y"
+      ],
+      "feature_count": 33,
+      "numerical_features": [
+        "num_of_prev_attempts",
+        "studied_credits",
+        "total_vle_clicks",
+        "avg_assessment_score"
+      ],
+      "categorical_features": [
+        "code_module",
+        "code_presentation",
+        "gender",
+        "highest_education",
+        "imd_band",
+        "age_band",
+        "disability"
+      ],
+      "scaled": true,
+      "impute_strategy": "mean"
+    },
+    "hyperparameters": {
+      "artifact_id": 1,
+      "name": "OULAD Centralized PyTorch Classifier",
+      "hidden_dims": [
+        64,
+        32
+      ],
+      "dropout_rate": 0.2,
+      "learning_rate": 0.001,
+      "batch_size": 32,
+      "epochs": 15,
+      "optimizer": "adam",
+      "random_state": 42
+    },
+    "split_summary": {
+      "train_samples": 120,
+      "val_samples": 40,
+      "test_samples": 40,
+      "positive_class_ratio_train": 0.325,
+      "positive_class_ratio_val": 0.325,
+      "positive_class_ratio_test": 0.325
+    },
+    "seed": 42
+  }
+}

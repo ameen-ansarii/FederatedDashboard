@@ -1,0 +1,86 @@
+{
+  "name": "FedProx Student Dropout Classifier",
+  "version": "mod_v_1_1786810581_72f140",
+  "framework": "PyTorch",
+  "checksum": "297e135616c68f23fb9e770ed46208aa6eec31ee2b2e24ad68a068b2e2748959",
+  "metrics": {
+    "accuracy": 0.3333,
+    "precision": 0.3333,
+    "recall": 1.0,
+    "f1": 0.5,
+    "roc_auc": 0.465,
+    "confusion_matrix": [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        10
+      ]
+    ]
+  },
+  "lineage": {
+    "dataset_id": 1,
+    "preprocessing_artifact_id": 1,
+    "preprocessing_version": "v_1_1786810580_9baac1",
+    "feature_schema": {
+      "feature_names": [
+        "Age",
+        "GPA",
+        "Attendance",
+        "Tuition_Paid_No",
+        "Tuition_Paid_Yes"
+      ],
+      "feature_count": 5,
+      "numerical_features": [
+        "Age",
+        "GPA",
+        "Attendance"
+      ],
+      "categorical_features": [
+        "Tuition_Paid"
+      ],
+      "scaled": true,
+      "impute_strategy": "mean"
+    },
+    "hyperparameters": {
+      "artifact_id": 1,
+      "name": "FedProx Student Dropout Classifier",
+      "num_clients": 2,
+      "partitioning": "NON_IID",
+      "dirichlet_alpha": 0.5,
+      "rounds": 1,
+      "local_epochs": 1,
+      "learning_rate": 0.01,
+      "batch_size": 16,
+      "hidden_dims": [
+        32,
+        16
+      ],
+      "dropout_rate": 0.1,
+      "optimizer": "adam",
+      "random_state": 42,
+      "mu": 1.0,
+      "algorithm": "FEDPROX",
+      "partitioning_details": {
+        "partitioning": "NON_IID",
+        "dirichlet_alpha": 0.5,
+        "num_clients": 2,
+        "client_sample_counts": {
+          "client_0": 81,
+          "client_1": 9
+        }
+      }
+    },
+    "split_summary": {
+      "train_samples": 90,
+      "val_samples": 30,
+      "test_samples": 30,
+      "positive_class_ratio_train": 0.32222222222222224,
+      "positive_class_ratio_val": 0.3333333333333333,
+      "positive_class_ratio_test": 0.3333333333333333
+    },
+    "seed": 42
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "registry_id": "PHASE_11_PUBLICATION_REGISTRY",
+  "generated_at": "2026-08-16T16:05:17.611792+00:00",
+  "tables": [
+    {
+      "table_id": "Table 1",
+      "title": "Aggregate Performance Across Evaluated Model Variants (Mean +/- Sample Std, N=5 Seeds)",
+      "source_artifact": "storage_data/phase10b_scientific_audit/metric_recalculation.json",
+      "generating_service": "ScientificAuditService.recompute_metrics",
+      "paper_section": "Section 11 (Results)"
+    },
+    {
+      "table_id": "Table 2",
+      "title": "Student's t 95% Confidence Intervals (df=4, t_crit=2.7764)",
+      "source_artifact": "storage_data/phase10b_scientific_audit/confidence_intervals.csv",
+      "generating_service": "ScientificAuditService.compute_confidence_intervals",
+      "paper_section": "Section 10 (Statistical Analysis)"
+    },
+    {
+      "table_id": "Table 3",
+      "title": "Paired Statistical Comparisons vs Centralized Baseline",
+      "source_artifact": "storage_data/phase10b_scientific_audit/paired_tests.csv",
+      "generating_service": "ScientificAuditService.compute_paired_statistical_comparisons",
+      "paper_section": "Section 10, 12 (Statistical Analysis)"
+    },
+    {
+      "table_id": "Table 4",
+      "title": "Standardized Effect Sizes (Paired Cohen's dz and Hedges' gz)",
+      "source_artifact": "storage_data/phase10b_scientific_audit/effect_sizes.csv",
+      "generating_service": "ScientificAuditService.compute_effect_sizes",
+      "paper_section": "Section 10 (Statistical Analysis)"
+    },
+    {
+      "table_id": "Table 5",
+      "title": "FedProx Proximal Parameter mu Regularization & Minority Collapse Audit",
+      "source_artifact": "storage_data/phase10b_scientific_audit/fedprox_mu_audit.csv",
+      "generating_service": "ScientificAuditService.audit_fedprox_mu",
+      "paper_section": "Section 13 (FedProx mu Sensitivity)"
+    },
+    {
+      "table_id": "Table 6",
+      "title": "FedAvg IID vs Non-IID Dirichlet (alpha=0.5) Degradation Breakdown",
+      "source_artifact": "storage_data/phase10b_scientific_audit/iid_vs_noniid_audit.csv",
+      "generating_service": "ScientificAuditService.audit_iid_vs_noniid",
+      "paper_section": "Section 12 (Non-IID Analysis)"
+    },
+    {
+      "table_id": "Table 7",
+      "title": "Explainable AI Cross-Method Attribution Overlap (Top-5 Features)",
+      "source_artifact": "storage_data/phase10b_scientific_audit/xai_evidence_audit.csv",
+      "generating_service": "ScientificAuditService.audit_xai_evidence",
+      "paper_section": "Section 15 (XAI Analysis)"
+    }
+  ],
+  "figures": [
+    {
+      "figure_number": 1,
+      "filename": "figure1.png",
+      "alias_filename": "fig1_model_performance.png",
+      "title": "Model Performance Comparison (Accuracy, F1, ROC-AUC)",
+      "size_bytes": 165396,
+      "sha256": "59bd49478824c50d0f85e715eaff544bfbdbabd27fb3e8160b0aac594fda3b9b"
+    },
+    {
+      "figure_number": 2,
+      "filename": "figure2.png",
+      "alias_filename": "fig2_f1_across_seeds.png",
+      "title": "F1-Score Trajectories Across 5 Random Seeds",
+      "size_bytes": 320997,
+      "sha256": "71505410af0e83ec322dcc1191685a6eb6229bf09a0111bde0d2f646b47907e6"
+    },
+    {
+      "figure_number": 3,
+      "filename": "figure3.png",
+      "alias_filename": "fig3_roc_auc_across_seeds.png",
+      "title": "ROC-AUC Trajectories Across 5 Random Seeds",
+      "size_bytes": 322177,
+      "sha256": "88fbfffb7f9f4e882ea4f4d8e8cc3e19759773372f528bfbc75ab5b000b4e6b3"
+    },
+    {
+      "figure_number": 4,
+      "filename": "figure4.png",
+      "alias_filename": "fig4_fedprox_mu_sensitivity.png",
+      "title": "FedProx Proximal Parameter mu Sensitivity",
+      "size_bytes": 242391,
+      "sha256": "3e63a7e0650d818627737125e335d0795ff6c3b82af1a1592f39726e7705a60f"
+    },
+    {
+      "figure_number": 5,
+      "filename": "figure5.png",
+      "alias_filename": "fig5_iid_vs_non_iid.png",
+      "title": "IID vs Non-IID Dirichlet (alpha=0.5) Distribution Comparison",
+      "size_bytes": 119433,
+      "sha256": "c64a6a1bcb995656e3b6965fed8d6e7c71293ceffcb507c4c6aae5240aea9d62"
+    },
+    {
+      "figure_number": 6,
+      "filename": "figure6.png",
+      "alias_filename": "fig6_convergence.png",
+      "title": "Training Loss & Validation Accuracy Convergence Trajectories",
+      "size_bytes": 333747,
+      "sha256": "a98b56dece96dca49cf159bb0c32bf750aaf93a9e4751def710f2e4ee7fd19ee"
+    },
+    {
+      "figure_number": 7,
+      "filename": "figure7.png",
+      "alias_filename": "fig7_client_heterogeneity.png",
+      "title": "Client Dirichlet Label & Sample Heterogeneity",
+      "size_bytes": 157349,
+      "sha256": "87cc3d8561a891c0967aa680b7117f9cd63899e792bca53c3b69d7bc877184f2"
+    },
+    {
+      "figure_number": 8,
+      "filename": "figure8.png",
+      "alias_filename": "fig8_xai_global_importance.png",
+      "title": "Global Feature Attribution Ranking (Kernel SHAP)",
+      "size_bytes": 114037,
+      "sha256": "585d25595de20e13cdb239b83cba8c40febd741addc020a7cd47af900261a44d"
+    }
+  ]
+}

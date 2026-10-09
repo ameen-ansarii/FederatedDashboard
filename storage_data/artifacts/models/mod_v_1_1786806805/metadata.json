@@ -1,0 +1,85 @@
+{
+  "name": "FedAvg",
+  "version": "mod_v_1_1786806805",
+  "framework": "PyTorch",
+  "checksum": "22d129b19db29256da285f900b656663d6e4ee54a32c78c725af647e7101a59f",
+  "metrics": {
+    "accuracy": 0.5625,
+    "precision": 0.5,
+    "recall": 0.2857,
+    "f1": 0.3636,
+    "roc_auc": 0.5357,
+    "confusion_matrix": [
+      [
+        14,
+        4
+      ],
+      [
+        10,
+        4
+      ]
+    ]
+  },
+  "lineage": {
+    "dataset_id": 1,
+    "preprocessing_artifact_id": 1,
+    "preprocessing_version": "v_1_1786806803",
+    "feature_schema": {
+      "feature_names": [
+        "Age",
+        "GPA",
+        "Attendance",
+        "Tuition_Paid_No",
+        "Tuition_Paid_Yes"
+      ],
+      "feature_count": 5,
+      "numerical_features": [
+        "Age",
+        "GPA",
+        "Attendance"
+      ],
+      "categorical_features": [
+        "Tuition_Paid"
+      ],
+      "scaled": true,
+      "impute_strategy": "mean"
+    },
+    "hyperparameters": {
+      "artifact_id": 1,
+      "name": "FedAvg",
+      "num_clients": 3,
+      "partitioning": "iid",
+      "dirichlet_alpha": 0.5,
+      "rounds": 4,
+      "local_epochs": 2,
+      "learning_rate": 0.001,
+      "batch_size": 32,
+      "hidden_dims": [
+        64,
+        32
+      ],
+      "dropout_rate": 0.2,
+      "optimizer": "adam",
+      "random_state": 42,
+      "partitioning_details": {
+        "partitioning": "iid",
+        "dirichlet_alpha": 0.5,
+        "num_clients": 3,
+        "client_sample_counts": {
+          "client_0": 32,
+          "client_1": 32,
+          "client_2": 32
+        }
+      }
+    },
+    "split_summary": {
+      "train_samples": 96,
+      "val_samples": 32,
+      "test_samples": 32,
+      "positive_class_ratio_train": 0.4270833333333333,
+      "positive_class_ratio_val": 0.4375,
+      "positive_class_ratio_test": 0.4375
+    },
+    "seed": 42
+  }
+}

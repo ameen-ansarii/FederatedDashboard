@@ -1,0 +1,95 @@
+{
+  "name": "FedAvg Student Dropout Classifier",
+  "version": "mod_v_1_1786896406_a0dc4c",
+  "framework": "PyTorch",
+  "checksum": "a7e323b05f824fc345998b5e1d682f4a4e7950faa5279f249916a9839b2013be",
+  "metrics": {
+    "accuracy": 0.4,
+    "precision": 0.3333,
+    "recall": 0.8,
+    "f1": 0.4706,
+    "roc_auc": 0.38,
+    "confusion_matrix": [
+      [
+        4,
+        16
+      ],
+      [
+        2,
+        8
+      ]
+    ]
+  },
+  "lineage": {
+    "dataset_id": 1,
+    "preprocessing_artifact_id": 1,
+    "preprocessing_version": "v_1_1786896406_a06b29",
+    "feature_schema": {
+      "feature_names": [
+        "Age",
+        "GPA",
+        "Attendance",
+        "Tuition_Paid_No",
+        "Tuition_Paid_Yes"
+      ],
+      "feature_count": 5,
+      "numerical_features": [
+        "Age",
+        "GPA",
+        "Attendance"
+      ],
+      "categorical_features": [
+        "Tuition_Paid"
+      ],
+      "scaled": true,
+      "impute_strategy": "mean"
+    },
+    "hyperparameters": {
+      "artifact_id": 1,
+      "name": "FedAvg Student Dropout Classifier",
+      "num_clients": 2,
+      "partitioning": "IID",
+      "dirichlet_alpha": 0.5,
+      "rounds": 1,
+      "local_epochs": 1,
+      "learning_rate": 0.05,
+      "batch_size": 32,
+      "hidden_dims": [
+        32,
+        16
+      ],
+      "dropout_rate": 0.1,
+      "optimizer": "adam",
+      "random_state": 1203729459,
+      "base_random_state": 1234,
+      "algorithm": "FEDAVG",
+      "reproducibility": {
+        "base_random_state": 1234,
+        "derived_seed": 1203729459,
+        "algorithm": "FEDAVG",
+        "variant": "IID",
+        "num_clients": 2,
+        "rounds": 1,
+        "local_epochs": 1
+      },
+      "partitioning_details": {
+        "partitioning": "IID",
+        "dirichlet_alpha": 0.5,
+        "num_clients": 2,
+        "client_sample_counts": {
+          "client_0": 45,
+          "client_1": 45
+        }
+      }
+    },
+    "split_summary": {
+      "train_samples": 90,
+      "val_samples": 30,
+      "test_samples": 30,
+      "positive_class_ratio_train": 0.32222222222222224,
+      "positive_class_ratio_val": 0.3333333333333333,
+      "positive_class_ratio_test": 0.3333333333333333
+    },
+    "seed": 1203729459
+  }
+}

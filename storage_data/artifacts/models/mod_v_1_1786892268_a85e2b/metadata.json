@@ -1,0 +1,87 @@
+{
+  "name": "FedAvg Student Dropout Classifier",
+  "version": "mod_v_1_1786892268_a85e2b",
+  "framework": "PyTorch",
+  "checksum": "423b0adf5ba1f067d07ceb76d2021e2da9831c608eb8f3f971c73a47e3c211a2",
+  "metrics": {
+    "accuracy": 0.55,
+    "precision": 0.3333,
+    "recall": 0.3846,
+    "f1": 0.3571,
+    "roc_auc": 0.5527,
+    "confusion_matrix": [
+      [
+        17,
+        10
+      ],
+      [
+        8,
+        5
+      ]
+    ]
+  },
+  "lineage": {
+    "dataset_id": 1,
+    "preprocessing_artifact_id": 1,
+    "preprocessing_version": "v_1_1786778298",
+    "feature_schema": {
+      "feature_count": 33,
+      "categorical_features": [
+        "code_module",
+        "code_presentation",
+        "gender",
+        "highest_education",
+        "imd_band",
+        "age_band",
+        "disability"
+      ],
+      "numerical_features": [
+        "num_of_prev_attempts",
+        "studied_credits",
+        "total_vle_clicks",
+        "avg_assessment_score"
+      ]
+    },
+    "hyperparameters": {
+      "artifact_id": 1,
+      "name": "FedAvg Student Dropout Classifier",
+      "num_clients": 3,
+      "partitioning": "IID",
+      "dirichlet_alpha": 0.5,
+      "rounds": 5,
+      "local_epochs": 2,
+      "learning_rate": 0.01,
+      "batch_size": 16,
+      "hidden_dims": [
+        32,
+        16
+      ],
+      "dropout_rate": 0.1,
+      "optimizer": "adam",
+      "random_state": 1058541295,
+      "base_random_state": 1024,
+      "algorithm": "FEDAVG",
+      "reproducibility": {
+        "base_random_state": 1024,
+        "derived_seed": 1058541295,
+        "algorithm": "FEDAVG",
+        "variant": "IID",
+        "num_clients": 3,
+        "rounds": 5,
+        "local_epochs": 2
+      },
+      "partitioning_details": {
+        "partitioning": "IID",
+        "dirichlet_alpha": 0.5,
+        "num_clients": 3,
+        "client_sample_counts": {
+          "client_0": 40,
+          "client_1": 40,
+          "client_2": 40
+        }
+      }
+    },
+    "split_summary": null,
+    "seed": 1058541295
+  }
+}

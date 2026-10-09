@@ -1,0 +1,88 @@
+{
+  "name": "FedAvg Student Dropout Classifier",
+  "version": "mod_v_1_1786892265_229e55",
+  "framework": "PyTorch",
+  "checksum": "79e9bbbdf77e7aec130ba75d43a9934e86e6075c9ef698dddf00a5560b343f3b",
+  "metrics": {
+    "accuracy": 0.55,
+    "precision": 0.3529,
+    "recall": 0.4615,
+    "f1": 0.4,
+    "roc_auc": 0.5385,
+    "confusion_matrix": [
+      [
+        16,
+        11
+      ],
+      [
+        7,
+        6
+      ]
+    ]
+  },
+  "lineage": {
+    "dataset_id": 1,
+    "preprocessing_artifact_id": 1,
+    "preprocessing_version": "v_1_1786778298",
+    "feature_schema": {
+      "feature_count": 33,
+      "categorical_features": [
+        "code_module",
+        "code_presentation",
+        "gender",
+        "highest_education",
+        "imd_band",
+        "age_band",
+        "disability"
+      ],
+      "numerical_features": [
+        "num_of_prev_attempts",
+        "studied_credits",
+        "total_vle_clicks",
+        "avg_assessment_score"
+      ]
+    },
+    "hyperparameters": {
+      "artifact_id": 1,
+      "name": "FedAvg Student Dropout Classifier",
+      "num_clients": 3,
+      "partitioning": "NON_IID",
+      "dirichlet_alpha": 0.5,
+      "rounds": 5,
+      "local_epochs": 2,
+      "learning_rate": 0.01,
+      "batch_size": 16,
+      "hidden_dims": [
+        32,
+        16
+      ],
+      "dropout_rate": 0.1,
+      "optimizer": "adam",
+      "random_state": 989536954,
+      "base_random_state": 789,
+      "algorithm": "FEDAVG",
+      "reproducibility": {
+        "base_random_state": 789,
+        "derived_seed": 989536954,
+        "algorithm": "FEDAVG",
+        "variant": "NON_IID",
+        "num_clients": 3,
+        "rounds": 5,
+        "local_epochs": 2,
+        "dirichlet_alpha": 0.5
+      },
+      "partitioning_details": {
+        "partitioning": "NON_IID",
+        "dirichlet_alpha": 0.5,
+        "num_clients": 3,
+        "client_sample_counts": {
+          "client_0": 19,
+          "client_1": 12,
+          "client_2": 89
+        }
+      }
+    },
+    "split_summary": null,
+    "seed": 989536954
+  }
+}

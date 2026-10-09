@@ -1,0 +1,144 @@
+{
+  "inventory_id": "PHASE_11_EVIDENCE_INVENTORY",
+  "generated_at": "2026-08-16T16:05:09.617180+00:00",
+  "total_artifacts_audited": 15,
+  "available_count": 15,
+  "missing_count": 0,
+  "artifacts": [
+    {
+      "artifact_path": "./storage_data/phase9d_multiseed_results.json",
+      "artifact_type": "raw_benchmark_json",
+      "sha256_checksum": "f315a0ee15de52db3622071ed14bb2bfa196299b6af126ec94f605b44b55a6d9",
+      "generation_status": "AVAILABLE",
+      "source_phase": "Phase 9D",
+      "used_in_paper": true,
+      "corresponding_section": "Section 9, 10, 11 (Experimental Design & Aggregate Metrics)"
+    },
+    {
+      "artifact_path": "./storage_data/artifacts/preprocessing/v_1_1786778298/splits.npz",
+      "artifact_type": "preprocessing_splits_npz",
+      "sha256_checksum": "07b1435bd534f3ce94795f5e541a727862930c30d109850d1b088d449b156e43",
+      "generation_status": "AVAILABLE",
+      "source_phase": "Phase 9A / Lineage",
+      "used_in_paper": true,
+      "corresponding_section": "Section 4, 5 (Dataset & Preprocessing Methodology)"
+    },
+    {
+      "artifact_path": "./storage_data/phase10b_scientific_audit/scientific_audit_report.md",
+      "artifact_type": "audit_report_markdown",
+      "sha256_checksum": "5d39f0b4d84fa1aff0b0d676f2e0410ec4ac0e05fb44aa1e19035bac8238c8cf",
+      "generation_status": "AVAILABLE",
+      "source_phase": "Phase 10B",
+      "used_in_paper": true,
+      "corresponding_section": "Section 10, 17, 23 (Statistical Validation & Evidence Appendix)"
+    },
+    {
+      "artifact_path": "./storage_data/phase10b_scientific_audit/metric_recalculation.json",
+      "artifact_type": "metric_recalculation_json",
+      "sha256_checksum": "4cbae87642ca413b9214da93ca40d5ce8a74b70e7c25f0ccb39b7ef367d181b2",
+      "generation_status": "AVAILABLE",
+      "source_phase": "Phase 10B",
+      "used_in_paper": true,
+      "corresponding_section": "Section 11 (Table 1 Aggregate Performance)"
+    },
+    {
+      "artifact_path": "./storage_data/phase10b_scientific_audit/confidence_intervals.csv",
+      "artifact_type": "statistical_table_csv",
+      "sha256_checksum": "f9a6a8e15cb2263b21ab3705edc7dee5aa305a5afaac70ca399417e4bef4727b",
+      "generation_status": "AVAILABLE",
+      "source_phase": "Phase 10B",
+      "used_in_paper": true,
+      "corresponding_section": "Section 10, 23 (95% Confidence Intervals)"
+    },
+    {
+      "artifact_path": "./storage_data/phase10b_scientific_audit/paired_tests.csv",
+      "artifact_type": "hypothesis_testing_csv",
+      "sha256_checksum": "c633f6e296dbf578862e5fed18386fe74780da42395c7fcfa19630cd8e27c2bd",
+      "generation_status": "AVAILABLE",
+      "source_phase": "Phase 10B",
+      "used_in_paper": true,
+      "corresponding_section": "Section 10, 12 (Paired Statistical Comparisons)"
+    },
+    {
+      "artifact_path": "./storage_data/phase10b_scientific_audit/effect_sizes.csv",
+      "artifact_type": "effect_sizes_csv",
+      "sha256_checksum": "047c7b046f15e020d4f8c6bc69bedac14284aea8047a588aa6b696dd9fc84f3a",
+      "generation_status": "AVAILABLE",
+      "source_phase": "Phase 10B",
+      "used_in_paper": true,
+      "corresponding_section": "Section 10 (Cohen's dz & Hedges' gz)"
+    },
+    {
+      "artifact_path": "./storage_data/phase10b_scientific_audit/fedprox_mu_audit.csv",
+      "artifact_type": "hyperparameter_audit_csv",
+      "sha256_checksum": "670b780826b9fdb05f9a6ba202788398c5ff1e7da9efc58ec0fef93def9cceee",
+      "generation_status": "AVAILABLE",
+      "source_phase": "Phase 10B",
+      "used_in_paper": true,
+      "corresponding_section": "Section 13 (FedProx mu Sensitivity)"
+    },
+    {
+      "artifact_path": "./storage_data/phase10b_scientific_audit/iid_vs_noniid_audit.csv",
+      "artifact_type": "distribution_audit_csv",
+      "sha256_checksum": "6d6f9871ad7bae8571cfab2c088d5a7b812c3cbff8e5c0da88aba1f487fddd54",
+      "generation_status": "AVAILABLE",
+      "source_phase": "Phase 10B",
+      "used_in_paper": true,
+      "corresponding_section": "Section 12 (IID vs Non-IID Degradation)"
+    },
+    {
+      "artifact_path": "./storage_data/phase10b_scientific_audit/client_heterogeneity_audit.csv",
+      "artifact_type": "partition_audit_csv",
+      "sha256_checksum": "39d30882d04a001e0e52966e272b2cf422f1b10ccbb1d9ce76412fbfa9fcd671",
+      "generation_status": "AVAILABLE",
+      "source_phase": "Phase 10B",
+      "used_in_paper": true,
+      "corresponding_section": "Section 7, 12 (Client Dirichlet Skew)"
+    },
+    {
+      "artifact_path": "./storage_data/phase10b_scientific_audit/xai_evidence_audit.csv",
+      "artifact_type": "xai_overlap_csv",
+      "sha256_checksum": "4097f5eb07474f7a72474dd8149f04aa977a38a7f45cace0085f4fe31b9aad05",
+      "generation_status": "AVAILABLE",
+      "source_phase": "Phase 10B",
+      "used_in_paper": true,
+      "corresponding_section": "Section 15 (XAI Attribution Overlap & Jaccard)"
+    },
+    {
+      "artifact_path": "./storage_data/phase10b_scientific_audit/figure_audit.csv",
+      "artifact_type": "figure_verification_csv",
+      "sha256_checksum": "49258880ec000b90cd68ed5f387a150fa828ef30a6ffd4a789a368728e6eee7c",
+      "generation_status": "AVAILABLE",
+      "source_phase": "Phase 10B",
+      "used_in_paper": true,
+      "corresponding_section": "Section 24, 25 (Figure Registry)"
+    },
+    {
+      "artifact_path": "./storage_data/phase10b_scientific_audit/claim_evidence_matrix.csv",
+      "artifact_type": "claim_evidence_matrix_csv",
+      "sha256_checksum": "fdfbaba5a15c043aa8c3046f0d859f5698ef32c12a23276718086e3e8e16ea39",
+      "generation_status": "AVAILABLE",
+      "source_phase": "Phase 10B",
+      "used_in_paper": true,
+      "corresponding_section": "Section 2, 20 (Research Questions & Claim Mapping)"
+    },
+    {
+      "artifact_path": "./storage_data/phase10b_scientific_audit/scientific_limitations.json",
+      "artifact_type": "limitations_registry_json",
+      "sha256_checksum": "dca97dea99b3e6098f3a22635bb0f6f74a1661ec330986d2e98e188d44f8fda9",
+      "generation_status": "AVAILABLE",
+      "source_phase": "Phase 10B",
+      "used_in_paper": true,
+      "corresponding_section": "Section 18, 19 (Limitations & Threats to Validity)"
+    },
+    {
+      "artifact_path": "./storage_data/phase10b_scientific_audit/evidence_manifest.json",
+      "artifact_type": "audit_manifest_json",
+      "sha256_checksum": "72898834538cad980fc0bb1f0e39bf292a0e8154d8513f59781e0156ab7fe07a",
+      "generation_status": "AVAILABLE",
+      "source_phase": "Phase 10B",
+      "used_in_paper": true,
+      "corresponding_section": "Section 17 (Reproducibility & Manifest)"
+    }
+  ]
+}

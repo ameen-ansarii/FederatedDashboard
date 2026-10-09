@@ -1,0 +1,106 @@
+{
+  "report_id": "report-test-manifest-001",
+  "experiment_id": "exp-test-reporting-001",
+  "storage_prefix": "reports/exp-test-reporting-001/report-test-manifest-001",
+  "generated_at": "2026-10-09T03:15:02.985490+00:00",
+  "artifacts": [
+    {
+      "filename": "report.md",
+      "path_key": "reports/exp-test-reporting-001/report-test-manifest-001/report.md",
+      "artifact_type": "report_markdown",
+      "checksum_sha256": "9db2221a356e27ff3beb26241cf43e4f6e09d6860f436db565a4541c8eabadcb",
+      "size_bytes": 8260
+    },
+    {
+      "filename": "report.json",
+      "path_key": "reports/exp-test-reporting-001/report-test-manifest-001/report.json",
+      "artifact_type": "report_json",
+      "checksum_sha256": "6101656a94b55ecb7153f68c077417e833e279b3a311af302fbdfc190c51a6f3",
+      "size_bytes": 30762
+    },
+    {
+      "filename": "reproducibility_manifest.json",
+      "path_key": "reports/exp-test-reporting-001/report-test-manifest-001/reproducibility_manifest.json",
+      "artifact_type": "manifest_json",
+      "checksum_sha256": "2b175cefdf725b3d542971435420dacd981a0671643c6b855bb845e9fa3a1060",
+      "size_bytes": 3751
+    },
+    {
+      "filename": "model_metrics.csv",
+      "path_key": "reports/exp-test-reporting-001/report-test-manifest-001/model_metrics.csv",
+      "artifact_type": "csv_table",
+      "checksum_sha256": "d455d2cde8e99c3027c60ba099a4cfb664a2892f81397677988be8cfadcfd70d",
+      "size_bytes": 1549
+    },
+    {
+      "filename": "seed_metrics.csv",
+      "path_key": "reports/exp-test-reporting-001/report-test-manifest-001/seed_metrics.csv",
+      "artifact_type": "csv_table",
+      "checksum_sha256": "2804e75aa3b6c4c49cac80abcd42de9a4fe19d0689c1f0eaadeee74d30e47f86",
+      "size_bytes": 2728
+    },
+    {
+      "filename": "baseline_deltas.csv",
+      "path_key": "reports/exp-test-reporting-001/report-test-manifest-001/baseline_deltas.csv",
+      "artifact_type": "csv_table",
+      "checksum_sha256": "3edec242a84613c274222714d98fd72f70b74a292bdd4c14954fd5b7ace425c7",
+      "size_bytes": 1120
+    },
+    {
+      "filename": "fedprox_mu_analysis.csv",
+      "path_key": "reports/exp-test-reporting-001/report-test-manifest-001/fedprox_mu_analysis.csv",
+      "artifact_type": "csv_table",
+      "checksum_sha256": "5732d3405d038bba6263aca928ae5c48596d6995a84d6276cdcc05fde6ad4e39",
+      "size_bytes": 509
+    },
+    {
+      "filename": "fig1_model_performance.png",
+      "path_key": "reports/exp-test-reporting-001/report-test-manifest-001/fig1_model_performance.png",
+      "artifact_type": "figure_png",
+      "checksum_sha256": "c67cf655f5ac00268244a211ccd36db1233572f3c8d24e1c1b2f73649595c8a4",
+      "size_bytes": 144547
+    },
+    {
+      "filename": "fig2_f1_across_seeds.png",
+      "path_key": "reports/exp-test-reporting-001/report-test-manifest-001/fig2_f1_across_seeds.png",
+      "artifact_type": "figure_png",
+      "checksum_sha256": "0ef60d996b3ede53704a02843627103c412dc71f40f96413feb58b61b9252a48",
+      "size_bytes": 253874
+    },
+    {
+      "filename": "fig3_roc_auc_across_seeds.png",
+      "path_key": "reports/exp-test-reporting-001/report-test-manifest-001/fig3_roc_auc_across_seeds.png",
+      "artifact_type": "figure_png",
+      "checksum_sha256": "afaf7c44311f3fef0a67cd344bd3048c9a095975a19aba788c3e02b5efab140c",
+      "size_bytes": 173467
+    },
+    {
+      "filename": "fig4_fedprox_mu_sensitivity.png",
+      "path_key": "reports/exp-test-reporting-001/report-test-manifest-001/fig4_fedprox_mu_sensitivity.png",
+      "artifact_type": "figure_png",
+      "checksum_sha256": "6e5a85217a27a255cf3a873f434eca3434be04f9d9360586cd3ba6af1f002952",
+      "size_bytes": 194632
+    },
+    {
+      "filename": "fig5_iid_vs_non_iid.png",
+      "path_key": "reports/exp-test-reporting-001/report-test-manifest-001/fig5_iid_vs_non_iid.png",
+      "artifact_type": "figure_png",
+      "checksum_sha256": "6c1e8d9cef9e2b7f27358afa11fd766e0a5acb9dcc074dbe45dccc7a609428c2",
+      "size_bytes": 105203
+    },
+    {
+      "filename": "fig6_convergence.png",
+      "path_key": "reports/exp-test-reporting-001/report-test-manifest-001/fig6_convergence.png",
+      "artifact_type": "figure_png",
+      "checksum_sha256": "17534d82bae48b202264470d24ba36817e471a8d79b40083a31b7ba9e216e6ef",
+      "size_bytes": 242465
+    },
+    {
+      "filename": "fig7_client_heterogeneity.png",
+      "path_key": "reports/exp-test-reporting-001/report-test-manifest-001/fig7_client_heterogeneity.png",
+      "artifact_type": "figure_png",
+      "checksum_sha256": "19a1e7a66689341286b88191c5b0ad64af842d9a90e6e3be47ffd3f5092b7ae0",
+      "size_bytes": 136371
+    }
+  ]
+}

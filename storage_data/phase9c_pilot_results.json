@@ -1,0 +1,487 @@
+{
+  "benchmark_config": {
+    "artifact_id": 1,
+    "name": "OULAD Pilot Experiment Phase 9C",
+    "num_clients": 3,
+    "rounds": 5,
+    "local_epochs": 2,
+    "centralized_epochs": 10,
+    "batch_size": 16,
+    "learning_rate": 0.01,
+    "hidden_dims": [
+      32,
+      16
+    ],
+    "dropout_rate": 0.1,
+    "dirichlet_alpha": 0.5,
+    "mu_values": [
+      0.001,
+      0.01,
+      0.1
+    ],
+    "random_state": 42
+  },
+  "models": [
+    {
+      "model_id": 1,
+      "model_version": "mod_v_1_1786891903_e0938e",
+      "algorithm": "CENTRALIZED",
+      "variant": "BASELINE",
+      "metrics": {
+        "accuracy": 0.575,
+        "precision": 0.4,
+        "recall": 0.6154,
+        "f1": 0.4848,
+        "roc_auc": 0.5641,
+        "loss": 1.3778,
+        "confusion_matrix": [
+          [
+            15,
+            12
+          ],
+          [
+            5,
+            8
+          ]
+        ]
+      },
+      "delta_from_baseline": {
+        "delta_accuracy": 0.0,
+        "delta_f1": 0.0,
+        "delta_roc_auc": 0.0,
+        "delta_loss": 0.0
+      }
+    },
+    {
+      "model_id": 2,
+      "model_version": "mod_v_1_1786891903_af2e57",
+      "algorithm": "FEDAVG",
+      "variant": "IID",
+      "metrics": {
+        "accuracy": 0.55,
+        "precision": 0.381,
+        "recall": 0.6154,
+        "f1": 0.4706,
+        "roc_auc": 0.6838,
+        "loss": 0.7107,
+        "confusion_matrix": [
+          [
+            14,
+            13
+          ],
+          [
+            5,
+            8
+          ]
+        ]
+      },
+      "delta_from_baseline": {
+        "delta_accuracy": -0.025,
+        "delta_f1": -0.0142,
+        "delta_roc_auc": 0.1197,
+        "delta_loss": -0.6671
+      }
+    },
+    {
+      "model_id": 3,
+      "model_version": "mod_v_1_1786891904_ff253c",
+      "algorithm": "FEDAVG",
+      "variant": "NON_IID_ALPHA_0.5",
+      "metrics": {
+        "accuracy": 0.55,
+        "precision": 0.3333,
+        "recall": 0.3846,
+        "f1": 0.3571,
+        "roc_auc": 0.5897,
+        "loss": 0.6623,
+        "confusion_matrix": [
+          [
+            17,
+            10
+          ],
+          [
+            8,
+            5
+          ]
+        ]
+      },
+      "delta_from_baseline": {
+        "delta_accuracy": -0.025,
+        "delta_f1": -0.1277,
+        "delta_roc_auc": 0.0256,
+        "delta_loss": -0.7155
+      }
+    },
+    {
+      "model_id": 4,
+      "model_version": "mod_v_1_1786891905_0b8354",
+      "algorithm": "FEDPROX",
+      "variant": "NON_IID_ALPHA_0.5_MU_0.001",
+      "metrics": {
+        "accuracy": 0.6,
+        "precision": 0.4211,
+        "recall": 0.6154,
+        "f1": 0.5,
+        "roc_auc": 0.6353,
+        "loss": 0.6756,
+        "confusion_matrix": [
+          [
+            16,
+            11
+          ],
+          [
+            5,
+            8
+          ]
+        ]
+      },
+      "delta_from_baseline": {
+        "delta_accuracy": 0.025,
+        "delta_f1": 0.0152,
+        "delta_roc_auc": 0.0712,
+        "delta_loss": -0.7022
+      }
+    },
+    {
+      "model_id": 5,
+      "model_version": "mod_v_1_1786891905_671911",
+      "algorithm": "FEDPROX",
+      "variant": "NON_IID_ALPHA_0.5_MU_0.01",
+      "metrics": {
+        "accuracy": 0.55,
+        "precision": 0.3529,
+        "recall": 0.4615,
+        "f1": 0.4,
+        "roc_auc": 0.5613,
+        "loss": 0.7957,
+        "confusion_matrix": [
+          [
+            16,
+            11
+          ],
+          [
+            7,
+            6
+          ]
+        ]
+      },
+      "delta_from_baseline": {
+        "delta_accuracy": -0.025,
+        "delta_f1": -0.0848,
+        "delta_roc_auc": -0.0028,
+        "delta_loss": -0.5821
+      }
+    },
+    {
+      "model_id": 6,
+      "model_version": "mod_v_1_1786891906_8d04e3",
+      "algorithm": "FEDPROX",
+      "variant": "NON_IID_ALPHA_0.5_MU_0.1",
+      "metrics": {
+        "accuracy": 0.6,
+        "precision": 0.44,
+        "recall": 0.8462,
+        "f1": 0.5789,
+        "roc_auc": 0.661,
+        "loss": 0.6917,
+        "confusion_matrix": [
+          [
+            13,
+            14
+          ],
+          [
+            2,
+            11
+          ]
+        ]
+      },
+      "delta_from_baseline": {
+        "delta_accuracy": 0.025,
+        "delta_f1": 0.0941,
+        "delta_roc_auc": 0.0969,
+        "delta_loss": -0.6861
+      }
+    }
+  ],
+  "checksums": {
+    "1": "f4d0b9957f1fac3dd5d96d15ed47f2b6e8fcb5b1d309042f2cf9d3cf1e22e1e2",
+    "2": "7cb05cc232f00690b214c1dfb84fc44462707b4d9729d7f74ded39c3ec04c15e",
+    "3": "edef7a13eb3c9a4c1f03d6370fea51d7ba84b3359cf45ec4704a8c116cd226cb",
+    "4": "9c56277b5609a63ec566411419a8b05db811b35b0cb31ee0650d93db56353401",
+    "5": "d8afec3b1cd6334f1fde6bd638c70a08f81c329da18959400ba01e0ae5b8cfe4",
+    "6": "16f4694abc975800d23adf757541648165892d26fd56db4ea2e3cc55b9c86514"
+  },
+  "trajectories": {
+    "CENTRALIZED": {
+      "epochs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "loss": [
+        0.9518,
+        0.9551,
+        0.9946,
+        1.0875,
+        1.1285,
+        1.2726,
+        1.4764,
+        1.5254,
+        1.656,
+        1.7459
+      ],
+      "validation_accuracy": [
+        0.45,
+        0.475,
+        0.6,
+        0.45,
+        0.475,
+        0.55,
+        0.525,
+        0.55,
+        0.625,
+        0.65
+      ]
+    },
+    "FEDAVG_IID": {
+      "rounds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "loss": [
+        0.6827,
+        0.6623,
+        0.6538,
+        0.6503,
+        0.71
+      ],
+      "validation_accuracy": [
+        0.6,
+        0.675,
+        0.6,
+        0.625,
+        0.575
+      ]
+    },
+    "FEDAVG_NON_IID_ALPHA_0.5": {
+      "rounds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "loss": [
+        0.702,
+        0.6717,
+        0.6505,
+        0.6682,
+        0.6496
+      ],
+      "validation_accuracy": [
+        0.4,
+        0.625,
+        0.625,
+        0.525,
+        0.55
+      ]
+    },
+    "FEDPROX_MU_0.001": {
+      "rounds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "loss": [
+        0.7191,
+        0.7079,
+        0.6933,
+        0.6833,
+        0.7003
+      ],
+      "validation_accuracy": [
+        0.325,
+        0.325,
+        0.5,
+        0.6,
+        0.575
+      ]
+    },
+    "FEDPROX_MU_0.01": {
+      "rounds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "loss": [
+        0.6732,
+        0.6641,
+        0.6675,
+        0.6583,
+        0.6438
+      ],
+      "validation_accuracy": [
+        0.725,
+        0.525,
+        0.525,
+        0.575,
+        0.6
+      ]
+    },
+    "FEDPROX_MU_0.1": {
+      "rounds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "loss": [
+        0.6866,
+        0.6562,
+        0.6468,
+        0.644,
+        0.6577
+      ],
+      "validation_accuracy": [
+        0.6,
+        0.675,
+        0.65,
+        0.675,
+        0.6
+      ]
+    }
+  },
+  "client_distributions": {
+    "iid": {
+      "strategy": "IID",
+      "num_clients": 3,
+      "dirichlet_alpha": null,
+      "total_samples": 120,
+      "client_breakdown": {
+        "client_1": {
+          "sample_count": 40,
+          "class_0_count": 25,
+          "class_1_count": 15,
+          "class_0_ratio": 0.625,
+          "class_1_ratio": 0.375
+        },
+        "client_2": {
+          "sample_count": 40,
+          "class_0_count": 28,
+          "class_1_count": 12,
+          "class_0_ratio": 0.7,
+          "class_1_ratio": 0.3
+        },
+        "client_3": {
+          "sample_count": 40,
+          "class_0_count": 28,
+          "class_1_count": 12,
+          "class_0_ratio": 0.7,
+          "class_1_ratio": 0.3
+        }
+      }
+    },
+    "non_iid": {
+      "strategy": "NON_IID",
+      "num_clients": 3,
+      "dirichlet_alpha": 0.5,
+      "total_samples": 120,
+      "client_breakdown": {
+        "client_1": {
+          "sample_count": 22,
+          "class_0_count": 17,
+          "class_1_count": 5,
+          "class_0_ratio": 0.7727,
+          "class_1_ratio": 0.2273
+        },
+        "client_2": {
+          "sample_count": 51,
+          "class_0_count": 44,
+          "class_1_count": 7,
+          "class_0_ratio": 0.8627,
+          "class_1_ratio": 0.1373
+        },
+        "client_3": {
+          "sample_count": 47,
+          "class_0_count": 20,
+          "class_1_count": 27,
+          "class_0_ratio": 0.4255,
+          "class_1_ratio": 0.5745
+        }
+      }
+    }
+  },
+  "mu_analysis": [
+    {
+      "mu": 0.001,
+      "accuracy": 0.6,
+      "f1": 0.5,
+      "roc_auc": 0.6353,
+      "loss": 0.6756,
+      "delta_f1_vs_centralized": 0.0152,
+      "delta_f1_vs_fedavg_non_iid": 0.1429
+    },
+    {
+      "mu": 0.01,
+      "accuracy": 0.55,
+      "f1": 0.4,
+      "roc_auc": 0.5613,
+      "loss": 0.7957,
+      "delta_f1_vs_centralized": -0.0848,
+      "delta_f1_vs_fedavg_non_iid": 0.0429
+    },
+    {
+      "mu": 0.1,
+      "accuracy": 0.6,
+      "f1": 0.5789,
+      "roc_auc": 0.661,
+      "loss": 0.6917,
+      "delta_f1_vs_centralized": 0.0941,
+      "delta_f1_vs_fedavg_non_iid": 0.2218
+    }
+  ],
+  "reproducibility": {
+    "base_random_state": 42,
+    "derived_seeds": {
+      "centralized": 1195991226,
+      "fedavg_iid": 644915249,
+      "fedavg_non_iid": 595050917,
+      "fedprox_mu_0.001": 1825270140,
+      "fedprox_mu_0.01": 481180090,
+      "fedprox_mu_0.1": 655387260
+    },
+    "artifact_id": 1,
+    "num_clients": 3,
+    "rounds": 5,
+    "local_epochs": 2,
+    "centralized_epochs": 10,
+    "batch_size": 16,
+    "learning_rate": 0.01,
+    "hidden_dims": [
+      32,
+      16
+    ],
+    "dropout_rate": 0.1,
+    "dirichlet_alpha": 0.5,
+    "mu_values": [
+      0.001,
+      0.01,
+      0.1
+    ]
+  }
+}

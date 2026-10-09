@@ -1,0 +1,135 @@
+{
+  "manifest_version": "1.0",
+  "generated_at": "2026-08-16 16:07:21.859696+00:00",
+  "experiment_id": "exp-test-reporting-001",
+  "dataset_name": "OULAD Report Benchmark",
+  "dataset_id": 1,
+  "preprocessing_artifact_version": "v_1_1786896441_8df7d7",
+  "preprocessing_artifact_id": 1,
+  "test_split_sample_count": 40,
+  "feature_dimension": 18,
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ],
+  "derived_seeds_by_seed": {
+    "42": {
+      "BASELINE": 42042,
+      "IID": 42042,
+      "NON_IID_ALPHA_0.5": 42042,
+      "NON_IID_ALPHA_0.5_MU_0.001": 42042,
+      "NON_IID_ALPHA_0.5_MU_0.01": 42042,
+      "NON_IID_ALPHA_0.5_MU_0.1": 42042
+    },
+    "123": {
+      "BASELINE": 123042,
+      "IID": 123042,
+      "NON_IID_ALPHA_0.5": 123042,
+      "NON_IID_ALPHA_0.5_MU_0.001": 123042,
+      "NON_IID_ALPHA_0.5_MU_0.01": 123042,
+      "NON_IID_ALPHA_0.5_MU_0.1": 123042
+    },
+    "456": {
+      "BASELINE": 456042,
+      "IID": 456042,
+      "NON_IID_ALPHA_0.5": 456042,
+      "NON_IID_ALPHA_0.5_MU_0.001": 456042,
+      "NON_IID_ALPHA_0.5_MU_0.01": 456042,
+      "NON_IID_ALPHA_0.5_MU_0.1": 456042
+    },
+    "789": {
+      "BASELINE": 789042,
+      "IID": 789042,
+      "NON_IID_ALPHA_0.5": 789042,
+      "NON_IID_ALPHA_0.5_MU_0.001": 789042,
+      "NON_IID_ALPHA_0.5_MU_0.01": 789042,
+      "NON_IID_ALPHA_0.5_MU_0.1": 789042
+    },
+    "1024": {
+      "BASELINE": 1024042,
+      "IID": 1024042,
+      "NON_IID_ALPHA_0.5": 1024042,
+      "NON_IID_ALPHA_0.5_MU_0.001": 1024042,
+      "NON_IID_ALPHA_0.5_MU_0.01": 1024042,
+      "NON_IID_ALPHA_0.5_MU_0.1": 1024042
+    }
+  },
+  "model_checksums_by_seed": {
+    "42": {
+      "BASELINE": "chk_42_0.5",
+      "IID": "chk_42_0.45",
+      "NON_IID_ALPHA_0.5": "chk_42_0.38",
+      "NON_IID_ALPHA_0.5_MU_0.001": "chk_42_0.35",
+      "NON_IID_ALPHA_0.5_MU_0.01": "chk_42_0.41",
+      "NON_IID_ALPHA_0.5_MU_0.1": "chk_42_0.37"
+    },
+    "123": {
+      "BASELINE": "chk_123_0.5",
+      "IID": "chk_123_0.45",
+      "NON_IID_ALPHA_0.5": "chk_123_0.38",
+      "NON_IID_ALPHA_0.5_MU_0.001": "chk_123_0.35",
+      "NON_IID_ALPHA_0.5_MU_0.01": "chk_123_0.41",
+      "NON_IID_ALPHA_0.5_MU_0.1": "chk_123_0.37"
+    },
+    "456": {
+      "BASELINE": "chk_456_0.5",
+      "IID": "chk_456_0.45",
+      "NON_IID_ALPHA_0.5": "chk_456_0.38",
+      "NON_IID_ALPHA_0.5_MU_0.001": "chk_456_0.35",
+      "NON_IID_ALPHA_0.5_MU_0.01": "chk_456_0.41",
+      "NON_IID_ALPHA_0.5_MU_0.1": "chk_456_0.37"
+    },
+    "789": {
+      "BASELINE": "chk_789_0.5",
+      "IID": "chk_789_0.45",
+      "NON_IID_ALPHA_0.5": "chk_789_0.38",
+      "NON_IID_ALPHA_0.5_MU_0.001": "chk_789_0.35",
+      "NON_IID_ALPHA_0.5_MU_0.01": "chk_789_0.41",
+      "NON_IID_ALPHA_0.5_MU_0.1": "chk_789_0.37"
+    },
+    "1024": {
+      "BASELINE": "chk_1024_0.5",
+      "IID": "chk_1024_0.45",
+      "NON_IID_ALPHA_0.5": "chk_1024_0.38",
+      "NON_IID_ALPHA_0.5_MU_0.001": "chk_1024_0.35",
+      "NON_IID_ALPHA_0.5_MU_0.01": "chk_1024_0.41",
+      "NON_IID_ALPHA_0.5_MU_0.1": "chk_1024_0.37"
+    }
+  },
+  "architecture": {
+    "model_type": "DropoutMLP",
+    "input_dim": 18,
+    "hidden_dims": [
+      32,
+      16
+    ],
+    "output_dim": 1,
+    "dropout_rate": 0.1
+  },
+  "hyperparameters": {
+    "optimizer": "adam",
+    "learning_rate": 0.01,
+    "batch_size": 16,
+    "num_clients": 3,
+    "federated_rounds": 5,
+    "local_epochs": 2,
+    "centralized_epochs": 10,
+    "dirichlet_alpha": 0.5,
+    "fedprox_mu_values": [
+      0.001,
+      0.01,
+      0.1
+    ]
+  },
+  "system_runtime": {
+    "python_version": "3.13.14",
+    "platform": "Linux-7.0.12+kali-amd64-x86_64-with-glibc2.42",
+    "os": "Linux",
+    "numpy_version": "2.5.2",
+    "seed_isolation_engine": "app.core.reproducibility.py",
+    "rng_generator": "torch.Generator(device='cpu')"
+  }
+}
