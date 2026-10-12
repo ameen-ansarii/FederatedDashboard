@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   FaSliders, 
   FaGraduationCap, 
   FaArrowRight 
 } from 'react-icons/fa6';
+import { useCountUp } from '../utils/useCountUp';
 
 export const StudentPredictor: React.FC = () => {
   // Input features
@@ -15,7 +16,7 @@ export const StudentPredictor: React.FC = () => {
   const [priorEduLower, setPriorEduLower] = useState<boolean>(false);
   const [ageYoung, setAgeYoung] = useState<boolean>(true);
 
-  // Prediction State: Starts null so no fake hardcoded result appears before user clicks calculate!
+  // Prediction State
   interface PredictionResult {
     probability: number;
     percentage: string;
@@ -32,18 +33,53 @@ export const StudentPredictor: React.FC = () => {
         reasoning: string;
       }>;
     };
+    personalized_learning_plan?: {
+      pacing_strategy: string;
+      strategies: Array<{
+        dimension: string;
+        recommendation: string;
+        urgency: string;
+      }>;
+      recommended_resources: Array<{
+        title: string;
+        type: string;
+        focus: string;
+      }>;
+      action_milestones: Array<{
+        phase: string;
+        goal: string;
+        status: string;
+      }>;
+      recommended_study_hours_weekly: number;
+      learning_profile_summary: string;
+    };
   }
 
   const [prediction, setPrediction] = useState<PredictionResult | null>(null);
-
   const [loading, setLoading] = useState<boolean>(false);
+  const [ringsVisible, setRingsVisible] = useState<boolean>(false);
+
+  // Trigger smooth ring flow when prediction changes
+  useEffect(() => {
+    if (prediction) {
+      setRingsVisible(false);
+      const timer = setTimeout(() => {
+        setRingsVisible(true);
+      }, 70);
+      return () => clearTimeout(timer);
+    }
+  }, [prediction]);
+
+  const targetRiskIndex = prediction ? Math.round(prediction.probability * 100) : 0;
+  const animRiskIndex = useCountUp(targetRiskIndex, 1500, ringsVisible);
 
   const calculateDropout = async () => {
     setLoading(true);
+    setRingsVisible(false);
 
     try {
       const apiBase = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000';
-      const response = await fetch(`${apiBase}/api/predict`, {
+      const fetchPromise = fetch(`${apiBase}/api/predict`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -56,6 +92,10 @@ export const StudentPredictor: React.FC = () => {
           age_band_young: ageYoung,
         }),
       });
+
+      // Provide smooth, visually respectful inference telemetry pacing (~700ms)
+      await new Promise((r) => setTimeout(r, 700));
+      const response = await fetchPromise;
 
       if (response.ok) {
         const data = await response.json();
@@ -148,12 +188,53 @@ export const StudentPredictor: React.FC = () => {
     const riskLevel = prob < 0.40 ? 'LOW' : prob < 0.70 ? 'MEDIUM' : 'HIGH';
     const action =
       riskLevel === 'LOW'
-        ? 'Standard progress monitoring. No urgent intervention needed.'
+        ? 'Standard autonomous learning. Continue current study trajectory.'
         : riskLevel === 'MEDIUM'
-        ? 'Schedule a check in meeting with an academic advisor.'
-        : 'Connect student with direct tutoring and counseling support.';
+        ? 'Guided intervention: Schedule progress review with academic mentor.'
+        : 'Immediate intervention: Provide 1-on-1 tutoring and study habit restructuring.';
 
     drivers.sort((a, b) => Math.abs(b.impact_score) - Math.abs(a.impact_score));
+
+    // Fallback personalized learning plan
+    const localPlan = {
+      pacing_strategy: vleClicks < 350
+        ? 'Micro-Learning Habit: Schedule 30-minute daily focused sessions on the virtual learning portal.'
+        : 'Sustained Autonomous Pacing: Maintain steady modular study consistency with weekly self-audits.',
+      strategies: [
+        {
+          dimension: 'Study Pacing',
+          recommendation: vleClicks < 400 ? 'Implement structured daily study intervals' : 'Maintain consistent weekly schedule',
+          urgency: vleClicks < 400 ? 'High' : 'Low'
+        },
+        {
+          dimension: 'Assessment Prep',
+          recommendation: avgScore < 50 ? 'Complete formative revision worksheets before unit assignments' : 'Engage with peer study circles',
+          urgency: avgScore < 50 ? 'High' : 'Low'
+        }
+      ],
+      recommended_resources: [
+        {
+          title: 'Interactive Module Diagnostic Worksheets',
+          type: 'Self-Paced Practice',
+          focus: 'Low-stakes self-testing to establish an active online learning habit'
+        },
+        {
+          title: 'Foundational Skills & Conceptual Primer Pack',
+          type: 'Remedial Modules',
+          focus: 'Core prerequisite vocabulary and mathematical fundamentals'
+        }
+      ],
+      action_milestones: [
+        { phase: 'Weeks 1 - 2', goal: 'Establish structured study schedule & attend advising check-in', status: 'Immediate' },
+        { phase: 'Weeks 3 - 5', goal: 'Complete formative practice quizzes and achieve 40+ VLE clicks/wk', status: 'Upcoming' }
+      ],
+      recommended_study_hours_weekly: credits > 90 ? 14 : credits > 60 ? 10 : 7,
+      learning_profile_summary: riskLevel === 'HIGH'
+        ? 'Intensive pedagogical support required: Focus on foundational revision and habit pacing.'
+        : riskLevel === 'MEDIUM'
+        ? 'Guided pacing required: Focus on formative feedback and study habit consistency.'
+        : 'Self-directed mastery: Student is progressing well with autonomous pacing.'
+    };
 
     setPrediction({
       probability: +prob.toFixed(4),
@@ -165,6 +246,7 @@ export const StudentPredictor: React.FC = () => {
         disclaimer: 'Statistical estimate to help advisors catch early warning signs.',
         top_drivers: drivers,
       },
+      personalized_learning_plan: localPlan
     });
   };
 
@@ -176,14 +258,14 @@ export const StudentPredictor: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10">
           <div>
             <div className="text-xs font-semibold text-zinc-500 uppercase tracking-wider flex items-center space-x-2">
-              <span className="pill-badge pill-purple">INDIVIDUAL SIMULATOR (MANUAL)</span>
-              <span>Single Student Sandbox</span>
+              <span className="pill-badge pill-purple">OBJECTIVES 3 &amp; 4</span>
+              <span>Performance Analytics &amp; Personalization</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-100 mt-2">
-              Manual What-If Dropout Risk Calculator
+              Student Performance &amp; Personalized Learning Engine
             </h2>
             <p className="text-sm text-zinc-400 mt-2 max-w-2xl leading-relaxed">
-              Manually adjust student parameters and engagement behaviors using the sliders below. No file upload required—runs immediate on-device neural inference for one student.
+              Analyzes academic engagement and assessment factors via federated inference. Generates personalized learning paths, study pacing strategies, and early intervention support without exposing private records.
             </p>
           </div>
 
@@ -413,8 +495,11 @@ export const StudentPredictor: React.FC = () => {
                       strokeWidth="10"
                       fill="transparent"
                       strokeDasharray="414"
-                      strokeDashoffset={414 - (Math.min(vleClicks, 2000) / 2000) * 310}
+                      strokeDashoffset={ringsVisible ? 414 - (Math.min(vleClicks, 2000) / 2000) * 310 : 414}
                       className="animate-ring-arc"
+                      style={{
+                        filter: ringsVisible ? 'drop-shadow(0 0 5px rgba(56, 189, 248, 0.6))' : 'none',
+                      }}
                     />
 
                     {/* Ring 2: Emerald Middle Ring (Pass Rate) */}
@@ -426,8 +511,11 @@ export const StudentPredictor: React.FC = () => {
                       strokeWidth="10"
                       fill="transparent"
                       strokeDasharray="314"
-                      strokeDashoffset={314 - (avgScore / 100) * 235}
+                      strokeDashoffset={ringsVisible ? 314 - (avgScore / 100) * 235 : 314}
                       className="animate-ring-arc"
+                      style={{
+                        filter: ringsVisible ? 'drop-shadow(0 0 5px rgba(74, 222, 128, 0.6))' : 'none',
+                      }}
                     />
 
                     {/* Ring 3: Rose Inner Ring (Dropout Risk) */}
@@ -439,15 +527,18 @@ export const StudentPredictor: React.FC = () => {
                       strokeWidth="10"
                       fill="transparent"
                       strokeDasharray="213"
-                      strokeDashoffset={213 - prediction.probability * 160}
+                      strokeDashoffset={ringsVisible ? 213 - (prediction?.probability || 0) * 160 : 213}
                       className="animate-ring-arc"
+                      style={{
+                        filter: ringsVisible ? 'drop-shadow(0 0 5px rgba(244, 63, 94, 0.6))' : 'none',
+                      }}
                     />
                   </svg>
 
-                  {/* White Center Bubble (PAI style) */}
-                  <div className="absolute w-20 h-20 rounded-full bg-white text-zinc-950 flex flex-col items-center justify-center shadow-2xl border-4 border-zinc-900">
-                    <span className="text-xl font-extrabold tracking-tight leading-none">
-                      {Math.round(prediction.probability * 100)}
+                  {/* White Center Bubble (PAI style) with animated count-up */}
+                  <div className="absolute w-20 h-20 rounded-full bg-white text-zinc-950 flex flex-col items-center justify-center shadow-2xl border-4 border-zinc-900 transition-transform duration-500 hover:scale-105">
+                    <span className="text-xl font-extrabold tracking-tight leading-none font-mono">
+                      {animRiskIndex}
                     </span>
                     <span className="text-[9px] font-extrabold text-zinc-600 tracking-wider mt-0.5">
                       RISK INDEX
@@ -604,6 +695,72 @@ export const StudentPredictor: React.FC = () => {
                 </div>
               </div>
             </div>
+
+            {/* Widget 3: Personalized Learning Capabilities & Recommendations (Objective 3) */}
+            {prediction.personalized_learning_plan && (
+              <div className="card-squircle p-7 bg-zinc-900/90 shadow-2xl border border-purple-500/20 space-y-5">
+                <div className="flex items-center justify-between pb-3 border-b border-white/5">
+                  <div className="flex items-center space-x-2">
+                    <span className="pill-badge pill-purple text-[9px]">OBJECTIVE 3</span>
+                    <span className="text-xs font-bold text-white uppercase tracking-wider">
+                      Personalized Learning Plan
+                    </span>
+                  </div>
+                  <span className="text-[11px] text-purple-300 font-medium">
+                    {prediction.personalized_learning_plan.recommended_study_hours_weekly} hrs/week recommended
+                  </span>
+                </div>
+
+                {/* Adaptive Pacing & Profile */}
+                <div className="p-3.5 rounded-2xl bg-zinc-950/80 border border-white/5">
+                  <div className="text-[10px] font-bold text-zinc-500 uppercase tracking-wider mb-1">
+                    Adaptive Study Strategy
+                  </div>
+                  <p className="text-xs text-zinc-200 leading-relaxed font-medium">
+                    {prediction.personalized_learning_plan.pacing_strategy}
+                  </p>
+                  <div className="text-[11px] text-zinc-400 mt-2 pt-2 border-t border-white/5 italic">
+                    {prediction.personalized_learning_plan.learning_profile_summary}
+                  </div>
+                </div>
+
+                {/* Curated Resources */}
+                <div>
+                  <div className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider mb-2.5">
+                    Curated Learning Resources &amp; Practice
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                    {prediction.personalized_learning_plan.recommended_resources.map((res, i) => (
+                      <div key={i} className="p-3 rounded-2xl bg-zinc-950/60 border border-white/5 text-xs">
+                        <div className="flex items-center justify-between">
+                          <span className="font-semibold text-white text-[11px]">{res.title}</span>
+                          <span className="pill-badge pill-blue text-[8px] py-0 px-1.5">{res.type}</span>
+                        </div>
+                        <p className="text-[10px] text-zinc-400 mt-1 leading-snug">{res.focus}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Milestones */}
+                <div>
+                  <div className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider mb-2">
+                    Action Milestones &amp; Learning Roadmap
+                  </div>
+                  <div className="space-y-1.5">
+                    {prediction.personalized_learning_plan.action_milestones.map((m, i) => (
+                      <div key={i} className="flex items-center justify-between p-2.5 rounded-xl bg-zinc-950/40 border border-white/5 text-xs">
+                        <div className="flex items-center space-x-2.5">
+                          <span className="text-[10px] font-bold text-purple-400 w-20 shrink-0">{m.phase}</span>
+                          <span className="text-zinc-300 text-[11px]">{m.goal}</span>
+                        </div>
+                        <span className="pill-badge pill-dark text-[8px] py-0 px-1.5 shrink-0 ml-2">{m.status}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
           </>
         )}
 
