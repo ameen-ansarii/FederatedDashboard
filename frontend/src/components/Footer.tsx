@@ -13,10 +13,10 @@ export const Footer: React.FC = () => {
             </div>
             <div>
               <div className="text-zinc-200 font-semibold tracking-tight uppercase">
-                Federated Student Retention
+                Federated Learning-Based Education System
               </div>
-              <div className="text-[11px] text-zinc-500 font-medium">
-                Masters thesis research based on the Open University dataset
+              <div className="text-[11px] text-zinc-400 font-medium">
+                Privacy-Preserving Student Performance Analytics &amp; Personalized Learning
               </div>
             </div>
           </div>
