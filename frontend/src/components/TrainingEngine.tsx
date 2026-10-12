@@ -146,20 +146,20 @@ export const TrainingEngine: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10">
           <div>
             <div className="text-xs font-semibold text-zinc-500 uppercase tracking-wider flex items-center space-x-2">
-              <span className="pill-badge pill-purple">RESEARCH &amp; OPTIMIZATION</span>
-              <span>Federated Learning Engine</span>
+              <span className="pill-badge pill-purple">OBJECTIVES 1 &amp; 2</span>
+              <span>Collaborative Federated Engine</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-100 mt-2">
-              Train Model Across 3 Isolated Campuses
+              Collaborative Federated Training Engine
             </h2>
             <p className="text-sm text-zinc-400 mt-2 max-w-2xl leading-relaxed">
-              Colleges train local PyTorch models on their own private student records (1,350 total records). The coordinator only receives encrypted weight updates, keeping raw student data strictly on-premises.
+              Enables collaborative machine learning across distributed educational institutions without sharing raw student data. Faculties train local PyTorch models on their isolated student records, communicating only compact 4.69 KB weight updates.
             </p>
           </div>
 
           <div className="mt-4 md:mt-0 flex items-center space-x-2 border border-zinc-800 bg-zinc-900 px-3.5 py-1.5 text-xs font-medium text-zinc-300 rounded-full shadow-sm">
             <FaShieldHalved className="w-3.5 h-3.5 text-emerald-400" />
-            <span>PyTorch 2.x • Zero Raw Data Shared</span>
+            <span>99.85% Comm Saved • Zero Raw Data Shared</span>
           </div>
         </div>
 
@@ -464,9 +464,9 @@ export const TrainingEngine: React.FC = () => {
             </div>
 
             {/* Privacy audit footer */}
-            <div className="mt-6 pt-4 border-t border-white/5 text-[11px] font-medium text-zinc-500 flex items-center justify-between">
-              <span>Encrypted parameter aggregation</span>
-              <span className="text-emerald-400 font-semibold">100% Student data residency preserved</span>
+            <div className="mt-6 pt-4 border-t border-white/5 text-[11px] font-medium text-zinc-500 flex flex-wrap items-center justify-between gap-2">
+              <span>Comm. Efficiency: 4.69 KB / round (99.85% bandwidth reduction)</span>
+              <span className="text-emerald-400 font-semibold">100% Student data residency preserved on edge</span>
             </div>
 
           </div>
