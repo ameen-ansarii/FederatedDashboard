@@ -19,9 +19,9 @@ export const Hero: React.FC<HeroProps> = ({ onExplore }) => {
           className="inline-flex items-center space-x-2 px-3 py-1 border border-zinc-800 bg-zinc-900 text-xs font-medium text-zinc-300 mb-6 rounded"
         >
           <FaLock className="w-3 h-3 text-zinc-400" />
-          <span>Masters project</span>
+          <span>Federated Learning Research</span>
           <span className="text-zinc-600">/</span>
-          <span className="text-zinc-400">Open University learning dataset</span>
+          <span className="text-zinc-400">Distributed Education &amp; Personalized Learning</span>
         </motion.div>
 
         {/* Title */}
@@ -31,7 +31,7 @@ export const Hero: React.FC<HeroProps> = ({ onExplore }) => {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-100 max-w-4xl leading-[1.1]"
         >
-          Predicting student dropout without sharing personal records
+          Federated Learning-Based Education System
         </motion.h1>
 
         {/* Description */}
@@ -41,7 +41,7 @@ export const Hero: React.FC<HeroProps> = ({ onExplore }) => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mt-6 text-base sm:text-lg text-zinc-400 max-w-3xl leading-relaxed"
         >
-          Colleges train a shared PyTorch model locally. Student records stay on their own servers, and only model updates travel to the coordinator. The system flags early warning signs and explains which factors drive the risk.
+          Collaborative machine learning across distributed educational institutions without sharing raw student data. The system identifies students academically at risk, preserves privacy, provides Explainable AI (XAI) insights, and generates personalized learning recommendations.
         </motion.p>
 
         {/* Action Buttons */}
@@ -52,18 +52,18 @@ export const Hero: React.FC<HeroProps> = ({ onExplore }) => {
           className="mt-8 flex flex-wrap gap-3"
         >
           <button
-            onClick={() => onExplore('batch')}
+            onClick={() => onExplore('predictor')}
             className="inline-flex items-center space-x-2 px-5 py-2.5 bg-zinc-100 text-zinc-950 font-semibold text-xs tracking-wider uppercase rounded hover:bg-white transition-colors"
           >
-            <span>Upload Student CSV (Real Batch)</span>
+            <span>Personalized Learning &amp; Risk Predictor</span>
             <FaArrowRight className="w-3.5 h-3.5" />
           </button>
 
           <button
-            onClick={() => onExplore('predictor')}
+            onClick={() => onExplore('batch')}
             className="inline-flex items-center space-x-2 px-5 py-2.5 border border-zinc-700 bg-zinc-900 text-zinc-200 font-semibold text-xs tracking-wider uppercase rounded hover:border-zinc-400 hover:text-white transition-colors"
           >
-            <span>Single Student Predictor</span>
+            <span>Cohort Batch Upload (CSV)</span>
           </button>
 
           <button
@@ -71,7 +71,7 @@ export const Hero: React.FC<HeroProps> = ({ onExplore }) => {
             className="inline-flex items-center space-x-2 px-5 py-2.5 border border-zinc-800 bg-zinc-900/50 text-zinc-400 font-semibold text-xs tracking-wider uppercase rounded hover:border-zinc-700 hover:text-zinc-200 transition-colors"
           >
             <FaBolt className="w-3.5 h-3.5 text-zinc-500" />
-            <span>Federated Training</span>
+            <span>Federated Training (FedProx / FedAvg)</span>
           </button>
 
           <button
@@ -79,7 +79,7 @@ export const Hero: React.FC<HeroProps> = ({ onExplore }) => {
             className="inline-flex items-center space-x-2 px-5 py-2.5 border border-zinc-800 bg-zinc-900/50 text-zinc-400 font-semibold text-xs tracking-wider uppercase rounded hover:border-zinc-700 hover:text-zinc-200 transition-colors"
           >
             <FaBuildingColumns className="w-3.5 h-3.5 text-zinc-500" />
-            <span>View test benchmarks</span>
+            <span>System Evaluation</span>
           </button>
         </motion.div>
 
@@ -97,10 +97,10 @@ export const Hero: React.FC<HeroProps> = ({ onExplore }) => {
             </div>
             <div className="mt-6">
               <h3 className="text-xl font-bold tracking-tight text-white">4.69 KB</h3>
-              <p className="text-xs text-zinc-400 mt-2 leading-relaxed">PyTorch MLP with 449 parameters running zero-leakage local training.</p>
+              <p className="text-xs text-zinc-400 mt-2 leading-relaxed">Compact PyTorch neural architecture enabling zero-leakage local gradient training.</p>
             </div>
             <div className="mt-4 pt-3 border-t border-white/5 text-[10px] font-semibold text-zinc-500 uppercase tracking-wider">
-              MODEL SIZE
+              MODEL WEIGHTS
             </div>
           </div>
 
@@ -111,38 +111,38 @@ export const Hero: React.FC<HeroProps> = ({ onExplore }) => {
             </div>
             <div className="mt-6">
               <h3 className="text-xl font-bold tracking-tight text-white">0 records</h3>
-              <p className="text-xs text-zinc-400 mt-2 leading-relaxed">Zero raw student logs transmitted outside local campus boundaries.</p>
+              <p className="text-xs text-zinc-400 mt-2 leading-relaxed">Zero raw student logs transmitted outside local campus node boundaries.</p>
             </div>
             <div className="mt-4 pt-3 border-t border-white/5 text-[10px] font-semibold text-zinc-500 uppercase tracking-wider">
-              PRIVACY GUARANTEE
+              PRIVACY PRESERVATION
             </div>
           </div>
 
           <div className="card-squircle p-6 flex flex-col justify-between group">
             <div className="flex items-center justify-between">
-              <span className="pill-badge pill-amber">Performance</span>
+              <span className="pill-badge pill-amber">Comm. Efficiency</span>
               <span className="text-zinc-600 group-hover:text-zinc-400 transition-colors text-xs">●●●</span>
             </div>
             <div className="mt-6">
-              <h3 className="text-xl font-bold tracking-tight text-white">&lt; 1.2 ms</h3>
-              <p className="text-xs text-zinc-400 mt-2 leading-relaxed">High-throughput CPU neural inference with sub-millisecond evaluation.</p>
+              <h3 className="text-xl font-bold tracking-tight text-white">99.85%</h3>
+              <p className="text-xs text-zinc-400 mt-2 leading-relaxed">Bandwidth reduction compared to centralized pooling of student records.</p>
             </div>
             <div className="mt-4 pt-3 border-t border-white/5 text-[10px] font-semibold text-zinc-500 uppercase tracking-wider">
-              CPU INFERENCE
+              COMMUNICATION EFFICIENCY
             </div>
           </div>
 
           <div className="card-squircle p-6 flex flex-col justify-between group">
             <div className="flex items-center justify-between">
-              <span className="pill-badge pill-rose">Explainability</span>
+              <span className="pill-badge pill-rose">Personalization</span>
               <span className="text-zinc-600 group-hover:text-zinc-400 transition-colors text-xs">●●●</span>
             </div>
             <div className="mt-6">
-              <h3 className="text-xl font-bold tracking-tight text-white">Saliency &amp; SHAP</h3>
-              <p className="text-xs text-zinc-400 mt-2 leading-relaxed">Gradient attribution reveals exactly what drives individual dropout risk.</p>
+              <h3 className="text-xl font-bold tracking-tight text-white">Adaptive Plans</h3>
+              <p className="text-xs text-zinc-400 mt-2 leading-relaxed">Tailored study pacing, curated resources, and milestone guidance.</p>
             </div>
             <div className="mt-4 pt-3 border-t border-white/5 text-[10px] font-semibold text-zinc-500 uppercase tracking-wider">
-              XAI ENGINE
+              PERSONALIZED LEARNING
             </div>
           </div>
         </motion.div>

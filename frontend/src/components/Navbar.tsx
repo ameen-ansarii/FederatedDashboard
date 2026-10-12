@@ -19,14 +19,14 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
           <div>
             <div className="flex items-center space-x-2">
               <span className="font-bold text-sm tracking-tight text-white uppercase">
-                Student Retention
+                FL Education System
               </span>
               <span className="pill-badge pill-purple text-[9px] py-0 px-2">
-                FEDERATED ML
+                FEDERATED AI
               </span>
             </div>
-            <p className="text-[11px] text-zinc-500 font-medium hidden sm:block">
-              Privacy-preserving learning analytics platform
+            <p className="text-[11px] text-zinc-400 font-medium hidden sm:block">
+              Privacy-Preserving Analytics & Personalized Learning
             </p>
           </div>
         </div>
@@ -34,11 +34,11 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
         {/* Navigation Tabs */}
         <nav className="hidden md:flex items-center space-x-1.5 border border-white/5 bg-zinc-900/90 p-1.5 rounded-full shadow-inner">
           {[
-            { id: 'batch', label: 'Batch CSV Upload' },
-            { id: 'topology', label: 'Campuses' },
+            { id: 'topology', label: 'Institutions' },
             { id: 'training', label: 'Federated Training' },
-            { id: 'predictor', label: 'Risk Predictor' },
-            { id: 'benchmarks', label: 'Test Benchmarks' },
+            { id: 'batch', label: 'Cohort Analytics' },
+            { id: 'predictor', label: 'Personalized Learning' },
+            { id: 'benchmarks', label: 'System Evaluation' },
           ].map((tab) => (
             <button
               key={tab.id}
@@ -58,7 +58,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
         <div className="flex items-center space-x-2">
           <div className="flex items-center space-x-2 px-3.5 py-1.5 border border-white/5 bg-zinc-900/80 text-xs font-medium text-zinc-300 rounded-full shadow-sm">
             <FaLock className="w-3.5 h-3.5 text-emerald-400" />
-            <span className="text-zinc-200">Zero Data Leakage</span>
+            <span className="text-zinc-200">Zero Raw Data Shared</span>
           </div>
         </div>
       </div>

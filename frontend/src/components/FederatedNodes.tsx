@@ -69,20 +69,21 @@ export const FederatedNodes: React.FC = () => {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10">
           <div>
-            <div className="text-xs font-semibold text-zinc-500 uppercase tracking-wider">
-              Campus network
+            <div className="text-xs font-semibold text-zinc-500 uppercase tracking-wider flex items-center space-x-2">
+              <span className="pill-badge pill-purple">OBJECTIVES 1 &amp; 2</span>
+              <span>Collaborative Distributed ML</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-100 mt-1">
-              How campuses train together without sharing student records
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-100 mt-2">
+              Distributed Educational Institutions &amp; Privacy Topology
             </h2>
-            <p className="text-sm text-zinc-400 mt-2 max-w-2xl">
-              Each department runs training locally on its own students. Only model weight adjustments leave the building, keeping personal files and grades private.
+            <p className="text-sm text-zinc-400 mt-2 max-w-2xl leading-relaxed">
+              Enables collaborative machine learning across distributed educational faculties and student devices without sharing raw data. Model weights train locally on student cohorts while preserving absolute privacy and confidentiality.
             </p>
           </div>
 
-          <div className="mt-4 md:mt-0 flex items-center space-x-2 border border-zinc-800 bg-zinc-900 px-3 py-1.5 text-xs font-medium text-zinc-300 rounded">
-            <FaShieldHalved className="w-3.5 h-3.5 text-zinc-300" />
-            <span>Independent campus partitions</span>
+          <div className="mt-4 md:mt-0 flex items-center space-x-2 border border-zinc-800 bg-zinc-900 px-3.5 py-1.5 text-xs font-medium text-zinc-300 rounded-full shadow-sm">
+            <FaShieldHalved className="w-3.5 h-3.5 text-emerald-400" />
+            <span>Zero Raw Record Transfer • Edge Isolation</span>
           </div>
         </div>
 
