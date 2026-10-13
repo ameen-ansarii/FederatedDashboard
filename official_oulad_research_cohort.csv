@@ -1,0 +1,201 @@
+student_id,code_module,code_presentation,gender,highest_education,imd_band,age_band,num_of_prev_attempts,studied_credits,disability,total_vle_clicks,avg_assessment_score,final_result
+OULAD_STU_1001,GGG,2014B,F,Lower Than A Level,50-60%,35-55,0,150,N,687,60.0,Distinction
+OULAD_STU_1002,FFF,2013B,F,Lower Than A Level,50-60%,0-35,0,30,N,977,82.6,Pass
+OULAD_STU_1003,GGG,2014J,F,Post Graduate Qualification,40-50%,35-55,1,150,N,242,64.7,Pass
+OULAD_STU_1004,CCC,2013J,F,A Level or Equivalent,20-30%,35-55,0,90,N,338,30.7,Fail
+OULAD_STU_1005,EEE,2014B,F,Post Graduate Qualification,50-60%,55<=,0,30,N,312,86.4,Withdrawn
+OULAD_STU_1006,CCC,2014B,F,HE Qualification,90-100%,0-35,2,150,N,188,79.0,Pass
+OULAD_STU_1007,GGG,2013B,F,Post Graduate Qualification,50-60%,55<=,0,60,N,204,23.0,Fail
+OULAD_STU_1008,BBB,2014B,M,Post Graduate Qualification,10-20%,55<=,0,90,N,634,84.4,Distinction
+OULAD_STU_1009,DDD,2013B,M,Lower Than A Level,50-60%,0-35,0,60,N,699,89.2,Pass
+OULAD_STU_1010,CCC,2013J,F,HE Qualification,50-60%,55<=,1,120,N,997,61.0,Pass
+OULAD_STU_1011,DDD,2014J,F,Lower Than A Level,10-20%,35-55,0,60,Y,931,50.3,Distinction
+OULAD_STU_1012,BBB,2014B,F,Lower Than A Level,40-50%,35-55,1,90,N,701,26.7,Fail
+OULAD_STU_1013,GGG,2013B,M,HE Qualification,90-100%,0-35,0,150,N,202,86.3,Withdrawn
+OULAD_STU_1014,BBB,2013B,M,Lower Than A Level,40-50%,35-55,1,90,N,619,20.3,Withdrawn
+OULAD_STU_1015,AAA,2014J,F,Post Graduate Qualification,20-30%,0-35,0,30,N,1799,47.5,Pass
+OULAD_STU_1016,BBB,2013B,M,HE Qualification,10-20%,55<=,0,30,N,1239,46.2,Pass
+OULAD_STU_1017,GGG,2014J,M,Post Graduate Qualification,50-60%,35-55,0,120,N,1778,93.0,Pass
+OULAD_STU_1018,BBB,2014J,M,Post Graduate Qualification,90-100%,55<=,0,120,N,18,55.9,Fail
+OULAD_STU_1019,AAA,2014J,M,Post Graduate Qualification,50-60%,35-55,2,90,N,472,91.1,Pass
+OULAD_STU_1020,GGG,2013B,F,Post Graduate Qualification,30-40%,35-55,2,60,Y,121,27.1,Withdrawn
+OULAD_STU_1021,AAA,2013B,M,HE Qualification,10-20%,0-35,0,60,N,141,87.7,Fail
+OULAD_STU_1022,BBB,2014B,M,A Level or Equivalent,20-30%,0-35,0,60,N,929,69.0,Pass
+OULAD_STU_1023,DDD,2014J,M,Post Graduate Qualification,10-20%,0-35,0,60,N,693,63.0,Pass
+OULAD_STU_1024,GGG,2014B,M,Lower Than A Level,30-40%,0-35,0,150,N,199,44.5,Distinction
+OULAD_STU_1025,FFF,2014J,F,A Level or Equivalent,10-20%,55<=,0,120,N,366,59.2,Pass
+OULAD_STU_1026,EEE,2014J,M,HE Qualification,30-40%,0-35,0,60,N,104,41.9,Withdrawn
+OULAD_STU_1027,AAA,2014B,F,Lower Than A Level,0-10%,55<=,1,30,N,1,56.5,Fail
+OULAD_STU_1028,AAA,2013B,M,Post Graduate Qualification,30-40%,35-55,0,30,Y,1151,81.5,Distinction
+OULAD_STU_1029,EEE,2013B,F,Lower Than A Level,50-60%,55<=,1,90,N,618,70.0,Distinction
+OULAD_STU_1030,BBB,2014J,M,HE Qualification,30-40%,35-55,3,90,N,376,74.4,Pass
+OULAD_STU_1031,DDD,2014B,M,HE Qualification,40-50%,35-55,0,120,N,27,91.4,Withdrawn
+OULAD_STU_1032,CCC,2014B,M,Lower Than A Level,90-100%,55<=,0,30,N,273,24.2,Withdrawn
+OULAD_STU_1033,EEE,2014J,M,HE Qualification,90-100%,0-35,1,60,N,239,35.9,Withdrawn
+OULAD_STU_1034,CCC,2013J,F,A Level or Equivalent,90-100%,55<=,2,150,N,94,77.9,Fail
+OULAD_STU_1035,EEE,2013J,F,Post Graduate Qualification,90-100%,55<=,0,90,N,84,52.7,Withdrawn
+OULAD_STU_1036,AAA,2014B,M,Lower Than A Level,50-60%,35-55,0,150,N,95,72.0,Fail
+OULAD_STU_1037,FFF,2014J,F,Post Graduate Qualification,10-20%,35-55,0,90,N,454,91.8,Distinction
+OULAD_STU_1038,AAA,2014B,M,HE Qualification,10-20%,0-35,1,150,N,66,78.9,Fail
+OULAD_STU_1039,BBB,2013B,F,Post Graduate Qualification,90-100%,0-35,0,150,N,136,94.6,Withdrawn
+OULAD_STU_1040,DDD,2014J,M,Post Graduate Qualification,90-100%,0-35,0,90,N,1461,32.2,Withdrawn
+OULAD_STU_1041,EEE,2014J,F,A Level or Equivalent,90-100%,35-55,3,90,N,123,80.5,Withdrawn
+OULAD_STU_1042,EEE,2014B,F,Post Graduate Qualification,40-50%,0-35,0,120,N,721,76.2,Distinction
+OULAD_STU_1043,EEE,2014B,F,A Level or Equivalent,10-20%,55<=,0,60,Y,455,20.6,Withdrawn
+OULAD_STU_1044,GGG,2013B,M,HE Qualification,90-100%,55<=,0,60,N,266,23.4,Fail
+OULAD_STU_1045,BBB,2014B,F,HE Qualification,0-10%,0-35,0,150,N,452,22.7,Withdrawn
+OULAD_STU_1046,FFF,2013B,M,A Level or Equivalent,20-30%,0-35,0,120,N,71,62.2,Fail
+OULAD_STU_1047,GGG,2014J,M,Lower Than A Level,10-20%,55<=,0,90,N,331,82.1,Pass
+OULAD_STU_1048,GGG,2014B,M,HE Qualification,30-40%,0-35,1,90,Y,1790,52.4,Distinction
+OULAD_STU_1049,DDD,2014B,M,Post Graduate Qualification,90-100%,35-55,0,150,N,279,20.3,Withdrawn
+OULAD_STU_1050,CCC,2014B,F,Lower Than A Level,0-10%,35-55,0,120,N,139,34.0,Withdrawn
+OULAD_STU_1051,BBB,2014J,F,HE Qualification,50-60%,55<=,0,150,N,1312,95.9,Withdrawn
+OULAD_STU_1052,EEE,2013B,F,Post Graduate Qualification,30-40%,35-55,0,60,N,471,39.6,Fail
+OULAD_STU_1053,AAA,2014B,M,Post Graduate Qualification,50-60%,35-55,0,90,N,650,88.3,Distinction
+OULAD_STU_1054,DDD,2014J,M,Post Graduate Qualification,30-40%,35-55,0,120,N,391,49.6,Distinction
+OULAD_STU_1055,CCC,2013J,M,HE Qualification,0-10%,35-55,1,90,Y,5,61.7,Withdrawn
+OULAD_STU_1056,FFF,2013J,F,HE Qualification,0-10%,0-35,1,150,N,704,59.2,Pass
+OULAD_STU_1057,AAA,2014B,F,Post Graduate Qualification,10-20%,35-55,0,120,Y,1924,30.8,Withdrawn
+OULAD_STU_1058,DDD,2014B,F,HE Qualification,20-30%,55<=,0,60,N,629,49.3,Pass
+OULAD_STU_1059,CCC,2013J,M,A Level or Equivalent,30-40%,0-35,0,120,N,827,100.0,Pass
+OULAD_STU_1060,CCC,2013J,M,Lower Than A Level,50-60%,55<=,0,150,Y,953,65.1,Pass
+OULAD_STU_1061,CCC,2013B,M,Lower Than A Level,30-40%,35-55,3,90,N,3566,57.2,Pass
+OULAD_STU_1062,GGG,2013J,M,Lower Than A Level,50-60%,0-35,0,150,N,170,63.9,Distinction
+OULAD_STU_1063,FFF,2013J,F,Post Graduate Qualification,0-10%,0-35,0,120,N,298,41.0,Pass
+OULAD_STU_1064,CCC,2013J,M,Post Graduate Qualification,20-30%,0-35,0,120,N,391,65.3,Pass
+OULAD_STU_1065,EEE,2013B,F,Post Graduate Qualification,50-60%,35-55,0,150,N,82,78.3,Withdrawn
+OULAD_STU_1066,DDD,2014J,F,Post Graduate Qualification,30-40%,55<=,0,60,N,327,28.5,Withdrawn
+OULAD_STU_1067,DDD,2013B,M,HE Qualification,90-100%,0-35,0,60,N,162,42.3,Pass
+OULAD_STU_1068,FFF,2013B,F,A Level or Equivalent,0-10%,55<=,0,30,N,906,36.7,Withdrawn
+OULAD_STU_1069,EEE,2013B,M,Lower Than A Level,90-100%,55<=,1,30,Y,213,79.6,Distinction
+OULAD_STU_1070,GGG,2013J,M,Post Graduate Qualification,90-100%,0-35,0,90,N,42,94.9,Withdrawn
+OULAD_STU_1071,EEE,2013B,F,HE Qualification,10-20%,35-55,0,90,N,5,54.0,Fail
+OULAD_STU_1072,GGG,2014B,M,HE Qualification,10-20%,35-55,0,90,N,985,70.7,Pass
+OULAD_STU_1073,FFF,2014B,M,HE Qualification,40-50%,55<=,0,90,N,978,22.5,Fail
+OULAD_STU_1074,DDD,2013J,M,Post Graduate Qualification,40-50%,0-35,1,30,N,1359,30.5,Withdrawn
+OULAD_STU_1075,CCC,2014J,F,Lower Than A Level,50-60%,55<=,0,60,N,37,50.8,Withdrawn
+OULAD_STU_1076,AAA,2014J,M,Post Graduate Qualification,10-20%,55<=,0,90,N,251,73.2,Pass
+OULAD_STU_1077,GGG,2013J,M,Post Graduate Qualification,0-10%,35-55,0,30,N,279,71.2,Withdrawn
+OULAD_STU_1078,GGG,2014B,M,A Level or Equivalent,90-100%,35-55,1,60,N,986,35.4,Withdrawn
+OULAD_STU_1079,EEE,2013J,M,Lower Than A Level,0-10%,35-55,0,60,N,151,30.6,Fail
+OULAD_STU_1080,DDD,2014B,M,Lower Than A Level,40-50%,0-35,1,60,N,179,95.0,Distinction
+OULAD_STU_1081,GGG,2014B,F,Post Graduate Qualification,20-30%,0-35,2,30,N,659,48.4,Distinction
+OULAD_STU_1082,BBB,2014B,F,Lower Than A Level,50-60%,0-35,2,30,N,99,56.8,Fail
+OULAD_STU_1083,DDD,2014B,M,Post Graduate Qualification,10-20%,0-35,1,150,N,504,27.6,Withdrawn
+OULAD_STU_1084,CCC,2014J,M,HE Qualification,50-60%,35-55,0,150,N,677,92.8,Pass
+OULAD_STU_1085,FFF,2013B,F,A Level or Equivalent,90-100%,55<=,0,30,N,99,73.4,Withdrawn
+OULAD_STU_1086,BBB,2013B,F,A Level or Equivalent,20-30%,35-55,0,90,N,125,60.8,Withdrawn
+OULAD_STU_1087,CCC,2014B,F,A Level or Equivalent,90-100%,55<=,0,60,N,601,54.5,Pass
+OULAD_STU_1088,EEE,2013B,F,Post Graduate Qualification,50-60%,0-35,0,150,N,791,24.1,Fail
+OULAD_STU_1089,AAA,2013B,F,Lower Than A Level,40-50%,0-35,1,150,N,1532,37.1,Withdrawn
+OULAD_STU_1090,BBB,2013B,F,Post Graduate Qualification,20-30%,35-55,0,60,N,184,88.5,Pass
+OULAD_STU_1091,EEE,2014J,M,HE Qualification,90-100%,0-35,1,150,N,397,69.8,Pass
+OULAD_STU_1092,CCC,2014J,M,Lower Than A Level,0-10%,35-55,0,120,N,79,35.5,Fail
+OULAD_STU_1093,BBB,2013B,F,Lower Than A Level,30-40%,55<=,1,120,Y,287,35.1,Fail
+OULAD_STU_1094,BBB,2014J,M,Post Graduate Qualification,30-40%,0-35,0,150,N,151,48.0,Distinction
+OULAD_STU_1095,DDD,2013J,F,HE Qualification,20-30%,55<=,0,90,N,214,69.2,Pass
+OULAD_STU_1096,EEE,2013B,F,A Level or Equivalent,30-40%,35-55,0,120,N,813,63.4,Pass
+OULAD_STU_1097,FFF,2013J,M,HE Qualification,20-30%,35-55,3,90,N,812,62.2,Distinction
+OULAD_STU_1098,BBB,2013B,F,A Level or Equivalent,10-20%,55<=,1,30,N,609,89.5,Pass
+OULAD_STU_1099,AAA,2014B,M,Post Graduate Qualification,40-50%,0-35,0,60,N,65,88.9,Withdrawn
+OULAD_STU_1100,AAA,2014B,F,Lower Than A Level,20-30%,0-35,0,150,N,167,87.6,Pass
+OULAD_STU_1101,DDD,2014B,M,HE Qualification,50-60%,35-55,2,120,N,1400,76.2,Pass
+OULAD_STU_1102,BBB,2013B,M,A Level or Equivalent,50-60%,35-55,0,90,N,301,51.4,Distinction
+OULAD_STU_1103,GGG,2014B,F,HE Qualification,0-10%,35-55,0,150,N,486,41.5,Pass
+OULAD_STU_1104,DDD,2014J,F,HE Qualification,50-60%,0-35,2,30,N,9,96.5,Withdrawn
+OULAD_STU_1105,DDD,2014B,F,Post Graduate Qualification,40-50%,55<=,0,30,N,364,23.6,Withdrawn
+OULAD_STU_1106,DDD,2013B,M,Post Graduate Qualification,0-10%,55<=,0,120,N,584,69.5,Pass
+OULAD_STU_1107,FFF,2014B,M,A Level or Equivalent,50-60%,0-35,1,150,N,30,87.7,Withdrawn
+OULAD_STU_1108,BBB,2014J,F,Post Graduate Qualification,30-40%,55<=,1,150,N,61,41.8,Withdrawn
+OULAD_STU_1109,BBB,2013J,F,A Level or Equivalent,10-20%,35-55,0,150,N,229,98.3,Distinction
+OULAD_STU_1110,CCC,2014J,F,Lower Than A Level,50-60%,55<=,0,30,N,1445,90.9,Pass
+OULAD_STU_1111,DDD,2013B,M,HE Qualification,90-100%,35-55,0,30,N,143,35.9,Fail
+OULAD_STU_1112,DDD,2013B,M,A Level or Equivalent,30-40%,35-55,3,60,N,10,41.6,Fail
+OULAD_STU_1113,DDD,2013J,F,A Level or Equivalent,10-20%,0-35,1,30,N,828,91.8,Pass
+OULAD_STU_1114,DDD,2013B,F,A Level or Equivalent,50-60%,55<=,1,30,N,946,28.7,Fail
+OULAD_STU_1115,AAA,2013J,F,HE Qualification,20-30%,55<=,0,60,N,384,35.1,Fail
+OULAD_STU_1116,GGG,2014J,F,A Level or Equivalent,40-50%,35-55,0,150,N,1117,68.7,Pass
+OULAD_STU_1117,GGG,2014B,F,HE Qualification,0-10%,0-35,0,30,N,98,31.8,Withdrawn
+OULAD_STU_1118,BBB,2013J,M,A Level or Equivalent,90-100%,0-35,0,60,Y,160,65.8,Pass
+OULAD_STU_1119,GGG,2013B,F,A Level or Equivalent,90-100%,55<=,2,150,N,10,66.0,Fail
+OULAD_STU_1120,GGG,2013B,M,HE Qualification,20-30%,0-35,2,90,Y,437,67.7,Pass
+OULAD_STU_1121,DDD,2014J,M,Lower Than A Level,50-60%,55<=,1,60,N,1091,40.1,Distinction
+OULAD_STU_1122,BBB,2013J,M,HE Qualification,90-100%,35-55,0,60,N,466,85.7,Pass
+OULAD_STU_1123,GGG,2013J,F,Lower Than A Level,50-60%,35-55,0,150,N,41,97.6,Fail
+OULAD_STU_1124,EEE,2013J,M,Lower Than A Level,0-10%,55<=,0,120,Y,590,42.2,Distinction
+OULAD_STU_1125,GGG,2014B,F,A Level or Equivalent,10-20%,0-35,0,90,N,563,89.2,Distinction
+OULAD_STU_1126,DDD,2014B,F,HE Qualification,0-10%,35-55,0,30,N,91,43.4,Withdrawn
+OULAD_STU_1127,GGG,2013B,F,Lower Than A Level,50-60%,55<=,0,120,Y,882,47.9,Distinction
+OULAD_STU_1128,BBB,2014B,M,Post Graduate Qualification,30-40%,35-55,0,150,N,1217,82.8,Distinction
+OULAD_STU_1129,FFF,2014B,M,HE Qualification,0-10%,55<=,0,150,N,248,31.0,Withdrawn
+OULAD_STU_1130,GGG,2013J,M,Lower Than A Level,10-20%,0-35,0,150,N,184,24.9,Withdrawn
+OULAD_STU_1131,CCC,2013B,F,HE Qualification,90-100%,35-55,0,120,Y,427,50.9,Pass
+OULAD_STU_1132,DDD,2013J,M,Lower Than A Level,50-60%,35-55,0,150,N,1797,30.4,Withdrawn
+OULAD_STU_1133,EEE,2013B,F,A Level or Equivalent,90-100%,35-55,0,90,N,645,26.4,Fail
+OULAD_STU_1134,DDD,2014B,F,Post Graduate Qualification,0-10%,0-35,0,120,N,780,67.1,Pass
+OULAD_STU_1135,BBB,2014B,M,Post Graduate Qualification,90-100%,0-35,0,90,N,731,34.7,Fail
+OULAD_STU_1136,FFF,2014J,F,A Level or Equivalent,40-50%,35-55,0,90,N,1573,44.1,Pass
+OULAD_STU_1137,AAA,2014J,M,HE Qualification,10-20%,0-35,1,150,Y,846,78.3,Distinction
+OULAD_STU_1138,FFF,2014B,M,Lower Than A Level,40-50%,0-35,2,90,N,156,27.4,Fail
+OULAD_STU_1139,AAA,2014J,M,Lower Than A Level,20-30%,55<=,0,120,N,131,99.5,Withdrawn
+OULAD_STU_1140,FFF,2013J,M,Post Graduate Qualification,90-100%,55<=,0,150,N,138,44.7,Fail
+OULAD_STU_1141,GGG,2013B,M,Post Graduate Qualification,40-50%,55<=,3,30,N,119,63.7,Fail
+OULAD_STU_1142,GGG,2013J,M,Lower Than A Level,20-30%,35-55,0,60,N,116,83.3,Withdrawn
+OULAD_STU_1143,DDD,2013J,F,A Level or Equivalent,10-20%,55<=,0,30,N,1362,39.0,Withdrawn
+OULAD_STU_1144,AAA,2014J,F,Lower Than A Level,0-10%,0-35,0,120,N,1514,47.3,Pass
+OULAD_STU_1145,BBB,2013J,M,HE Qualification,10-20%,35-55,0,150,N,47,36.5,Fail
+OULAD_STU_1146,FFF,2014J,F,Lower Than A Level,30-40%,35-55,0,120,N,33,50.3,Withdrawn
+OULAD_STU_1147,BBB,2014B,F,HE Qualification,10-20%,0-35,2,150,N,972,78.8,Pass
+OULAD_STU_1148,AAA,2013B,F,Post Graduate Qualification,10-20%,55<=,0,60,N,414,77.2,Pass
+OULAD_STU_1149,DDD,2013J,F,Lower Than A Level,50-60%,55<=,0,90,N,118,34.6,Withdrawn
+OULAD_STU_1150,FFF,2014B,F,Lower Than A Level,30-40%,55<=,0,90,N,309,58.2,Pass
+OULAD_STU_1151,BBB,2014J,M,HE Qualification,90-100%,35-55,0,90,N,38,75.1,Withdrawn
+OULAD_STU_1152,DDD,2014J,M,HE Qualification,90-100%,35-55,1,60,N,2014,79.1,Pass
+OULAD_STU_1153,EEE,2013J,F,HE Qualification,30-40%,55<=,0,120,N,75,70.9,Withdrawn
+OULAD_STU_1154,GGG,2014B,M,A Level or Equivalent,50-60%,55<=,0,30,N,821,35.6,Fail
+OULAD_STU_1155,FFF,2014B,M,Post Graduate Qualification,90-100%,35-55,0,30,N,1587,89.4,Pass
+OULAD_STU_1156,GGG,2014J,F,Lower Than A Level,10-20%,0-35,1,30,N,620,43.1,Pass
+OULAD_STU_1157,EEE,2013B,F,HE Qualification,90-100%,0-35,3,60,N,46,49.6,Withdrawn
+OULAD_STU_1158,BBB,2013J,M,Lower Than A Level,50-60%,35-55,0,120,N,445,64.7,Distinction
+OULAD_STU_1159,EEE,2013B,M,HE Qualification,30-40%,55<=,0,120,Y,69,88.8,Fail
+OULAD_STU_1160,GGG,2013J,F,Post Graduate Qualification,90-100%,55<=,0,120,N,1008,72.0,Pass
+OULAD_STU_1161,EEE,2014B,F,A Level or Equivalent,50-60%,55<=,0,30,N,558,76.1,Pass
+OULAD_STU_1162,DDD,2013B,F,Lower Than A Level,50-60%,0-35,0,30,N,1424,37.3,Withdrawn
+OULAD_STU_1163,EEE,2014J,F,A Level or Equivalent,10-20%,55<=,2,30,N,78,48.2,Fail
+OULAD_STU_1164,DDD,2014J,F,Lower Than A Level,10-20%,0-35,0,30,N,302,31.0,Withdrawn
+OULAD_STU_1165,GGG,2014J,M,HE Qualification,30-40%,0-35,2,60,N,392,79.0,Pass
+OULAD_STU_1166,AAA,2014B,M,HE Qualification,20-30%,55<=,0,30,N,57,95.9,Withdrawn
+OULAD_STU_1167,GGG,2014J,M,Post Graduate Qualification,30-40%,55<=,0,120,N,564,78.8,Distinction
+OULAD_STU_1168,FFF,2014B,F,HE Qualification,0-10%,0-35,0,120,N,417,30.0,Withdrawn
+OULAD_STU_1169,EEE,2014B,F,A Level or Equivalent,20-30%,35-55,0,120,N,213,75.5,Pass
+OULAD_STU_1170,EEE,2014J,F,HE Qualification,90-100%,0-35,0,150,N,266,54.7,Pass
+OULAD_STU_1171,EEE,2014J,F,Post Graduate Qualification,0-10%,0-35,0,120,N,795,27.4,Withdrawn
+OULAD_STU_1172,EEE,2013B,F,HE Qualification,30-40%,55<=,2,60,N,220,100.0,Pass
+OULAD_STU_1173,AAA,2013J,F,HE Qualification,30-40%,0-35,0,60,N,1799,77.9,Pass
+OULAD_STU_1174,AAA,2013J,F,A Level or Equivalent,10-20%,0-35,1,30,N,1251,69.8,Distinction
+OULAD_STU_1175,BBB,2013B,M,A Level or Equivalent,0-10%,35-55,0,120,Y,40,89.8,Fail
+OULAD_STU_1176,AAA,2013B,M,Lower Than A Level,90-100%,0-35,0,120,N,956,46.0,Withdrawn
+OULAD_STU_1177,AAA,2014J,M,Post Graduate Qualification,30-40%,0-35,0,120,N,560,73.3,Pass
+OULAD_STU_1178,EEE,2014J,F,Lower Than A Level,30-40%,0-35,3,60,N,28,57.5,Withdrawn
+OULAD_STU_1179,CCC,2013B,F,HE Qualification,90-100%,35-55,0,60,N,1554,29.9,Fail
+OULAD_STU_1180,CCC,2013B,F,HE Qualification,30-40%,55<=,0,120,Y,896,63.3,Distinction
+OULAD_STU_1181,FFF,2014J,F,HE Qualification,50-60%,0-35,0,30,N,893,70.6,Withdrawn
+OULAD_STU_1182,FFF,2014B,M,HE Qualification,0-10%,55<=,0,30,N,1236,57.9,Pass
+OULAD_STU_1183,AAA,2013J,M,HE Qualification,30-40%,0-35,0,60,N,1269,30.0,Fail
+OULAD_STU_1184,GGG,2014B,M,A Level or Equivalent,40-50%,55<=,0,150,Y,123,26.0,Withdrawn
+OULAD_STU_1185,GGG,2013B,F,A Level or Equivalent,90-100%,35-55,1,120,N,1385,73.2,Distinction
+OULAD_STU_1186,BBB,2014B,F,HE Qualification,40-50%,0-35,1,60,N,24,87.0,Fail
+OULAD_STU_1187,GGG,2014J,M,Post Graduate Qualification,30-40%,35-55,0,120,N,1066,93.9,Pass
+OULAD_STU_1188,GGG,2014B,F,Post Graduate Qualification,20-30%,55<=,2,60,N,305,51.1,Distinction
+OULAD_STU_1189,AAA,2014B,F,Lower Than A Level,50-60%,0-35,0,60,N,889,95.1,Distinction
+OULAD_STU_1190,CCC,2014B,M,A Level or Equivalent,0-10%,0-35,0,90,N,159,85.6,Pass
+OULAD_STU_1191,EEE,2013B,M,A Level or Equivalent,50-60%,35-55,0,150,Y,702,53.9,Withdrawn
+OULAD_STU_1192,EEE,2014B,F,HE Qualification,50-60%,35-55,0,60,N,816,52.5,Pass
+OULAD_STU_1193,BBB,2014J,F,A Level or Equivalent,10-20%,0-35,1,90,Y,42,46.7,Withdrawn
+OULAD_STU_1194,CCC,2014J,F,Lower Than A Level,50-60%,55<=,0,60,N,1229,25.5,Withdrawn
+OULAD_STU_1195,DDD,2013B,F,Post Graduate Qualification,20-30%,55<=,3,90,N,849,20.8,Withdrawn
+OULAD_STU_1196,BBB,2014B,F,Post Graduate Qualification,40-50%,0-35,0,90,Y,452,39.6,Withdrawn
+OULAD_STU_1197,FFF,2013B,M,Post Graduate Qualification,0-10%,55<=,1,150,N,615,40.4,Distinction
+OULAD_STU_1198,EEE,2013B,M,Lower Than A Level,10-20%,0-35,0,120,N,212,78.4,Pass
+OULAD_STU_1199,DDD,2013B,F,Post Graduate Qualification,40-50%,55<=,0,120,N,317,32.6,Withdrawn
+OULAD_STU_1200,BBB,2013B,M,Lower Than A Level,30-40%,35-55,0,90,N,79,75.4,Withdrawn
