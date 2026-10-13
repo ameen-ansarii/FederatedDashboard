@@ -16,7 +16,29 @@ A privacy-preserving Learning Analytics system that predicts student academic at
 - **Frontend**: React 18, Vite, TypeScript, Tailwind CSS, Framer Motion
 - **Dataset**: Open University Learning Analytics Dataset (OULAD)
 
-## Getting Started
+## Quick Start for Evaluation / Presentation (Zero Node.js Required)
+
+For complete presentation instructions and evaluator walkthrough, see **[HOW_TO_RUN_GUIDE.md](file:///c:/Users/hp/Desktop/Dropout%20Prediction/HOW_TO_RUN_GUIDE.md)**.
+
+### Windows (1-Click Run):
+Double-click **`START_DEMO.bat`**.
+- Auto-verifies Python.
+- Auto-installs missing dependencies.
+- Starts the PyTorch AI engine and serves the pre-compiled React frontend at `http://127.0.0.1:8000`.
+- Automatically opens the dashboard in your default browser.
+
+### macOS & Linux:
+Run:
+```bash
+bash start_demo.sh
+```
+*(Or simply `python3 backend_lite.py` and open `http://127.0.0.1:8000`)*
+
+---
+
+## Developer Setup (Full-Stack Dev Mode)
+
+If you wish to modify the React frontend TypeScript source code:
 
 ### 1. Prerequisites
 - Python 3.10+
@@ -40,7 +62,7 @@ cd frontend
 # Install dependencies
 npm install
 
-# Run the development server
+# Run the Vite development server
 npm run dev
 ```
-Frontend will be accessible at `http://localhost:5173`.
+Frontend development server will be accessible at `http://localhost:5173`.
